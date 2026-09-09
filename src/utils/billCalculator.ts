@@ -1,5 +1,5 @@
 import type { Bill, ItemUnit, Participant, ParticipantSettlement } from '../types';
-export const money = (cents: number) => `RM${(cents / 100).toFixed(2)}`;
+export const money = (cents: number) => `${(cents / 100).toFixed(2)}`;
 export function cents(value: string): number {
   if (!/^\d+(\.\d{0,2})?$/.test(value)) throw new Error('Enter a non-negative amount with up to 2 decimal places.');
   const [whole, fraction = ''] = value.split('.');
