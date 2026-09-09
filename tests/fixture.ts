@@ -1,0 +1,2 @@
+import type { Bill } from '../src/types';
+export function fixture(): Bill {return {id:'',requestId:'11111111-1111-4111-8111-111111111111',sessionId:'fs_'+'a'.repeat(64),restaurant:'Test meal',createdAt:'',expiresAt:'',participants:[{id:'a',name:'Amy'},{id:'b',name:'Ben'},{id:'c',name:'Chris'}],items:[{id:'food',name:'Rice',quantity:1,unitPriceCents:1000,totalPriceCents:1000}],itemUnits:[{id:'food:0',itemId:'food',name:'Rice',priceCents:1000,participantIds:['a','b','c']}],subtotalCents:1000,serviceChargeCents:100,taxCents:60,discountCents:10,totalCents:1150,settlements:[]};}
