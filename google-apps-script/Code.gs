@@ -121,7 +121,7 @@ function scanReceipt_(request) {
   var status=response.getResponseCode();
   if(status===429)throw new Error('The scanning provider quota is exhausted or busy. The site owner should check the provider quota; retry later.');
   if(status===401||status===403)throw new Error('The scanning service credentials were rejected. The site owner needs to check the API key.');
-  if(status===400||status===404)throw new Error('The scanning service configuration was rejected. The site owner needs to check the API key and image-capable model.');
+  if(status===400||status===404){var providerMessage='';try{providerMessage=JSON.parse(response.getContentText()).error.message||'';}catch(e){}throw new Error('The scanning service configuration was rejected'+(providerMessage?': '+providerMessage:'')+'.');}
   if(status!==200)throw new Error('The scanning provider is temporarily unavailable. Please retry later.');
   var body;try{body=JSON.parse(response.getContentText());}catch(e){throw new Error('The scanning service returned an invalid response format. Please retry.');}
   return normalizeScan_(parseScanResponse_(body));
