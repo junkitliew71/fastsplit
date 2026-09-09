@@ -1,0 +1,6 @@
+// Small code-drawn app icon. No external image dependency.
+import { deflateSync } from 'node:zlib';
+import { writeFileSync } from 'node:fs';
+function crc32(data){let crc=0xffffffff;for(const b of data){crc^=b;for(let i=0;i<8;i++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);}return (crc^0xffffffff)>>>0;}
+function chunk(type,data){const t=Buffer.from(type),len=Buffer.alloc(4),crc=Buffer.alloc(4);len.writeUInt32BE(data.length);crc.writeUInt32BE(crc32(Buffer.concat([t,data])));return Buffer.concat([len,t,data,crc]);}
+for(const size of [192,512]){const pixels=Buffer.alloc((size*4+1)*size);for(let y=0;y<size;y++){for(let x=0;x<size;x++){const nx=x/size*192,ny=y/size*192;let color=[9,107,84,255];if((nx>=48&&nx<77&&ny>=44&&ny<152)||(nx>=48&&nx<144&&ny>=44&&ny<70)||(nx>=48&&nx<131&&ny>=94&&ny<120))color=[255,255,255,255];if((nx-144)**2+(ny-144)**2<17**2)color=[200,238,145,255];const offset=y*(size*4+1)+1+x*4;pixels.set(color,offset);}}const header=Buffer.alloc(13);header.writeUInt32BE(size,0);header.writeUInt32BE(size,4);header[8]=8;header[9]=6;writeFileSync(`public/icon-${size}.png`,Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',header),chunk('IDAT',deflateSync(pixels)),chunk('IEND',Buffer.alloc(0))]));}
