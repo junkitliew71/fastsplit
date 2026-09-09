@@ -128,7 +128,7 @@ function scanReceipt_(request) {
 }
 function receiptSchema_() {
   var amount={type:'integer'};
-  return {type:'object',properties:{restaurant:{type:'string'},error:{type:'string'},items:{type:'array',items:{type:'object',properties:{name:{type:'string'},quantity:{type:'integer'},totalPriceCents:amount},required:['name','quantity','totalPriceCents']}},serviceChargeCents:amount,taxCents:amount,discountCents:amount,receiptTotalCents:{type:['integer','null']}},required:['restaurant','error','items','serviceChargeCents','taxCents','discountCents','receiptTotalCents']};
+  return {type:'object',properties:{restaurant:{type:'string'},error:{type:'string'},items:{type:'array',items:{type:'object',properties:{name:{type:'string'},quantity:{type:'integer'},totalPriceCents:amount},required:['name','quantity','totalPriceCents']}},serviceChargeCents:amount,taxCents:amount,discountCents:amount,receiptTotalCents:{type:'integer',nullable:true}},required:['restaurant','error','items','serviceChargeCents','taxCents','discountCents','receiptTotalCents']};
 }
 function parseScanResponse_(body) {
   var candidate=body.candidates&&body.candidates[0];
