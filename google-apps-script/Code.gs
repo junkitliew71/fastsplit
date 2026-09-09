@@ -116,7 +116,7 @@ function scanReceipt_(request) {
     'Return restaurant as an empty string if unavailable. Return error as an empty string on success, or a short error with items [] if not a receipt or item prices are unreadable. Return only the specified JSON.'
   ].join(' ');
   var response;
-  try{response=UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/'+encodeURIComponent(model)+':generateContent',{method:'post',contentType:'application/json',headers:{'x-goog-api-key':key},payload:JSON.stringify({contents:[{parts:[{text:prompt},{inline_data:{mime_type:request.mimeType,data:request.image}}]}],generationConfig:{responseMimeType:'application/json',responseJsonSchema:receiptSchema_(),temperature:0}}),muteHttpExceptions:true});}
+  try{response=UrlFetchApp.fetch('https://generativelanguage.googleapis.com/v1beta/models/'+encodeURIComponent(model)+':generateContent',{method:'post',contentType:'application/json',headers:{'x-goog-api-key':key},payload:JSON.stringify({contents:[{parts:[{text:prompt},{inline_data:{mime_type:request.mimeType,data:request.image}}]}],generationConfig:{responseMimeType:'application/json',responseJsonSchema:receiptSchema_(),thinkingConfig:{thinkingLevel:'MINIMAL'},maxOutputTokens:2048}}),muteHttpExceptions:true});}
   catch(e){throw new Error('The scanning service could not be reached. Please retry later.');}
   var status=response.getResponseCode();
   if(status===429)throw new Error('The scanning provider quota is exhausted or busy. The site owner should check the provider quota; retry later.');
