@@ -8,7 +8,7 @@ import { eachPrice, isColumnHeader, isQuantitySummary, isUnitPriceContinuation }
 const uuid = () => crypto.randomUUID();
 const rate = (line: string) => line.match(/(?:\b|\s)(\d{1,2}(?:\.\d+)?)\s*%/)?.[1];
 function item(name: string, quantity: number, total: number): ReceiptItem | null {
-  const clean = name.replace(eachPrice, '').replace(/\(\s*$/, '').replace(/\s+/g, ' ').replace(/^[^\p{L}\p{N}]+/u, '').replace(/^\d{4,14}\s+/, '').trim().slice(0, 100);
+  const clean = name.replace(eachPrice, '').replace(/\(\s*$/, '').replace(/\s+[TD]\s*$/i, '').replace(/\s+/g, ' ').replace(/^[^\p{L}\p{N}]+/u, '').replace(/^\d{4,14}\s+/, '').trim().slice(0, 100);
   if (!clean || quantity < 1 || quantity > 50 || total < 0) return null;
   return { id: uuid(), name: clean, quantity, unitPriceCents: total % quantity === 0 ? total / quantity : total, totalPriceCents: total };
 }

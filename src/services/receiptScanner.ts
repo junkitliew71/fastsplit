@@ -30,12 +30,44 @@ export async function prepareReceiptImage(file: File): Promise<Blob> {
   } finally { URL.revokeObjectURL(url); }
 }
 export const parseReceiptText = parseMalaysiaReceiptText;
+type OcrWord = { text: string; left: number; top: number; width: number; height: number };
+/** PSM 11 finds receipt columns well, but emits each cell on a separate text
+ * line. Rebuild visual rows from TSV word coordinates before semantic parsing. */
+export function receiptRowsFromTsv(tsv: string): string {
+  const words: OcrWord[] = tsv.split('\n').slice(1).flatMap(row => {
+    const cells = row.split('\t');
+    if (cells[0] !== '5' || !cells[11]?.trim()) return [];
+    const left = Number(cells[6]), top = Number(cells[7]), width = Number(cells[8]), height = Number(cells[9]);
+    return Number.isFinite(left + top + width + height) ? [{ text: cells.slice(11).join('\t').trim(), left, top, width, height }] : [];
+  });
+  const rows: OcrWord[][] = [];
+  for (const word of words.sort((a, b) => (a.top + a.height / 2) - (b.top + b.height / 2) || a.left - b.left)) {
+    const center = word.top + word.height / 2;
+    let best: OcrWord[] | undefined, distance = Infinity;
+    for (const row of rows) { const rowCenter = row.reduce((sum, entry) => sum + entry.top + entry.height / 2, 0) / row.length; const gap = Math.abs(center - rowCenter); if (gap < distance && gap <= Math.max(8, word.height * .9)) { best = row; distance = gap; } }
+    (best || (rows.push([]), rows[rows.length - 1])).push(word);
+  }
+  return rows.sort((a, b) => Math.min(...a.map(word => word.top)) - Math.min(...b.map(word => word.top))).map(row => row.sort((a, b) => a.left - b.left).map(word => word.text).join(' ')).join('\n');
+}
+function scanQuality(receipt: Receipt) {
+  const mismatch = receipt.scanWarning?.match(/add up to ([\d.]+), while the printed total is ([\d.]+)/);
+  const difference = mismatch ? Math.abs(Number(mismatch[1]) - Number(mismatch[2])) : 0;
+  return receipt.items.length * 10 - difference - (receipt.items.length ? 0 : 100);
+}
 // Resolve from the document URL so Vite's relative base (`./`) remains inside
 // the GitHub Pages project path (for example, `/fastsplit/ocr/...`).
 const asset = (path: string) => new URL(`${import.meta.env.BASE_URL}ocr/${path}`, document.baseURI).toString();
 export async function scanReceipt(file: File, progress: ScanProgress = () => {}): Promise<Receipt> {
   progress('Preparing image locally…'); const prepared = await prepareReceiptImage(file); progress('Loading local OCR…'); const { createWorker } = await import('tesseract.js');
   const worker = await createWorker('eng', 1, { workerPath: asset('worker.min.js'), corePath: asset('tesseract-core-simd-lstm.wasm.js'), langPath: asset('data'), logger: message => { if (message.status === 'recognizing text') progress(`Reading receipt locally… ${Math.round((message.progress || 0) * 100)}%`); } });
-  try { await worker.setParameters({ tessedit_pageseg_mode: '4' as Tesseract.PSM }); progress('Extracting receipt text…'); const result = await worker.recognize(prepared); return parseReceiptText(result.data.text); } finally { await worker.terminate(); }
+  try {
+    await worker.setParameters({ tessedit_pageseg_mode: '11' as Tesseract.PSM, preserve_interword_spaces: '1' }); progress('Extracting receipt rows…');
+    const sparse = await worker.recognize(prepared, {}, { text: true, tsv: true });
+    const reconstructed = receiptRowsFromTsv(sparse.data.tsv || ''); const primary = parseReceiptText(reconstructed || sparse.data.text);
+    if (primary.items.length >= 2 && !primary.scanWarning?.includes('while the printed total')) return primary;
+    progress('Checking receipt table…'); await worker.setParameters({ tessedit_pageseg_mode: '6' as Tesseract.PSM, preserve_interword_spaces: '1' });
+    const block = parseReceiptText((await worker.recognize(prepared)).data.text);
+    return scanQuality(block) > scanQuality(primary) ? block : primary;
+  } finally { await worker.terminate(); }
 }
 export function demoReceipt(): Receipt { return {restaurant:'Sushi House · Demo',items:[{id:crypto.randomUUID(),name:'Salmon sushi',quantity:2,unitPriceCents:800,totalPriceCents:1600},{id:crypto.randomUUID(),name:'Chicken ramen',quantity:1,unitPriceCents:1800,totalPriceCents:1800},{id:crypto.randomUUID(),name:'Iced green tea',quantity:3,unitPriceCents:300,totalPriceCents:900}],serviceChargeCents:430,taxCents:258,discountCents:0}; }
