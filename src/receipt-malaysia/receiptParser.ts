@@ -60,5 +60,5 @@ export function parseMalaysiaReceiptText(text: string): Receipt {
   if (!validateReceiptTotal(calculated, printedTotal)) warnings.push(`Detected entries add up to ${(calculated / 100).toFixed(2)}, while the printed total is ${(printedTotal! / 100).toFixed(2)}. Check every amount.`);
   // FastSplit currently has fields only for food/service/tax/discount. Other fees are
   // included with service charge so the bill remains balanced and visibly editable.
-  return { restaurant: restaurant || 'Receipt', items, serviceChargeCents: serviceChargeCents + otherFees + roundingCents, taxCents, discountCents, scanWarning: warnings.join(' ') };
+  return { restaurant: restaurant || 'Receipt', items, serviceChargeCents: serviceChargeCents + otherFees + roundingCents, taxCents, discountCents, printedTotalCents: printedTotal, receiptNeedsReview: !validateReceiptTotal(calculated, printedTotal), scanWarning: warnings.join(' ') };
 }
