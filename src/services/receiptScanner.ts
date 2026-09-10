@@ -62,11 +62,11 @@ function scanQuality(receipt: Receipt) {
   const average=receipt.items.reduce((sum,item)=>sum+(item.confidence??.5),0)/Math.max(1,receipt.items.length),review=receipt.items.filter(item=>item.needsReview).length;
   return receipt.items.length*4+average*10-review*2-(difference??0)*4+(difference!==null&&difference<=.02?30:0)-(receipt.items.length?0:100);
 }
-export interface OcrDebugPass { mode:string; rawText:string; words:ReturnType<typeof layoutFromTsv>['words']; rows:ReturnType<typeof layoutFromTsv>['rows']; columns:ReturnType<typeof receiptColumns>; classifications:string[]; items:Receipt['items']; score:number }
+export interface OcrDebugPass { mode:string; rawText:string; words:ReturnType<typeof layoutFromTsv>['words']; rows:ReturnType<typeof layoutFromTsv>['rows']; imageWidth:number; imageHeight:number; columns:ReturnType<typeof receiptColumns>; classifications:string[]; items:Receipt['items']; score:number }
 export interface OcrDebugSnapshot { originalImageUrl:string; preprocessedImageUrl:string; passes:OcrDebugPass[]; finalItems:Receipt['items']; finalReceipt:Receipt }
 declare global { interface Window { __fastSplitOcrDebug?:OcrDebugSnapshot } }
 const debugEnabled=()=>typeof location!=='undefined'&&new URLSearchParams(location.search).get('ocrDebug')==='1';
-function debugPass(mode:string,rawText:string,tsv:string,receipt:Receipt):OcrDebugPass {const layout=layoutFromTsv(tsv);return{mode,rawText,words:layout.words,rows:layout.rows,columns:receiptColumns(layout),classifications:layout.rows.map(classifyReceiptRow),items:receipt.items,score:scanQuality(receipt)};}
+function debugPass(mode:string,rawText:string,tsv:string,receipt:Receipt):OcrDebugPass {const layout=layoutFromTsv(tsv),page=tsv.split('\n').map(row=>row.split('\t')).find(cells=>cells[0]==='1');return{mode,rawText,words:layout.words,rows:layout.rows,imageWidth:Number(page?.[8])||layout.width,imageHeight:Number(page?.[9])||layout.height,columns:receiptColumns(layout),classifications:layout.rows.map(classifyReceiptRow),items:receipt.items,score:scanQuality(receipt)};}
 // Resolve from the document URL so Vite's relative base (`./`) remains inside
 // the GitHub Pages project path (for example, `/fastsplit/ocr/...`).
 const asset = (path: string) => new URL(`${import.meta.env.BASE_URL}ocr/${path}`, document.baseURI).toString();
@@ -80,7 +80,7 @@ export async function scanReceipt(file: File, progress: ScanProgress = () => {})
     const primary = sparse.data.tsv ? parseReceiptTsv(sparse.data.tsv) : parseReceiptText(sparse.data.text);
     if(debug&&sparse.data.tsv)passes.push(debugPass('PSM 11 sparse',sparse.data.text,sparse.data.tsv,primary));let selected=primary;
     if(primary.items.length<2||primary.scanWarning?.includes('while the printed total')){progress('Checking receipt table…');await worker.setParameters({tessedit_pageseg_mode:'6' as Tesseract.PSM,preserve_interword_spaces:'1'});const blockResult=await worker.recognize(prepared,{},{text:true,tsv:true}),block=blockResult.data.tsv?parseReceiptTsv(blockResult.data.tsv):parseReceiptText(blockResult.data.text);if(debug&&blockResult.data.tsv)passes.push(debugPass('PSM 6 block',blockResult.data.text,blockResult.data.tsv,block));if(scanQuality(block)>scanQuality(primary))selected=block;}
-    if(debug){window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);}
+    if(debug){window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);const{renderOcrDebugPanel}=await import('./ocrDebugPanel');renderOcrDebugPanel(window.__fastSplitOcrDebug);}
     return selected;
   } finally { await worker.terminate(); }
 }
