@@ -6,6 +6,9 @@
 :root { background: #fafbf9; --muted: #63736a; }
 .topbar { max-width: 848px; height: 80px; padding: 0 24px; }
 .brand { font-size: 23px; }
+.language-toggle { min-height: 34px; padding: 4px; border: 1px solid var(--border); border-radius: 8px; background: white; color: var(--muted); font-size: 11px; font-weight: 700; gap: 0; }
+.language-toggle span { padding: 5px 7px; border-radius: 5px; }
+.language-toggle span:first-child { background: #e7f0e4; color: var(--green); }
 main { min-height: calc(100vh - 158px); }
 .home-intro { padding: 68px 0 48px; text-align: center; }
 .home-intro h1 { font-size: clamp(34px, 5.5vw, 48px); letter-spacing: -1.8px; line-height: 1.2; }
@@ -30,6 +33,7 @@ main { min-height: calc(100vh - 158px); }
 footer { max-width: 800px; padding: 24px; }
 @media (max-width: 650px) {
   .topbar { height: 72px; padding: 0 20px; }
+  .language-toggle { margin-right: -7px; }
   .home-intro { padding: 44px 0 32px; }
   .home-intro h1 { letter-spacing: -1.3px; }
   .home-intro p { max-width: 300px; font-size: 14px; }
