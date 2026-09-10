@@ -62,17 +62,33 @@ function scanQuality(receipt: Receipt) {
   const average=receipt.items.reduce((sum,item)=>sum+(item.confidence??.5),0)/Math.max(1,receipt.items.length),review=receipt.items.filter(item=>item.needsReview).length;
   return receipt.items.length*4+average*10-review*2-(difference??0)*4+(difference!==null&&difference<=.02?30:0)-(receipt.items.length?0:100);
 }
-export interface OcrDebugPass { mode:string; rawText:string; words:ReturnType<typeof layoutFromTsv>['words']; rows:ReturnType<typeof layoutFromTsv>['rows']; imageWidth:number; imageHeight:number; columns:ReturnType<typeof receiptColumns>; classifications:string[]; items:Receipt['items']; score:number }
+export interface OcrDebugPass { mode:string; rawText:string; words:ReturnType<typeof layoutFromTsv>['words']; rows:ReturnType<typeof layoutFromTsv>['rows']; imageWidth:number; imageHeight:number; columns:ReturnType<typeof receiptColumns>; classifications:string[]; items:Receipt['items']; score:number; metrics?:Record<string,number>; imageSource?:'original'|'preprocessed' }
 export interface OcrDebugSnapshot { originalImageUrl:string; preprocessedImageUrl:string; passes:OcrDebugPass[]; finalItems:Receipt['items']; finalReceipt:Receipt }
 declare global { interface Window { __fastSplitOcrDebug?:OcrDebugSnapshot } }
 const debugEnabled=()=>typeof location!=='undefined'&&new URLSearchParams(location.search).get('ocrDebug')==='1';
-function debugPass(mode:string,rawText:string,tsv:string,receipt:Receipt):OcrDebugPass {const layout=layoutFromTsv(tsv),page=tsv.split('\n').map(row=>row.split('\t')).find(cells=>cells[0]==='1');return{mode,rawText,words:layout.words,rows:layout.rows,imageWidth:Number(page?.[8])||layout.width,imageHeight:Number(page?.[9])||layout.height,columns:receiptColumns(layout),classifications:layout.rows.map(classifyReceiptRow),items:receipt.items,score:scanQuality(receipt)};}
+function debugPass(mode:string,rawText:string,tsv:string,receipt:Receipt,metrics?:Record<string,number>,imageSource:'original'|'preprocessed'='preprocessed'):OcrDebugPass {const layout=layoutFromTsv(tsv),page=tsv.split('\n').map(row=>row.split('\t')).find(cells=>cells[0]==='1');return{mode,rawText,words:layout.words,rows:layout.rows,imageWidth:Number(page?.[8])||layout.width,imageHeight:Number(page?.[9])||layout.height,columns:receiptColumns(layout),classifications:layout.rows.map(classifyReceiptRow),items:receipt.items,score:scanQuality(receipt),metrics,imageSource};}
 // Resolve from the document URL so Vite's relative base (`./`) remains inside
 // the GitHub Pages project path (for example, `/fastsplit/ocr/...`).
 const asset = (path: string) => new URL(`${import.meta.env.BASE_URL}ocr/${path}`, document.baseURI).toString();
 export async function scanReceipt(file: File, progress: ScanProgress = () => {}): Promise<Receipt> {
-  progress('Preparing image locally…'); const prepared = await prepareReceiptImage(file); progress('Loading local OCR…'); const { createWorker } = await import('tesseract.js');
+  progress('Preparing image locally…'); const prepared = await prepareReceiptImage(file);
   const debug=debugEnabled(),passes:OcrDebugPass[]=[],originalImageUrl=debug?URL.createObjectURL(file):'',preprocessedImageUrl=debug?URL.createObjectURL(prepared):'';
+  try {
+    progress('Loading enhanced local OCR…');
+    const { recognizeReceiptWithPaddle } = await import('./paddleReceiptOcr');
+    // PaddleOCR's detector performs its own resize/normalization. Preserve the
+    // original pixels here: the legacy paper-edge rectifier can over-crop photos
+    // containing cutlery or hands and is retained only for Tesseract fallback.
+    const paddle = await recognizeReceiptWithPaddle(file);
+    progress('Extracting receipt rows…');
+    const selected = parseReceiptTsv(paddle.tsv);
+    if(debug){passes.push(debugPass('PaddleOCR PP-OCRv5',paddle.rawText,paddle.tsv,selected,paddle.metrics,'original'));window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);const{renderOcrDebugPanel}=await import('./ocrDebugPanel');renderOcrDebugPanel(window.__fastSplitOcrDebug);}
+    return selected;
+  } catch (paddleError) {
+    console.warn('Enhanced local OCR unavailable; falling back to Tesseract.', paddleError);
+    progress('Enhanced OCR unavailable; loading local fallback…');
+  }
+  const { createWorker } = await import('tesseract.js');
   const worker = await createWorker(['eng','chi_sim','chi_tra'], 1, { workerPath: asset('worker.min.js'), corePath: asset('tesseract-core-simd-lstm.wasm.js'), langPath: asset('data'), logger: message => { if (message.status === 'recognizing text') progress(`Reading receipt locally… ${Math.round((message.progress || 0) * 100)}%`); } });
   try {
     await worker.setParameters({ tessedit_pageseg_mode: '11' as Tesseract.PSM, preserve_interword_spaces: '1' }); progress('Extracting receipt rows…');
