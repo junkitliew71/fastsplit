@@ -21,7 +21,7 @@ export async function prepareReceiptImage(file: File): Promise<Blob> {
   } finally { URL.revokeObjectURL(url); }
 }
 const amount = /(?:RM|MYR)?\s*([0-9]{1,5}(?:[,.][0-9]{2}))/ig;
-const ignored = /\b(sub\s*total|grand\s*total|total|amount\s*due|cash|change|balance|rounding|visa|mastercard|card|thank\s*you|tel(?:ephone)?|table|receipt|invoice)\b/i;
+const ignored = /\b(sub\s*(?:total|ttl)|grand\s*total|total|amount\s*due|cash|change|balance|rounding|visa|mastercard|card|tng|thank\s*you|tel(?:ephone)?|table|receipt|invoice)\b/i;
 const charge = /\b(service(?:\s*charge)?|svc|sst|tax|gst|discount|rebate)\b/i;
 const toCents = (value: string) => Math.round(Number(value.replace(',', '.')) * 100);
 function receiptItem(name: string, quantity: number, total: number): ReceiptItem | null { const clean = name.replace(/\s+/g, ' ').replace(/^[^A-Za-z0-9]+/, '').trim().slice(0, 100); if (!clean || !Number.isSafeInteger(total) || total < 0 || quantity < 1 || quantity > 50) return null; if (total % quantity) return { id: crypto.randomUUID(), name: clean, quantity: 1, unitPriceCents: total, totalPriceCents: total }; return { id: crypto.randomUUID(), name: clean, quantity, unitPriceCents: total / quantity, totalPriceCents: total }; }
@@ -37,7 +37,9 @@ export function parseReceiptText(text: string): Receipt {
   const calculated = items.reduce((sum, value) => sum + value.totalPriceCents, 0) + serviceChargeCents + taxCents - discountCents; const warnings = ['Please check the detected items before continuing.']; if (!items.length) warnings.push('No priced item lines were certain enough to add. Enter the receipt manually.'); if (printedTotal !== null && calculated !== printedTotal) warnings.push(`Detected entries add up to ${(calculated / 100).toFixed(2)}, while the printed total is ${(printedTotal / 100).toFixed(2)}. Check every amount.`);
   return { restaurant: restaurant || 'Receipt', items, serviceChargeCents, taxCents, discountCents, scanWarning: warnings.join(' ') };
 }
-const asset = (path: string) => new URL(`${import.meta.env.BASE_URL}ocr/${path}`, location.origin).toString();
+// Resolve from the document URL so Vite's relative base (`./`) remains inside
+// the GitHub Pages project path (for example, `/fastsplit/ocr/...`).
+const asset = (path: string) => new URL(`${import.meta.env.BASE_URL}ocr/${path}`, document.baseURI).toString();
 export async function scanReceipt(file: File, progress: ScanProgress = () => {}): Promise<Receipt> {
   progress('Preparing image locally…'); const prepared = await prepareReceiptImage(file); progress('Loading local OCR…'); const { createWorker } = await import('tesseract.js');
   const worker = await createWorker('eng', 1, { workerPath: asset('worker.min.js'), corePath: asset('tesseract-core-simd-lstm.wasm.js'), langPath: asset('data'), logger: message => { if (message.status === 'recognizing text') progress(`Reading receipt locally… ${Math.round((message.progress || 0) * 100)}%`); } });

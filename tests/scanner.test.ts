@@ -8,4 +8,5 @@ describe('Receipt image input',()=>{
 describe('local receipt parser',()=>{
   it('extracts Malaysian-style item amounts and charges conservatively',()=>{const receipt=parseReceiptText('Kedai Makan\nChicken Rice RM 8.50\n2 x Coke 6.00\nService Charge 1.45\nSST 0.87\nTotal 16.82');expect(receipt.restaurant).toBe('Kedai Makan');expect(receipt.items.map(i=>i.name)).toEqual(['Chicken Rice','Coke']);expect(receipt.items[1].quantity).toBe(2);expect(receipt.serviceChargeCents).toBe(145);expect(receipt.taxCents).toBe(87);});
   it('does not manufacture unreadable item lines',()=>{expect(parseReceiptText('TOTAL RM 10.00').items).toEqual([]);});
+  it('does not treat subtotal or TNG settlement lines as food',()=>{const receipt=parseReceiptText('Mango Juice 6.50\nCreme Brulee Souffle Pancake 17.90\nEe SUBTTL 24.40\nBee TNG 28.30');expect(receipt.items.map(i=>i.name)).toEqual(['Mango Juice','Creme Brulee Souffle Pancake']);});
 });

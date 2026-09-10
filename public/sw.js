@@ -1,4 +1,4 @@
-const CACHE='fastsplit-shell-v2';
+const CACHE='fastsplit-shell-v3';
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(['./','./icon-192.png','./icon-512.png','./ocr/worker.min.js','./ocr/tesseract-core-simd-lstm.wasm.js','./ocr/tesseract-core-simd-lstm.wasm','./ocr/data/eng.traineddata.gz'])));self.skipWaiting();});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('fastsplit-shell-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
 // Only public same-origin shell assets. Never cache receipt APIs, image uploads or sessions.
