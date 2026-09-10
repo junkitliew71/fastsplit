@@ -1,6 +1,8 @@
 import type { ReceiptItem } from '../types';
 import { moneyValues } from './malaysiaCurrency';
-import { isColumnHeader } from './restaurantReceiptSemantics';
+import { isNoiseLine } from './malaysiaIgnorePatterns';
+import { discountLabels, roundingLabels, serviceLabels, subtotalLabels, taxLabels, totalLabels } from './malaysiaReceiptKeywords';
+import { isColumnHeader, quantityWords } from './restaurantReceiptSemantics';
 
 export interface OcrWord { text: string; confidence: number; x: number; y: number; width: number; height: number }
 export interface ReceiptRow { words: OcrWord[]; text: string; confidence: number; y: number }
@@ -33,26 +35,33 @@ function tableAnchors(row: ReceiptRow): Anchors {
 function numericWord(word: OcrWord) { return /^\d{1,2}$/.test(word.text) ? Number(word.text) : null; }
 function closest<T extends OcrWord>(words: T[], x: number | undefined) { return x === undefined || !words.length ? undefined : words.reduce((best, word) => Math.abs(center(word) - x) < Math.abs(center(best) - x) ? word : best); }
 
+function clusteredAnchor(values: number[], tolerance: number, preferRight = false) {
+  const clusters: number[][] = []; for (const value of values.sort((a,b)=>a-b)) { const cluster=clusters.find(group=>Math.abs(value-group.reduce((sum,n)=>sum+n,0)/group.length)<=tolerance); (cluster||(clusters.push([]),clusters[clusters.length-1])).push(value); }
+  const candidates=clusters.sort((a,b)=>b.length-a.length||(preferRight?b[0]-a[0]:a[0]-b[0])),best=candidates[0]; return best?best.reduce((sum,n)=>sum+n,0)/best.length:undefined;
+}
+function inferredAnchors(layout: ReceiptLayout): Anchors {
+  const header=layout.rows.find(row=>isColumnHeader(row.text)),fromHeader=header?tableAnchors(header):{},tolerance=Math.max(18,layout.width*.055);
+  const moneyX=layout.rows.flatMap(row=>row.words.filter(word=>moneyValues(word.text).length).map(center));
+  const quantityX=layout.rows.flatMap(row=>row.words.filter(word=>numericWord(word)!==null).map(center));
+  return {...fromHeader,lineTotal:fromHeader.lineTotal??clusteredAnchor(moneyX,tolerance,true),quantity:fromHeader.quantity??clusteredAnchor(quantityX,tolerance)};
+}
+const summaryLine=(line:string)=>[subtotalLabels,totalLabels,serviceLabels,taxLabels,discountLabels,roundingLabels].some(pattern=>pattern.test(line)||pattern.test(line.replace(/\s/g,'')))||/\b(?:balance|cash|change|amount\s*due)\b/i.test(line);
+const explicitQuantity=(line:string)=>Number(line.match(/(?:^|\b(?:qty|quantity)\s*:?)\s*(\d{1,2})\b|\b(\d{1,2})\s*(?:x|\*|@|pcs?|ea|units?)\b/i)?.slice(1).find(Boolean)||0)||null;
+function buildItem(name:string,quantity:number,unitPrice:number,total:number,confidence:number,mathValid:boolean):ReceiptItem|null {const clean=name.replace(/\s+/g,' ').replace(/^[^\p{L}\p{N}]+/u,'').replace(/\s+[TD]$/i,'').trim();if(!clean||quantity<1||quantity>50)return null;const score=Math.max(0,Math.min(1,confidence/100+(mathValid?.08:-.22)));return{id:crypto.randomUUID(),name:clean.slice(0,100),quantity,unitPriceCents:unitPrice,totalPriceCents:total,confidence:score,needsReview:score<.65||!mathValid};}
+
 export function itemsFromLayout(layout: ReceiptLayout): ReceiptItem[] {
-  const headerIndex = layout.rows.findIndex(row => isColumnHeader(row.text)); if (headerIndex < 0) return [];
-  const anchors = tableAnchors(layout.rows[headerIndex]); const tolerance = Math.max(45, layout.width * .15); const items: ReceiptItem[] = [];
-  for (const row of layout.rows.slice(headerIndex + 1)) {
-    if (/\b(?:sub\s*total|total\s*amount|grand\s*total|bill\s*rounding|balance|cash|change)\b/i.test(row.text)) break;
-    const numberWords = row.words.filter(word => numericWord(word) !== null); const moneyWords = row.words.filter(word => moneyValues(word.text).length);
-    if (!moneyWords.length) continue;
-    let quantityWord = closest(numberWords, anchors.quantity); if (quantityWord && anchors.quantity !== undefined && Math.abs(center(quantityWord) - anchors.quantity) > tolerance) quantityWord = undefined;
-    if (!quantityWord && anchors.quantity === undefined) quantityWord = numberWords[0];
-    const totalWord = closest(moneyWords, anchors.lineTotal) || moneyWords[moneyWords.length - 1];
-    const unitWord = closest(moneyWords.filter(word => word !== totalWord), anchors.unitPrice);
-    const quantity = quantityWord ? numericWord(quantityWord)! : 1, total = moneyValues(totalWord.text).at(-1)!;
-    const unitPrice = unitWord ? moneyValues(unitWord.text).at(-1)! : (total % quantity === 0 ? total / quantity : total);
-    const descriptionStart = anchors.description ?? (quantityWord ? center(quantityWord) : 0);
-    const firstNumericColumn = Math.min(...[anchors.unitPrice, anchors.quantity !== undefined && anchors.quantity > descriptionStart ? anchors.quantity : undefined, anchors.lineTotal].filter((value): value is number => value !== undefined && value > descriptionStart));
-    const description = row.words.filter(word => center(word) >= descriptionStart - tolerance * .5 && center(word) < firstNumericColumn - 8 && word !== quantityWord && !moneyWords.includes(word)).map(word => word.text).join(' ').replace(/\s+[TD]$/i, '').trim();
-    if (!description || quantity < 1 || quantity > 50) continue;
-    const confidence = Math.max(0, Math.min(1, row.words.reduce((sum, word) => sum + word.confidence, 0) / row.words.length / 100));
-    const mathValid = Math.abs(quantity * unitPrice - total) <= 2;
-    items.push({ id: crypto.randomUUID(), name: description.slice(0, 100), quantity, unitPriceCents: unitPrice, totalPriceCents: total, confidence, needsReview: confidence < .6 || !mathValid });
+  const anchors=inferredAnchors(layout),tolerance=Math.max(35,layout.width*.12),items:ReceiptItem[]=[];let pendingName='',pendingQuantity:number|null=null,pendingUnit:number|null=null,pendingConfidence=0;
+  for(const row of layout.rows){const line=row.text.trim(),moneyWords=row.words.filter(word=>moneyValues(word.text).length),numberWords=row.words.filter(word=>numericWord(word)!==null);
+    if(isColumnHeader(line)){continue;} if(summaryLine(line)){if(pendingName&&/^\s*(?:line\s*)?total\b/i.test(line)&&moneyWords.length){const total=moneyValues(moneyWords.at(-1)!.text).at(-1)!,quantity=pendingQuantity||1,unit=pendingUnit??(total%quantity===0?total/quantity:total),made=buildItem(pendingName,quantity,unit,total,(pendingConfidence+row.confidence)/2,Math.abs(quantity*unit-total)<=2);if(made)items.push(made);}pendingName='';pendingQuantity=pendingUnit=null;continue;}
+    if(isNoiseLine(line))continue; const statedQuantity=explicitQuantity(line);if(statedQuantity&&!moneyWords.length&&!/\p{L}{3,}/u.test(line.replace(quantityWords,''))){pendingQuantity=statedQuantity;continue;}if(!moneyWords.length){if(/^\s*\d{1,2}\s*$/.test(line)){pendingQuantity=Number(line);continue;}if(/\p{L}/u.test(line)&&line.length<=120){pendingName=pendingName?`${pendingName} ${line}`:line;pendingConfidence=pendingConfidence?(pendingConfidence+row.confidence)/2:row.confidence;}continue;}
+    if(/^\s*(?:unit(?:\s*price)?|rate)\b/i.test(line)&&pendingName){pendingUnit=moneyValues(moneyWords.at(-1)!.text).at(-1)!;continue;}
+    let quantityWord=closest(numberWords,anchors.quantity);if(quantityWord&&anchors.quantity!==undefined&&Math.abs(center(quantityWord)-anchors.quantity)>tolerance)quantityWord=undefined;
+    const leading=numberWords.find(word=>row.words.indexOf(word)===0&&numericWord(word)!==null),quantity=statedQuantity||(quantityWord?numericWord(quantityWord):null)||(leading?numericWord(leading):null)||pendingQuantity||1;
+    const totalWord=closest(moneyWords,anchors.lineTotal)||moneyWords.at(-1)!,totalCandidate=moneyValues(totalWord.text).at(-1)!;
+    const otherAmounts=moneyWords.filter(word=>word!==totalWord).map(word=>moneyValues(word.text).at(-1)!);let unit=pendingUnit??otherAmounts.find(value=>Math.abs(value*quantity-totalCandidate)<=2)??otherAmounts[0];let total=totalCandidate;
+    if(unit===undefined&&moneyWords.length===1&&/(?:@|\/\s*(?:ea|unit)|\beach\b|\bper\s+(?:item|unit))/i.test(line)){unit=totalCandidate;total=quantity*unit;}if(unit===undefined)unit=total%quantity===0?total/quantity:total;
+    const excluded=new Set<OcrWord>([...moneyWords,...numberWords.filter(word=>word===quantityWord||word===leading)]),description=row.words.filter(word=>!excluded.has(word)&&!/^(?:RM|MYR|@|x|\*|qty|quantity|pcs?|ea|unit|price|total|[TD])$/i.test(word.text)).map(word=>word.text).join(' ').trim(),name=description||pendingName;
+    const confidence=(row.confidence+(pendingName?pendingConfidence:row.confidence))/2,mathValid=Math.abs(quantity*unit-total)<=2,made=buildItem(name,quantity,unit,total,confidence,mathValid);if(made)items.push(made);pendingName='';pendingQuantity=pendingUnit=null;pendingConfidence=0;
   }
   return items;
 }
