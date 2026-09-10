@@ -1,6 +1,6 @@
 import type { Receipt } from '../types';
 import { parseMalaysiaReceiptText } from '../receipt-malaysia/receiptParser';
-import { itemsFromLayout, layoutFromTsv } from '../receipt-malaysia/receiptLayout';
+import { classifyReceiptRow, itemsFromLayout, layoutFromTsv, receiptColumns } from '../receipt-malaysia/receiptLayout';
 import { validateReceiptTotal } from '../receipt-malaysia/receiptValidator';
 
 export type ScanProgress = (message: string) => void;
@@ -57,25 +57,31 @@ export function parseReceiptTsv(tsv: string): Receipt {
   return { ...semantic, items: reviewedItems, receiptNeedsReview: !totalsMatch || reviewedItems.some(item => item.needsReview), scanWarning: warnings.join(' ') };
 }
 function scanQuality(receipt: Receipt) {
-  const mismatch = receipt.scanWarning?.match(/add up to ([\d.]+), while the printed total is ([\d.]+)/);
-  const difference = mismatch ? Math.abs(Number(mismatch[1]) - Number(mismatch[2])) : 0;
-  return receipt.items.length * 10 - difference - (receipt.items.length ? 0 : 100);
+  const calculated=receipt.items.reduce((sum,item)=>sum+item.totalPriceCents,0)+receipt.serviceChargeCents+receipt.taxCents-receipt.discountCents;
+  const difference=receipt.printedTotalCents===null||receipt.printedTotalCents===undefined?null:Math.abs(calculated-receipt.printedTotalCents)/100;
+  const average=receipt.items.reduce((sum,item)=>sum+(item.confidence??.5),0)/Math.max(1,receipt.items.length),review=receipt.items.filter(item=>item.needsReview).length;
+  return receipt.items.length*4+average*10-review*2-(difference??0)*4+(difference!==null&&difference<=.02?30:0)-(receipt.items.length?0:100);
 }
+export interface OcrDebugPass { mode:string; rawText:string; words:ReturnType<typeof layoutFromTsv>['words']; rows:ReturnType<typeof layoutFromTsv>['rows']; columns:ReturnType<typeof receiptColumns>; classifications:string[]; items:Receipt['items']; score:number }
+export interface OcrDebugSnapshot { originalImageUrl:string; preprocessedImageUrl:string; passes:OcrDebugPass[]; finalItems:Receipt['items']; finalReceipt:Receipt }
+declare global { interface Window { __fastSplitOcrDebug?:OcrDebugSnapshot } }
+const debugEnabled=()=>typeof location!=='undefined'&&new URLSearchParams(location.search).get('ocrDebug')==='1';
+function debugPass(mode:string,rawText:string,tsv:string,receipt:Receipt):OcrDebugPass {const layout=layoutFromTsv(tsv);return{mode,rawText,words:layout.words,rows:layout.rows,columns:receiptColumns(layout),classifications:layout.rows.map(classifyReceiptRow),items:receipt.items,score:scanQuality(receipt)};}
 // Resolve from the document URL so Vite's relative base (`./`) remains inside
 // the GitHub Pages project path (for example, `/fastsplit/ocr/...`).
 const asset = (path: string) => new URL(`${import.meta.env.BASE_URL}ocr/${path}`, document.baseURI).toString();
 export async function scanReceipt(file: File, progress: ScanProgress = () => {}): Promise<Receipt> {
   progress('Preparing image locally…'); const prepared = await prepareReceiptImage(file); progress('Loading local OCR…'); const { createWorker } = await import('tesseract.js');
+  const debug=debugEnabled(),passes:OcrDebugPass[]=[],originalImageUrl=debug?URL.createObjectURL(file):'',preprocessedImageUrl=debug?URL.createObjectURL(prepared):'';
   const worker = await createWorker(['eng','chi_sim','chi_tra'], 1, { workerPath: asset('worker.min.js'), corePath: asset('tesseract-core-simd-lstm.wasm.js'), langPath: asset('data'), logger: message => { if (message.status === 'recognizing text') progress(`Reading receipt locally… ${Math.round((message.progress || 0) * 100)}%`); } });
   try {
     await worker.setParameters({ tessedit_pageseg_mode: '11' as Tesseract.PSM, preserve_interword_spaces: '1' }); progress('Extracting receipt rows…');
     const sparse = await worker.recognize(prepared, {}, { text: true, tsv: true });
     const primary = sparse.data.tsv ? parseReceiptTsv(sparse.data.tsv) : parseReceiptText(sparse.data.text);
-    if (primary.items.length >= 2 && !primary.scanWarning?.includes('while the printed total')) return primary;
-    progress('Checking receipt table…'); await worker.setParameters({ tessedit_pageseg_mode: '6' as Tesseract.PSM, preserve_interword_spaces: '1' });
-    const blockResult = await worker.recognize(prepared, {}, { text: true, tsv: true });
-    const block = blockResult.data.tsv ? parseReceiptTsv(blockResult.data.tsv) : parseReceiptText(blockResult.data.text);
-    return scanQuality(block) > scanQuality(primary) ? block : primary;
+    if(debug&&sparse.data.tsv)passes.push(debugPass('PSM 11 sparse',sparse.data.text,sparse.data.tsv,primary));let selected=primary;
+    if(primary.items.length<2||primary.scanWarning?.includes('while the printed total')){progress('Checking receipt table…');await worker.setParameters({tessedit_pageseg_mode:'6' as Tesseract.PSM,preserve_interword_spaces:'1'});const blockResult=await worker.recognize(prepared,{},{text:true,tsv:true}),block=blockResult.data.tsv?parseReceiptTsv(blockResult.data.tsv):parseReceiptText(blockResult.data.text);if(debug&&blockResult.data.tsv)passes.push(debugPass('PSM 6 block',blockResult.data.text,blockResult.data.tsv,block));if(scanQuality(block)>scanQuality(primary))selected=block;}
+    if(debug){window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);}
+    return selected;
   } finally { await worker.terminate(); }
 }
 export function demoReceipt(): Receipt { return {restaurant:'Sushi House · Demo',items:[{id:crypto.randomUUID(),name:'Salmon sushi',quantity:2,unitPriceCents:800,totalPriceCents:1600},{id:crypto.randomUUID(),name:'Chicken ramen',quantity:1,unitPriceCents:1800,totalPriceCents:1800},{id:crypto.randomUUID(),name:'Iced green tea',quantity:3,unitPriceCents:300,totalPriceCents:900}],serviceChargeCents:430,taxCents:258,discountCents:0}; }

@@ -6,6 +6,10 @@ FastSplit is a mobile-first React, TypeScript and Vite app for splitting restaur
 
 Receipt scanning uses [Tesseract.js](https://github.com/naptha/tesseract.js) wholly in the browser. A receipt image is resized/contrast-adjusted locally, read by a local Web Worker and parsed conservatively into editable items, service charge, SST/tax and discounts. No receipt image, OCR text, API key or AI/OCR request is sent to Apps Script or any third-party OCR service.
 
+### OCR debug mode
+
+Open the app with `?ocrDebug=1` before the hash route (for example `/?ocrDebug=1#/scan`) and scan a receipt. In browser developer tools, inspect `window.__fastSplitOcrDebug` for the original and preprocessed image URLs, every OCR pass, raw text, word-level bounding boxes/confidence, reconstructed rows, inferred columns, semantic row classifications, candidate scores and final items. Debug image URLs live only in that browser tab and are never uploaded.
+
 The English OCR worker, WASM core and language data live in `public/ocr/`. The service worker caches them with the app shell, so scanning works offline after the app has been opened once and those assets have been cached. The first installation/load needs the site assets to be downloaded. OCR is best with clear English/Latin text; Malaysian receipts with complex layouts, poor photos or other scripts may need manual correction. Always review names, quantities and prices before continuing.
 
 ## Offline and sync
