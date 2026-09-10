@@ -16,4 +16,4 @@ export async function request<T>(action: string, payload: object = {}): Promise<
     throw error;
   } finally { clearTimeout(timeout); }
 }
-export const api = {create:(bill: Bill) => request<Bill>('createReceipt',{data:bill}),history:() => request<Bill[]>('history'),get:(receiptId:string) => request<Bill>('getReceipt',{receiptId}),delete:(receiptId:string) => request<boolean>('deleteReceipt',{receiptId})};
+export const api = {create:(bill: Bill) => request<Bill>('createReceipt',{data:bill}),history:() => request<Bill[]>('history'),get:(receiptId:string) => request<Bill>('getReceipt',{receiptId}),updatePayment:(receiptId:string,participantId:string,paid:boolean) => request<Bill>('updatePaymentStatus',{receiptId,participantId,paid}),delete:(receiptId:string) => request<boolean>('deleteReceipt',{receiptId})};
