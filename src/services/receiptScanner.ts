@@ -89,7 +89,7 @@ export async function scanReceipt(file: File, progress: ScanProgress = () => {})
     progress('Extracting receipt rows…');
     const selected = parseReceiptTsv(paddle.tsv);
     if(debug){passes.push(debugPass('PaddleOCR PP-OCRv5',paddle.rawText,paddle.tsv,selected,paddle.metrics,'original',paddle.tokens));window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);const{renderOcrDebugPanel}=await import('./ocrDebugPanel');renderOcrDebugPanel(window.__fastSplitOcrDebug);}
-    return {...selected,ocrTokens:paddle.tokens.map((token,index)=>({id:`token_${index+1}`,text:token.text,confidence:token.confidence/100,bbox:{x:token.x,y:token.y,width:token.width,height:token.height}})),imageWidth:paddle.tokens.reduce((max,t)=>Math.max(max,t.x+t.width),1),imageHeight:paddle.tokens.reduce((max,t)=>Math.max(max,t.y+t.height),1)};
+    return {...selected,ocrTokens:paddle.tokens.map((token,index)=>({id:`token_${index+1}`,text:token.text,confidence:token.confidence/100,bbox:{x:token.x,y:token.y,width:token.width,height:token.height}})),imageWidth:paddle.imageWidth,imageHeight:paddle.imageHeight};
   } catch (paddleError) {
     console.warn('Enhanced local OCR unavailable; falling back to Tesseract.', paddleError);
     progress('Enhanced OCR unavailable; loading local fallback…');
@@ -98,10 +98,10 @@ export async function scanReceipt(file: File, progress: ScanProgress = () => {})
   const worker = await createWorker(['eng','chi_sim','chi_tra'], 1, { workerPath: asset('worker.min.js'), corePath: asset('tesseract-core-simd-lstm.wasm.js'), langPath: asset('data'), logger: message => { if (message.status === 'recognizing text') progress(`Reading receipt locally… ${Math.round((message.progress || 0) * 100)}%`); } });
   try {
     await worker.setParameters({ tessedit_pageseg_mode: '11' as Tesseract.PSM, preserve_interword_spaces: '1' }); progress('Extracting receipt rows…');
-    const sparse = await worker.recognize(prepared, {}, { text: true, tsv: true });
+    const sparse = await worker.recognize(file, {}, { text: true, tsv: true });
     const primary = sparse.data.tsv ? parseReceiptTsv(sparse.data.tsv) : parseReceiptText(sparse.data.text);
     if(debug&&sparse.data.tsv)passes.push(debugPass('PSM 11 sparse',sparse.data.text,sparse.data.tsv,primary));let selected=primary;
-    if(primary.items.length<2||primary.scanWarning?.includes('while the printed total')){progress('Checking receipt table…');await worker.setParameters({tessedit_pageseg_mode:'6' as Tesseract.PSM,preserve_interword_spaces:'1'});const blockResult=await worker.recognize(prepared,{},{text:true,tsv:true}),block=blockResult.data.tsv?parseReceiptTsv(blockResult.data.tsv):parseReceiptText(blockResult.data.text);if(debug&&blockResult.data.tsv)passes.push(debugPass('PSM 6 block',blockResult.data.text,blockResult.data.tsv,block));if(scanQuality(block)>scanQuality(primary))selected=block;}
+    if(primary.items.length<2||primary.scanWarning?.includes('while the printed total')){progress('Checking receipt table…');await worker.setParameters({tessedit_pageseg_mode:'6' as Tesseract.PSM,preserve_interword_spaces:'1'});const blockResult=await worker.recognize(file,{},{text:true,tsv:true}),block=blockResult.data.tsv?parseReceiptTsv(blockResult.data.tsv):parseReceiptText(blockResult.data.text);if(debug&&blockResult.data.tsv)passes.push(debugPass('PSM 6 block',blockResult.data.text,blockResult.data.tsv,block));if(scanQuality(block)>scanQuality(primary))selected=block;}
     if(debug){window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);const{renderOcrDebugPanel}=await import('./ocrDebugPanel');renderOcrDebugPanel(window.__fastSplitOcrDebug);}
     const tsv=selected===primary?sparse.data.tsv:'';
     const tokens=tsv?tokensFromTsv(tsv):[];

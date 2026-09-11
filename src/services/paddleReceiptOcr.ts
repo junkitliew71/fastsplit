@@ -11,6 +11,8 @@ export interface PaddleReceiptOcrResult {
   rawText: string;
   tsv: string;
   tokens:PaddleOcrToken[];
+  imageWidth:number;
+  imageHeight:number;
   metrics: {
     modelLoadMs: number;
     detectionMs: number;
@@ -61,15 +63,18 @@ export async function recognizeReceiptWithPaddle(image: Blob): Promise<PaddleRec
       textDetLimitType: 'max',
       textDetThresh: 0.25,
       textDetBoxThresh: 0.5,
+      textDetUnclipRatio: 1.1,
     });
     if (!result) throw new Error('Local PaddleOCR returned no receipt result.');
-    const tokens=(result.items as PaddleLine[]).map(line=>{const xs=line.poly.map(point=>point[0]),ys=line.poly.map(point=>point[1]),x=Math.floor(Math.min(...xs)),y=Math.floor(Math.min(...ys)),width=Math.max(1,Math.ceil(Math.max(...xs))-x),height=Math.max(1,Math.ceil(Math.max(...ys))-y);return{text:line.text,confidence:line.score*100,boundingBox:line.poly,x,y,width,height};});
+    const tokens=(result.items as PaddleLine[]).flatMap(line=>{const xs=line.poly.map(point=>point[0]),ys=line.poly.map(point=>point[1]),x=Math.floor(Math.min(...xs)),y=Math.floor(Math.min(...ys)),width=Math.max(1,Math.ceil(Math.max(...xs))-x),height=Math.max(1,Math.ceil(Math.max(...ys))-y),matches=[...line.text.matchAll(/\S+/g)];if(matches.length<2)return[{text:line.text.trim(),confidence:line.score*100,boundingBox:line.poly,x,y,width,height}];const total=Math.max(1,line.text.length),pad=Math.min(2,width*.004);return matches.map(match=>{const start=match.index||0,end=start+match[0].length,left=x+width*start/total,right=x+width*end/total;return{text:match[0],confidence:line.score*100,boundingBox:line.poly,x:Math.round(left+pad),y:y+Math.round(height*.06),width:Math.max(1,Math.round(right-left-pad*2)),height:Math.max(1,Math.round(height*.88))};});}).filter(token=>token.text&&token.confidence>=20&&token.width<result.image.width*.9&&token.height<result.image.height*.25);
     return {
       // PaddleOCR returns recognized lines, not a separately rewritten text
       // field. This is a direct, lossless line join for the debug panel.
       rawText: result.items.map(item => item.text).join('\n'),
       tsv: resultToTsv(result.items as PaddleLine[], result.image.width, result.image.height),
       tokens,
+      imageWidth:result.image.width,
+      imageHeight:result.image.height,
       metrics: {
         modelLoadMs: Math.round(initializedAt - startedAt),
         detectionMs: Math.round(result.metrics.detMs),
