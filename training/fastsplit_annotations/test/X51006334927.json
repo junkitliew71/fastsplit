@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006334927",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006334927.jpg",
+    "boxes": "SROIE2019/test/box/X51006334927.txt",
+    "entities": "SROIE2019/test/entities/X51006334927.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "6.00 % TAX"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "6.40"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036"
+      ],
+      "text": "CALTEX BIRU PETROLEUM CO.NO:001684044-P KELANA JAYA. 47301 PETALING SELANGOR DARUL EHSAN. GST NO.001410277376 TAX INVOICE SWEETIE BAN KACANG MERAH RM 3.20 S SWEETIE POTATO BUN RM 3.20 S TOTAL RM CASH RM 50.00 CHANGE DUE RM 43.60 S RM 0.36 TOTAL EXCLUSIVE OF TAX RM 6.04 TRANSACTION NUMBER: 01000206618 DATE TIME NUM POS CNO PSNO 437 ENJOY THE JOURNEY 11/11/16 09:58 64051 01 0004"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=6.4. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.742Z",
+  "updatedAt": "2026-09-11T00:44:24.742Z"
+}

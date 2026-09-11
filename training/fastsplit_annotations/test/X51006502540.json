@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006502540",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006502540.jpg",
+    "boxes": "SROIE2019/test/box/X51006502540.txt",
+    "entities": "SROIE2019/test/entities/X51006502540.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022",
+        "t0025",
+        "t0026"
+      ],
+      "text": "4 M NASI LEMAK BURGER 4 M FRIES 4 M 100PLUS",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "75.80",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0027",
+        "t0029",
+        "t0030"
+      ],
+      "text": "2 M MCC DELUXE 2 M COKE 2 M FRIES",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "29.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "1 MDS CHARGE",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "4.25",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a007",
+      "label": "TAX",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "109.05"
+    },
+    {
+      "id": "a008",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "109.05"
+    },
+    {
+      "id": "a009",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0023",
+        "t0033",
+        "t0035",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045"
+      ],
+      "text": "***** DUPLICATE ***** GERBANG ALAF RESTAURANTS SDN BHD (65351-M) LICENSEE OF MCDONALD'S LEVEL 6, BANGUNAN TH, DAMANSARA UPTOWN3 NO.3, JALAN SS21/39,47400 PETALING JAYA SELANGOR (GST ID NO: 000504664064) MCDONALD'S SILANG(#005) TEL NO. 03-2031-5235 TAX INVOICE MFY SIDE 1 INV# 000051300003910 ORD #17 -REG #13- 27/04/2018 15:20:22 QTY ITEM TOTAL 1300-13-1300 OTHER TOTAL (INCL GST) TOTAL ROUNDED CASH TENDERED 150.00 CHANGE 40.95 TOTAL INCLUDES 6% GST 6.17 THANK YOU AND PLEASE COME AGAIN. GUEST RELATIONS CENTER :"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a005",
+        "a006"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 3 item group(s); 0/3 item equations valid. lineSum=109.05; subtotal=missing; grandTotal=109.05. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.028Z",
+  "updatedAt": "2026-09-11T00:44:25.028Z"
+}

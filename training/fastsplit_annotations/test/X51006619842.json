@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619842",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006619842.jpg",
+    "boxes": "SROIE2019/test/box/X51006619842.txt",
+    "entities": "SROIE2019/test/entities/X51006619842.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "32.70"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038"
+      ],
+      "text": "YIN MA (M) SDN.BHD.(974306-T) NO.2, JALAN UDANG SIAR 2, TAMAN SRI SEGAMBUT, 52000 KUALA LUMPUR. GST REG NO.:000119906304 INVOICE NO DATE COUNTER 9555112913331 STORAGE BOX(SM 9555112913331 STORAGE BOX(SM 9555112913331 STORAGE BOX(SM NO OF ITEMS: 3 TOTAL INCL. GST:RM CASH:RM CHANGE:RM SERVED BY YINMA SEGAMBUT 10.90 S 10.90 S 10.90 S 50.00 17.30 GST SUMMARY GST CODE S @6.0% AMOUNT(RM) 30.84 TAX(RM) 1.86 REF NO: 00500055998044795 EXCHANGE ARE ALLOWED WITHIN 3 DAY WITH RECEIPT. STRICTLY NO CASH REFUND. THANK YOU. WELCOME AGAIN. : 44795 : 3 JUN 2016 12:26PM : 401"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=32.7. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.539Z",
+  "updatedAt": "2026-09-11T00:44:25.539Z"
+}

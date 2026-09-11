@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005442366",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005442366.jpg",
+    "boxes": "SROIE2019/test/box/X51005442366.txt",
+    "entities": "SROIE2019/test/entities/X51005442366.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "VS FUJ1500ML",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "1X",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "10.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "10.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "APOLLO CAKE",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "1X",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "6.80",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "6.50",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022",
+        "t0023",
+        "t0025"
+      ],
+      "text": "ORIGINAL 30S (DISO: 0.3000) TG CASHEW",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "1X",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "4.20",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "4.20",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0028",
+        "t0029",
+        "t0031"
+      ],
+      "text": "NUTS MIXWD ALMOND SMOKE TG COATED",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "1X",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "1.90",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "1.90",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "22.60"
+    },
+    {
+      "id": "a018",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "0.30"
+    },
+    {
+      "id": "a019",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "22.60"
+    },
+    {
+      "id": "a020",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0038",
+        "t0040"
+      ],
+      "text": "TRIPLE SIX POINT ENTERPRISE 666 NO 14& 16 JALAN PERMAS 4/3 BANDAR BARU PERMAS JAYA TEL : 016-7574666 RECEIPT NO: REC-0014888 DATE: 22-03-2018 04:01:20 PM PAYMENT TYPE: CASH RECEIPT (RECEIPT NO.: REC-0014888) QTY ITEM PRICE TOTAL (RM) (RM) COCONUT PEANUTS DISCOUNT TOTAL AMOUNT TENDERED"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 4 item group(s); 3/4 item equations valid. lineSum=22.60; subtotal=22.6; grandTotal=22.6. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.488Z",
+  "updatedAt": "2026-09-11T00:44:23.488Z"
+}

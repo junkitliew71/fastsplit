@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007262330",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51007262330.jpg",
+    "boxes": "SROIE2019/train/box/X51007262330.txt",
+    "entities": "SROIE2019/train/entities/X51007262330.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "41.20"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0031",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045"
+      ],
+      "text": "SWC ENTERPRISE SDN BHD (1125830-V) 5-7, JALAN MAHAGONI 7/1 SEKSYEN 4, BANDAR UTAMA, 44300 BATANG KALI, SELANGOR 03-60571377 GST ID : 002017808384 TAX INVOICE NO : 0051808219001118 005001(BATANGKALI-1) 001 118 23/03/2018 19:08:32 OPEN CODE-SR ITEM 0025679 U 0025679 U 2X11.80 2X8.80 23.60 S 17.60 S ITEM 2 QTY 4 SAVING 0.00 SUBTOTAL INCL GST SPEC. DISC ROUNDING TOTAL CASH CHANGE 41.20 0.00 512.00 470.80 GST SUMMARY S(6%) AMOUNT(RM) 38.86 TAX(RM) 2.34 23/03/2018 19:08:32 GOODS SOLD ONLY EXCHANGEABLE WITHIN 3 DAYS GOODS SOLD ARE NOT REFUNDABLE THANK YOU FOR YOUR KIND SUPPORT PLEASE COME AGAIN"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=41.2. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:30.513Z",
+  "updatedAt": "2026-09-11T00:44:30.513Z"
+}

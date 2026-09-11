@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006414728",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006414728.jpg",
+    "boxes": "SROIE2019/test/box/X51006414728.txt",
+    "entities": "SROIE2019/test/entities/X51006414728.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0013",
+        "t0014"
+      ],
+      "text": "KEK SPAN OREE FOODELICO SDN. BHD. (1268140-H) LOT LG10, AEON TAMAN UNIVERSITI SHOPPING CENTER, NO. 4, JALAN PENDIDIKAN, TAMAN UNIVERSITI 81300 SKUDAI, JOHOR << ** TAX INVOICE ** >> TAX INVOICE NO: C4004290047 STATION: C40 CUSTOMER NO:1047 KEK SPAN KLASIK",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "13.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a004",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "13.00"
+    },
+    {
+      "id": "a005",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0011",
+        "t0012",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041"
+      ],
+      "text": "DATE: 29-APR-2018 04:19 PM CASHIER: NG WEI CONG 13.00 SUB TOTAL: 13.00 GST: GRAND TOTAL: 13.00 PAYMENT TYPE AMOUNT TIPS CHANGES CASH 0.00 0.00 GST SUMMARY AMOUNT (RM) GST (RM) SR=6% 0.00 0.00 ZR=0% 0.00 0.00 THANK YOU PLEASE COME AGAIN"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=13.00; subtotal=0; grandTotal=13. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.996Z",
+  "updatedAt": "2026-09-11T00:44:24.996Z"
+}

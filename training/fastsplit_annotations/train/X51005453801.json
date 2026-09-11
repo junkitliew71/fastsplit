@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005453801",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005453801.jpg",
+    "boxes": "SROIE2019/train/box/X51005453801.txt",
+    "entities": "SROIE2019/train/entities/X51005453801.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "102.00"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "96.23"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "102.00"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045"
+      ],
+      "text": "3180303 GL HANDICRAFT & TAIL ORING 19, JALAN KANCIL, OFF JALANPUDU, 55100 KUALA LUMPUR MALAYSIA COMPANY REG NO. :75495-W GST REG NO. :001948532736 TAX INVOICE INVOICE NO.: CS 10012 DATE: 20/03/2018 13:01 CASHLER #: 01 RM CODE SAFETY PINS BUTTERFLY - S 6.00 BOXS X 17.00 102.00 SR SUBTOTAL : TOTAL EXCL.OF GST TOTAL INCL.OF GST 102.00 TOTAL AMT ROUNDED 102.00 PAYMENT : CHANGE DUE : 0.00 TOTAL LTEM(S) : 6 GST SUMMARY AMOUNT(RM) TAX(RM) SR @ 6% 96.23 5.77 THANK YOU PLEASE COME AGAIN"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=102; grandTotal=102. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.098Z",
+  "updatedAt": "2026-09-11T00:44:27.098Z"
+}

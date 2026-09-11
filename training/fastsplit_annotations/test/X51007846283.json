@@ -1,0 +1,668 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007846283",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51007846283.jpg",
+    "boxes": "SROIE2019/test/box/X51007846283.txt",
+    "entities": "SROIE2019/test/entities/X51007846283.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "CHEK HUP 2IN1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0011"
+      ],
+      "text": "1X",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0058"
+      ],
+      "text": "15.56SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "ITEM PROMO @12.99",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0059"
+      ],
+      "text": "-2.57",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "LUCOZADE SPORT",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a007",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0012"
+      ],
+      "text": "1X",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0060"
+      ],
+      "text": "12.73SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "JAPAN SUN FUJI",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0013"
+      ],
+      "text": "1X",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a011",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0061"
+      ],
+      "text": "22.50SR",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a012",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "CHILE ANGELENO",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a013",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "1X",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a014",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0062"
+      ],
+      "text": "7.90SR",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a015",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "AUS SEEKA KIWI",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a016",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "1X",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a017",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0063"
+      ],
+      "text": "10.90SR",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a018",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "ITEM PROMO @9.49",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a019",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0064"
+      ],
+      "text": "-1.41",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a020",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0048"
+      ],
+      "text": "BLUEBERRY",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a021",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "1X",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a022",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0065"
+      ],
+      "text": "8.00SR",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a023",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "T. CHERRY HONEY",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a024",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "1X",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a025",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0066"
+      ],
+      "text": "4.80SR",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a026",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0050"
+      ],
+      "text": "TOMATO PLUM",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a027",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "1X",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a028",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0067"
+      ],
+      "text": "5.40SR",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a029",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "CUT FRUITS 1.99",
+      "itemId": "item-011"
+    },
+    {
+      "id": "a030",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "1X",
+      "itemId": "item-011"
+    },
+    {
+      "id": "a031",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0068"
+      ],
+      "text": "2.50SR",
+      "itemId": "item-011"
+    },
+    {
+      "id": "a032",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0052"
+      ],
+      "text": "GUAVA KING",
+      "itemId": "item-012"
+    },
+    {
+      "id": "a033",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "1X",
+      "itemId": "item-012"
+    },
+    {
+      "id": "a034",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0069"
+      ],
+      "text": "9.14SR",
+      "itemId": "item-012"
+    },
+    {
+      "id": "a035",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "CAVANDISH BANAN",
+      "itemId": "item-013"
+    },
+    {
+      "id": "a036",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "1X",
+      "itemId": "item-013"
+    },
+    {
+      "id": "a037",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0070"
+      ],
+      "text": "5.18SR",
+      "itemId": "item-013"
+    },
+    {
+      "id": "a038",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0054"
+      ],
+      "text": "US RED GLOBE",
+      "itemId": "item-014"
+    },
+    {
+      "id": "a039",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "1X",
+      "itemId": "item-014"
+    },
+    {
+      "id": "a040",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0071"
+      ],
+      "text": "14.85SR",
+      "itemId": "item-014"
+    },
+    {
+      "id": "a041",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0055"
+      ],
+      "text": "PAPAYA",
+      "itemId": "item-015"
+    },
+    {
+      "id": "a042",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "1X",
+      "itemId": "item-015"
+    },
+    {
+      "id": "a043",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0072"
+      ],
+      "text": "5.75SR",
+      "itemId": "item-015"
+    },
+    {
+      "id": "a044",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0056"
+      ],
+      "text": "E-1150 POWERFUL",
+      "itemId": "item-016"
+    },
+    {
+      "id": "a045",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "1X",
+      "itemId": "item-016"
+    },
+    {
+      "id": "a046",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0073"
+      ],
+      "text": "11.22SR",
+      "itemId": "item-016"
+    },
+    {
+      "id": "a047",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0081"
+      ],
+      "text": "SUB-TOTAL",
+      "itemId": "item-017"
+    },
+    {
+      "id": "a048",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0087"
+      ],
+      "text": "147.45",
+      "itemId": "item-017"
+    },
+    {
+      "id": "a049",
+      "label": "TAX",
+      "tokenIds": [
+        "t0088"
+      ],
+      "text": "147.45"
+    },
+    {
+      "id": "a050",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0098"
+      ],
+      "text": "147.45"
+    },
+    {
+      "id": "a051",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0057",
+        "t0074",
+        "t0075",
+        "t0076",
+        "t0077",
+        "t0078",
+        "t0079",
+        "t0080",
+        "t0082",
+        "t0083",
+        "t0084",
+        "t0085",
+        "t0086",
+        "t0089",
+        "t0090",
+        "t0091",
+        "t0092",
+        "t0093",
+        "t0094",
+        "t0095",
+        "t0096",
+        "t0097",
+        "t0099",
+        "t0100",
+        "t0101",
+        "t0102",
+        "t0103",
+        "t0104",
+        "t0105",
+        "t0106",
+        "t0107",
+        "t0108",
+        "t0109",
+        "t0110",
+        "t0111",
+        "t0112"
+      ],
+      "text": "AEON CO. (M) BHD (126926-H) 3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR GST ID : 002017394688 SHOPPING HOURS SUN-THU:1000 HRS - 2230 HRS FRI-SAT:1000 HRS - 2300 HRS 1X 000000135412 000001038556 000007670558 000008294692 000007773877 000008626349 000002003191 000004291008 000005073689 000000388658 000000389273 000000381000 000000812627 000000380980 000007857430 SUSHI SET-PTC 15.00SR AEON STAMPS LOYALTY PROGRAM \"PRODUCT(S)\" SOLD ARE NEITHER EXCHANGEABLE NOR REFUNDABLE AEON PERMAS JAYA TEL 1-300-80-AEON (2366) THANK YOU FOR YOUR PATRONAGE PLEASE COME AGAIN TOTAL SALES INCL GST TOTAL AFTER ADJ INCL GST CASH ITEM COUNT 15 CHANGE AMT 147.45 200.00 52.55 INVOICE NO: 2018060310100050084 GST SUMMARY SR @ 0% TOTAL AMOUNT 147.45 TAX 0.00 0.00 03/06/2018 12:42 1010 005 0050084 0306651 PJ NUR AYU REGULAR STAMP(S) : 4 BONUS STAMP (S) : 0 TOTAL STAMP(S) : 4"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a012",
+        "a013",
+        "a014"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a015",
+        "a016",
+        "a017"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a018",
+        "a019"
+      ]
+    },
+    {
+      "id": "item-008",
+      "assignmentIds": [
+        "a020",
+        "a021",
+        "a022"
+      ]
+    },
+    {
+      "id": "item-009",
+      "assignmentIds": [
+        "a023",
+        "a024",
+        "a025"
+      ]
+    },
+    {
+      "id": "item-010",
+      "assignmentIds": [
+        "a026",
+        "a027",
+        "a028"
+      ]
+    },
+    {
+      "id": "item-011",
+      "assignmentIds": [
+        "a029",
+        "a030",
+        "a031"
+      ]
+    },
+    {
+      "id": "item-012",
+      "assignmentIds": [
+        "a032",
+        "a033",
+        "a034"
+      ]
+    },
+    {
+      "id": "item-013",
+      "assignmentIds": [
+        "a035",
+        "a036",
+        "a037"
+      ]
+    },
+    {
+      "id": "item-014",
+      "assignmentIds": [
+        "a038",
+        "a039",
+        "a040"
+      ]
+    },
+    {
+      "id": "item-015",
+      "assignmentIds": [
+        "a041",
+        "a042",
+        "a043"
+      ]
+    },
+    {
+      "id": "item-016",
+      "assignmentIds": [
+        "a044",
+        "a045",
+        "a046"
+      ]
+    },
+    {
+      "id": "item-017",
+      "assignmentIds": [
+        "a047",
+        "a048"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 17 item group(s); 0/17 item equations valid. lineSum=279.90; subtotal=missing; grandTotal=147.45. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.072Z",
+  "updatedAt": "2026-09-11T00:44:26.072Z"
+}

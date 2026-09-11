@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006328345",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006328345.jpg",
+    "boxes": "SROIE2019/test/box/X51006328345.txt",
+    "entities": "SROIE2019/test/entities/X51006328345.txt"
+  },
+  "status": "complete",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "181010 FRENCH LO",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "3",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "2.40",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "7.20 S",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "7.20"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0023",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0030",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040"
+      ],
+      "text": "KING'S CONFECTIONERY S/B 273500-U (KJ1) NO. 20-A1, JALAN SS6/3, KELANA JAYA, 473 PETALING JAYA SELANGOR D.E. TEL/FAX :- 03 - 78800732 TEL:0122144371 (GST ID : 000294060032) TAX INVOICE INV NO :KJ130661528 DATE:23/02/17 10:53 CASHIER:FW1254 CTR :01 CODE DESC QTY RM D% AMT 0 QTY 3 7.20 ROUNDING ADJ DUE PAY 10.00 CHANGE 2.80 (TOTAL INCLUDED GST @ 6% : 0.41) GOODS SOLD NOT RETURNABLE/EXCHANGEABLE! TERIMA KASIH SILA DATANG LAGI!TQ TASTY BAKING HEALTY NATION!! ==VISIT US ONLINE AT WWW.KINGS.COM.MY=="
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 1/1 item equations valid. lineSum=7.20; subtotal=missing; grandTotal=7.2. Validation passed.",
+  "createdAt": "2026-09-11T00:44:24.612Z",
+  "updatedAt": "2026-09-11T00:44:24.612Z"
+}

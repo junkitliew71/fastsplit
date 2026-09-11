@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007231361",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51007231361.jpg",
+    "boxes": "SROIE2019/train/box/X51007231361.txt",
+    "entities": "SROIE2019/train/entities/X51007231361.txt"
+  },
+  "status": "complete",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "07 CREAM OF MUSHROOM SOUP",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "2",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "6.10",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "12.20",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "101 NOODLE SOUP O.T.ROCK",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "12.90",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "12.90",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "107 SPICY T/S SPAGHETTI",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "14.90",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "14.90",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "40 SIRLOIN STEAK",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "2",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "34.90",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "69.80",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "51 GRILLED MARINATED",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a018",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "1",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a019",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "19.90",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a020",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "19.90",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a021",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "54 GRILLED CHICKEN CHOP",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a022",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "1",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a023",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "18.90",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a024",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "18.90",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a025",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "99 ICED LEMON TEA",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a026",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0048"
+      ],
+      "text": "1",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a027",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "6.90",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a028",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0050"
+      ],
+      "text": "6.90",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a029",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "155.50"
+    },
+    {
+      "id": "a030",
+      "label": "TAX",
+      "tokenIds": [
+        "t0055"
+      ],
+      "text": "9.31"
+    },
+    {
+      "id": "a031",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0057"
+      ],
+      "text": "-0.01"
+    },
+    {
+      "id": "a032",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0061"
+      ],
+      "text": "RM 164.80"
+    },
+    {
+      "id": "a033",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0022",
+        "t0027",
+        "t0032",
+        "t0037",
+        "t0042",
+        "t0047",
+        "t0052",
+        "t0054",
+        "t0056",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0062",
+        "t0063",
+        "t0064",
+        "t0065",
+        "t0066",
+        "t0067",
+        "t0068",
+        "t0069",
+        "t0070",
+        "t0071",
+        "t0072",
+        "t0073",
+        "t0074"
+      ],
+      "text": "SIZZLING STONEGRILL DIMILIKI OLEH : DOVE HOLDINGS SDN BHD REG NO : 91694-X LOT S25, AEON TEBRAU CITY JUSCO NO 1, JLN DESA TEBRAU, TMN DESA TEBRAU, 81100 JOHOR BAHRU, JOHOR +607-357 1177 GST ID: 0013 7941 8112 TAX INVOICE NO 15 80292 DATE: 26/05/2018 8:53:27 PM CASHIER: C001 TAX QTY CODE/DESC UNIT PRICE TOTAL RM SR SR SR SR SR SR SR TOTAL AMOUNT : GST 6% ROUNDING ADJ : TOTAL AMOUNT: 164.80 TOTAL: TYPE 7 QTY: 9 26/05/2018 8:53:37 GST SUMMARY AMOUNT RM TAX RM SR 6% 155.50 9.31 ZR 0% 0.00 0.00 ... XPOSMART WIFIPOS SINCE 1985 ..."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a017",
+        "a018",
+        "a019",
+        "a020"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a021",
+        "a022",
+        "a023",
+        "a024"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a025",
+        "a026",
+        "a027",
+        "a028"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 7 item group(s); 7/7 item equations valid. lineSum=155.50; subtotal=155.5; grandTotal=164.8. Validation passed.",
+  "createdAt": "2026-09-11T00:44:30.470Z",
+  "updatedAt": "2026-09-11T00:44:30.470Z"
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006414715",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006414715.jpg",
+    "boxes": "SROIE2019/test/box/X51006414715.txt",
+    "entities": "SROIE2019/test/entities/X51006414715.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0006",
+        "t0009",
+        "t0010",
+        "t0012"
+      ],
+      "text": "SECRET RECIPE RESTAURANT (COMPANY NO 559208-M) LOT G16, PERMAS JAYA JUSCO BILL COVERS #1 TAX INVOICE #P1176502 M/ROOM CHIC (RICE)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0011"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0013"
+      ],
+      "text": "16.98 S",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "SP/TI MBALL CHK",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "18.87 S",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "RM41.81"
+    },
+    {
+      "id": "a008",
+      "label": "TAX",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "RM2.37"
+    },
+    {
+      "id": "a009",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "42.00"
+    },
+    {
+      "id": "a010",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0004",
+        "t0005",
+        "t0007",
+        "t0008",
+        "t0017",
+        "t0018",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042"
+      ],
+      "text": "TEL : 07-3889980 TABLE #11 #1 ORDER #P3057498 RM SUBTOTAL TOTAL RM41.81 2 ITEMS CASH ROUNDING RM-0.01 CHANGE 0.20 SV CHG @ 10% SALES RM35.85 SV CHG @ 10% AMOUNT RM3.59 S = GST @ 6% SALES RM39.44 S = GST @ 6% INCLUDED * INDICATES TAXED ITEMS P1-286815 GST NO. 000260571136 THANK YOU. PLEASE COME AGAIN! FAX: 07-3889981 4/22/2018 08:10PM SV-WANI"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005",
+        "a006"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 2 item group(s); 0/2 item equations valid. lineSum=35.85; subtotal=41.81; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.980Z",
+  "updatedAt": "2026-09-11T00:44:24.980Z"
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005568899",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005568899.jpg",
+    "boxes": "SROIE2019/train/box/X51005568899.txt",
+    "entities": "SROIE2019/train/entities/X51005568899.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "RM 5.90"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "RM 5.90"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0021",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034"
+      ],
+      "text": "MR. D.I.Y. SDN BHD (CO.REG :704427-T) LOT 1851-A & 1851-B, JALAN KPB 6, KWANSAN PERINDUSTRIAN BLANKONG, 43300 SERI KEMBANGAN, SELANGOR (GST ID NO :001092886528) (CHERAS LEISURE MALL) -TAX INVOICE- CLOTH PEG E-140 *S WA36 - 6/60 9555112901406 1 X 5.90 5.90 ITEM(S) : 1 QTY(S) : 1 TOTAL INCL. GST@6% CASH GST SUMMARY AMT(RM) TAX(RM) GST S@6% 5.57 0.33 18-10-17 15:16 SH01 ZT09 T3 R000000163 OPERATOR GCHT - NOR MASLIZA EXCHANGE ARE ALLOWED WITHIN 7 DAY WITH RECEIPT, STRICTLY NO CASH REFUND."
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=5.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.183Z",
+  "updatedAt": "2026-09-11T00:44:27.183Z"
+}

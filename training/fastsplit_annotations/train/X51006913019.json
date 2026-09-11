@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006913019",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006913019.jpg",
+    "boxes": "SROIE2019/train/box/X51006913019.txt",
+    "entities": "SROIE2019/train/entities/X51006913019.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0010",
+        "t0013"
+      ],
+      "text": "1X 000004921851 1000Z TP GIKEN",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "93.90SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "AEON CARD DISC",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "-4.69",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0011",
+        "t0016"
+      ],
+      "text": "1X 000006227678 TEFAL COMFORT M",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "169.00SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "ITEM PROMO @149.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "-20.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "AEON CARD DISC",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a010",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "-7.45",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a011",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0012",
+        "t0020"
+      ],
+      "text": "1X 000008612854 A161S545 TEFAL",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "558.00SR",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "ITEM PROMO @259.00",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a014",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "-299.00",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a015",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "AEON CARD DISC",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "-12.95",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a017",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "SUB-TOTAL",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a018",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "476.81",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a019",
+      "label": "TAX",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "-0.01"
+    },
+    {
+      "id": "a020",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "476.80"
+    },
+    {
+      "id": "a021",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0015",
+        "t0019",
+        "t0023",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0039",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0063",
+        "t0064",
+        "t0065",
+        "t0066",
+        "t0067",
+        "t0068",
+        "t0069",
+        "t0070",
+        "t0071",
+        "t0072",
+        "t0073",
+        "t0074",
+        "t0075",
+        "t0076",
+        "t0077",
+        "t0078",
+        "t0079",
+        "t0080"
+      ],
+      "text": "AEON CO. (M) BHD (126926-H) 3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR GST ID : 002017394688 SHOPPING HOURS SUN-THU:1000 HRS - 2200 HRS FRI-SAT:1000 HRS - 2300 HRS VALUED CUSTOMER: 1250016708 @89.21 @141.55 @246.05 TOTAL SALES INCL GST ROUNDING ADJ TOTAL AFTER ADJ INCL GST CASH ITEM COUNT 3 476.81 500.00 23.20 INVOICE NO: 2018051110133130177 GST SUMMARY SR @ 6% TOTAL 11/05/2018 17:19 0304023 CST NURNABILA EMISHA BINTI IBRAHIM REGULAR STAMP(S) : BONUS STAMP(S) TOTAL STAMP(S) AEON STAMPS LOYALTY PROGRAM \"PRODUCT (S)\" SOLD ARE NEITHER EXCHANGEABLE NOR REFUNDABLE AEON TEBRAU CITY TEL 1-300-80-AEON (2366) THANK YOU FOR YOUR PATRONAGE PLEASE COME AGAIN EXCLUSIVE FOR AEON MEMBERS: WE LOVE TO HEAR YOUR FEEDBACK VISIT WWW.SURVEYMONKEY.COM/R/AEONCSIS (STORE) / WWW.SURVEYMONKEY.COM/R/AEONCSIM (MALL) SHARE YOUR EXPERIENCE *GET RM5 AEON GIFT VOUCHER* CHANGE AMT AMOUNT TAX 449.82 26.99 449.82 26.99 1013 313 3130177 14 : 0 : 14"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a009",
+        "a010"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a013",
+        "a014"
+      ]
+    },
+    {
+      "id": "item-008",
+      "assignmentIds": [
+        "a015",
+        "a016"
+      ]
+    },
+    {
+      "id": "item-009",
+      "assignmentIds": [
+        "a017",
+        "a018"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 9 item group(s); 0/9 item equations valid. lineSum=953.62; subtotal=missing; grandTotal=476.8. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:30.225Z",
+  "updatedAt": "2026-09-11T00:44:30.225Z"
+}

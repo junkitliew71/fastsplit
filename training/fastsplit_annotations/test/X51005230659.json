@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005230659",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005230659.jpg",
+    "boxes": "SROIE2019/test/box/X51005230659.txt",
+    "entities": "SROIE2019/test/entities/X51005230659.txt"
+  },
+  "status": "complete",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0014",
+        "t0015"
+      ],
+      "text": "20X30 BEG 1KG91X30) 20X30 1KG",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "8.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "8.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "8.00"
+    },
+    {
+      "id": "a006",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0016",
+        "t0018",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036"
+      ],
+      "text": "SWC ENTERPRISE SDN BHD (1125830-V) NO. 5-7, JALAN MAHAGONI 7/1, SEKYSEN 4, BANDAR UTAMA, 44300 BATANG KALI, SELANGOR. TEL : 03-6057 1377 TAX INVOICE (GST ID NO. : 002017808384) 08/01/2018 11:07:06 CASHIER: 123 NO:0100080332 ITEM/DESC. TOTAL QTY : 1 TOTAL QTY : TOTAL AMOUNT CASH CHANGE 10.00 2.00 G 0.45 THANK YOU ! PLEASE COME AGAIN ! GOODS SOLD ONLY EXCHANGABLE WITHIN 3 DAYS ! QTY PRICE AMT. 6% INCLUDED IN TOTAL"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 1/1 item equations valid. lineSum=8.00; subtotal=missing; grandTotal=8. Validation passed.",
+  "createdAt": "2026-09-11T00:44:23.265Z",
+  "updatedAt": "2026-09-11T00:44:23.265Z"
+}

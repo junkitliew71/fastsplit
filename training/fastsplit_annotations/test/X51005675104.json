@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005675104",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005675104.jpg",
+    "boxes": "SROIE2019/test/box/X51005675104.txt",
+    "entities": "SROIE2019/test/entities/X51005675104.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "12MM 4/8B PLYWOOD",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "3",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "63.60",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "190.80",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "180.00"
+    },
+    {
+      "id": "a006",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a007",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a008",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "190.80"
+    },
+    {
+      "id": "a009",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0030",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058"
+      ],
+      "text": "SYARIKAT PERNIAGAAN GIN KEE (81109-A) NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR TEL : 03-40210276 GST ID : 000750673920 SIMPLIFIED TAX INVOICE CASH DOC NO GOODS SOLD ARE NOT RETURNABLE, THANK YOU. : CS00012944 DATE: 25/01/2018 CASHIER 10.80 : USER TIME: 14:29:00 SALESPERSON: 180.00 REF. : ITEM QTY S/PRICE AMOUNT TAX 1007 SR TOTAL QTY: 3 190.80 TOTAL SALES (EXCLUDING GST) : DISCOUNT : TOTAL GST : 10.80 ROUNDING : TOTAL SALES (INCLUSIVE OF GST) : 190.80 CASH : CHANGE : 0.00 GST SUMMARY TAX CODE % AMT(RM) TAX(RM) SR 6 180.00 10.80 TOTAL :"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 1/1 item equations valid. lineSum=190.80; subtotal=missing; grandTotal=190.8. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.844Z",
+  "updatedAt": "2026-09-11T00:44:23.844Z"
+}

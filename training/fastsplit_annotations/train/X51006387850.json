@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006387850",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006387850.jpg",
+    "boxes": "SROIE2019/train/box/X51006387850.txt",
+    "entities": "SROIE2019/train/entities/X51006387850.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "ZRL:IKAN BILIS KOPEK A++ 10G",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "100",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "0.25",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "25.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "SR:TEPUNG JAGUNG CAP BINTANG 20X4",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "25.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "25.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "ZRL:VITAMAS CARTON",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "42.50",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "42.50",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "SUB-TOTAL",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "92.50",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "DISC",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "0.00",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a017",
+      "label": "TAX",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "1.50"
+    },
+    {
+      "id": "a018",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a019",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "94.00"
+    },
+    {
+      "id": "a020",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0030",
+        "t0031",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0043",
+        "t0045",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050"
+      ],
+      "text": "YONG CEN ENTERPRISE 9, JALAN SUBANG JASA 3, 40150 SHAH ALAM, SELANGOR. TEL: 012-9719498 GST NO: 001147981824 CASH RECEIPT # CS00633950 DATE: 25/04/2017 SALESPERSON : TIME: 07:53:00 COUNTER : ITEM QTY U/P AMOUNT 2411662040 24116623030 2411662303 TOTAL QUANTITY 102 GST TAX ROUNDING T L CASH CHANGE 0.00 94.00 0.00 GOODS SOLD ARE NOT RETURNABLE, THANK YOU. POSTED"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a015",
+        "a016"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 5 item group(s); 3/5 item equations valid. lineSum=185.00; subtotal=missing; grandTotal=94. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.735Z",
+  "updatedAt": "2026-09-11T00:44:28.735Z"
+}

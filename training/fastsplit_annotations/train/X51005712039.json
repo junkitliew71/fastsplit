@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005712039",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005712039.jpg",
+    "boxes": "SROIE2019/train/box/X51005712039.txt",
+    "entities": "SROIE2019/train/entities/X51005712039.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0017",
+        "t0020"
+      ],
+      "text": "NE3555 1 1/2\"SAFETY PIN",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "2",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "1.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "2.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0021",
+        "t0025"
+      ],
+      "text": "SB/01-3 SATIN BIAS TAPE 12MMX3Y",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "7.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "7.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "SUB-TOTAL:",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "9.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "DISC:",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "0.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "TAX:",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a014",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "0.00",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a015",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a016",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "9.00"
+    },
+    {
+      "id": "a017",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0026",
+        "t0027",
+        "t0034",
+        "t0036",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049"
+      ],
+      "text": "L TWO FLORIST & HANDICRAFT 002062543-P NO.49, JALAN MAHAGONI 7/2, SEKSYEN 4 BANDAR UTAMA, 44300 BATANG KALI, SELANGOR. TEL: 012-3216447 CASH RECEIPT#: DATE: SALESPERSON: TIME: CASHIER: ITEM QTY U/P AMOUNT TOTAL QTY: 3 ROUNDING: TOTAL CASH 20.00 CHANGE 11.00 BARANG YANG DIJUAL TIDAK BOLEH DITUKAR. CS00007203 21/03/2018 001 11:01:00 USER"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a013",
+        "a014"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 5 item group(s); 2/5 item equations valid. lineSum=18.00; subtotal=missing; grandTotal=9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.835Z",
+  "updatedAt": "2026-09-11T00:44:27.835Z"
+}

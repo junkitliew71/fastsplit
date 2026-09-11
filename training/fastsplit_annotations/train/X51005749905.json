@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005749905",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005749905.jpg",
+    "boxes": "SROIE2019/train/box/X51005749905.txt",
+    "entities": "SROIE2019/train/entities/X51005749905.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "2KGS. WOOD LACQUER THINNER",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "1.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "19.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "19.00 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "1.5KG. UFIXX PUTTY FILLER.",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "1.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "10.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "10.00 SR",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "100# X 8\" X 45M SAND PAPER ROLL.",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "2.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "2.50",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "5.00 SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "TAX",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "34.00"
+    },
+    {
+      "id": "a014",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a015",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "34.00"
+    },
+    {
+      "id": "a016",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0023",
+        "t0028",
+        "t0033",
+        "t0035",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050"
+      ],
+      "text": "ENW HARDWARE CENTRE (M) SDN. BHD. CO. REG. NO. : 795225-A GST REG. NO. : 000155453440 NO: G3, BLK G, JLN PJU 1A/3, ARA DAMANSARA, 47301 PETALING JAYA, SELANGOR DARUL EHSAN. TEL : 03-7832 6929 , 012-659 9829 10/03/2018 TAX INVOICE NO. :CS00230322 CASH SALE (ARA D'SARA) TEL: 03-7832 6929 H/P: 012-659 9829 ITEM QTY U.PRICE RM 001533 000920 006828 TOTAL AMT INCL. GST @ 6% : ROUNDING ADJUSMENT : TOTAL AMT PAYABLE : TOTAL QTY TENDER : 4 GST SUMMARY SR = 6% AMOUNT (RM) 32.07 GST (RM) 1.93 POINT : 0.00 *GOODS SOLD ARE NOT RETURNABLE THANK YOU FOR SHOPPING AT ENW HARDWARE CENTRE (M) SDN. BHD."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 3 item group(s); 3/3 item equations valid. lineSum=34.00; subtotal=missing; grandTotal=34. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.198Z",
+  "updatedAt": "2026-09-11T00:44:28.198Z"
+}

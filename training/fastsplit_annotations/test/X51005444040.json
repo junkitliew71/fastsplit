@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005444040",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005444040.jpg",
+    "boxes": "SROIE2019/test/box/X51005444040.txt",
+    "entities": "SROIE2019/test/entities/X51005444040.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "133.70"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052"
+      ],
+      "text": "B.I.G. BEN'S INDEPENDENT GROCER BENS INDEPENDENT GROCER SDN. BHD (913144-A) LOT 6, JALAN BATAI, PLAZA BATAI, DAMANSARA HEIGHTS 50490, KUALA LUMPUR T: 03-2093 7358 | F: 03-2093 7359 (GST REG NO 000243941376) TAX INVOICE : BAT01201803090220 09/03/18 CASHIER : JORVILYN 18:08:53 EVIAN MINERAL WATER 6X1.25L 3068320113784 53.50*2 107.00 S FRESH CUT HONEY JACKFRUIT PEELED 400G 1430018201 8.90*3 26.70 Z ITEM 2 TOTAL WITH GST @ 6% 133.70 QTY ROUNDING TOTAL SAVING 0.00 TOTAL TENDER CASH 140.00 CHANGE 6.30 GST ANALYSIS GOODS TAX AMOUNT S = 6% 100.94 6.06 Z = 0% 26.70 0.00 BIG.COM.MY FACEBOOK.COM/THEBIGGROUP EXCHANGE & REFUND MAY BE ALLOWED WITHIN 3 DAYS WITH ORIGINAL TAX INVOICE THANK YOU, PLEASE COME AGAIN BAT01201803090220 5"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=133.7. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.518Z",
+  "updatedAt": "2026-09-11T00:44:23.518Z"
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X00016469623",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X00016469623.jpg",
+    "boxes": "SROIE2019/train/box/X00016469623.txt",
+    "entities": "SROIE2019/train/entities/X00016469623.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "TOTAL",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "RM 30.91",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "RM 0.01"
+    },
+    {
+      "id": "a004",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "RM 30.90"
+    },
+    {
+      "id": "a005",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0048",
+        "t0050",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061"
+      ],
+      "text": "TAN WOON YANN MR D.I.Y. (M) SDN BHD (CO. RFG : 860671-D) LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR (TESCO PUTRA NILAI) -INVOICE- KILAT AUTO ECO WASH & SHINE ES1000 1L WA45 /2A - 12 9555916500133 1 X 3.11 3.11 KILAT' ECO AUTO WASH &WAX EW-1000-1L WA44-A - 12 9555916500126 1 X 4.62 4.62 WD40 27ML MOO 2572 WA43-A - 24 079567600084 1 X 11.23 11.23 KLEENSO AJAIB 99 SERAI WANYI 900G WDOO - 15 9555651400385 1 X 7.45 7.45 HANDKERCHIEF 71386#2PCS PI12PJ11-4 - 6/300 9090822 1 X 4.50 4.50 ITEM (S) : 5 QTY(S) : 5 ROUNDING ADJUSTMENT TOTAL ROUNDED CASH RM 51.00 CHANGE RM 20.10 18-11-18 13 : 58 SH01 ZI53 T2 R000002902 UPERATOR TRAINEE CASHIER EXCHANGE ARE ALLOWED WITHIN 7 DAYS WITH RECEIPT. STRICTLY NO CASH REFUND."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=30.91; subtotal=missing; grandTotal=30.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.470Z",
+  "updatedAt": "2026-09-11T00:44:26.470Z"
+}

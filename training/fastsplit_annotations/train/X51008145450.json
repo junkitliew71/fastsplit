@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008145450",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008145450.jpg",
+    "boxes": "SROIE2019/train/box/X51008145450.txt",
+    "entities": "SROIE2019/train/entities/X51008145450.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0024",
+        "t0026"
+      ],
+      "text": "*** RETAIL/TAKEAWAY *** TAU SAR PNEAH (S) 16PCS @9.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "4",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "36.00 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "DB TAU SAR PNEAH (S) 12PCS @7.60",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "2",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "15.20 SR",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "BEH TEH SAW 8PCS @8.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "2",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "16.00 SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "PHONG PNEAH 6PCS @9.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a011",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "2",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "18.00 SR",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a013",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "85.20"
+    },
+    {
+      "id": "a014",
+      "label": "TAX",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a015",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "85.20"
+    },
+    {
+      "id": "a016",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0050",
+        "t0052",
+        "t0053"
+      ],
+      "text": "GHEE HIANG GH DISTRIBUTOR & MARKETING SDN BHD (1097826-H) 216, MACALISTER ROAD, 10400 PENANG. 10400 PENANG. TEL: 04-227 2222 GST REG. NO. : 001315377152 TAX INVOICE INVOICE NO : 216_01/21047 DATE : 20/06/2018 #1 12:53 PM CASHIER : PART TIMERS 05 PRN ON : 20/06/2018 12:56 PM QTY ITEM RM 10 SUBTOTAL NET TOTAL 85.20 CASH 100.20 CHANGE 15.00 *** 20/06/2018 12:56 PM *** TAX SUMMARY SR:GST @0% AMOUNT TAX THANK YOU, PLEASE COME AGAIN GOODS SOLD ARE NOT REFUNDABLE"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008",
+        "a009"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a010",
+        "a011",
+        "a012"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 4 item group(s); 0/4 item equations valid. lineSum=85.20; subtotal=85.2; grandTotal=85.2. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.724Z",
+  "updatedAt": "2026-09-11T00:44:31.724Z"
+}

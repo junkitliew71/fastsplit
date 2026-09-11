@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005605295",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005605295.jpg",
+    "boxes": "SROIE2019/test/box/X51005605295.txt",
+    "entities": "SROIE2019/test/entities/X51005605295.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "5.15"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "5.15"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045"
+      ],
+      "text": "ECONSAVE ECONSAVE CASH & CARRY (FC) S/B(930311-W) LOT G01, KL FESTIVAL CITY, NO. 67 JIN JBU KOTA IMN DANAW KOTA, KL TEL: (603) 4148 1027 22/03/18 10:17 RG:4 TX:24382 GST REG NO : 001919221760 INV NO: 220318/10049/04/24382 QTY RM ITEM # 9555501403092 (NR)ES CHOICE SOFT 1 4.20 S ITEM # 9555501400367 (NR)ES ICE COOL MI 1 0.95 S SUBTOTAL TOTAL(INCL GST) CASH 5.20 CHANGE DUE 0.05 ITEMS PURCHASED:2 GST - RATE AMT(RM) TAX(RM) S 6% 4.86 0.29 BANDINGKAN HARGA KAMI THANK YOU. PLEASE COME AGAIN. PAULINE AK JABAN ST:10049 RG:4 CH:1010 TR:24382 10:18 22/03/18"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=5.15; grandTotal=5.15. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.752Z",
+  "updatedAt": "2026-09-11T00:44:23.752Z"
+}

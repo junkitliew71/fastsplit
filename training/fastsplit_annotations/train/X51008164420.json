@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008164420",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008164420.jpg",
+    "boxes": "SROIE2019/train/box/X51008164420.txt",
+    "entities": "SROIE2019/train/entities/X51008164420.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0015",
+        "t0017"
+      ],
+      "text": "MAX HD-10K STAPLER WBD ISSUES 20% REBATE",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "7.30 T",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "7.30"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0018",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042"
+      ],
+      "text": "POPULAR BOOK CO. (M) SDN BHD (CO. NO. 113825-W) (GST REG NO. 001492992000) NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA AMPANG POINT CENTRE TEL : 03-42601064/66 03/04/18 19:19 SLIP NO.: 6030099332 MAZIDAH YASIN TRANS: 80272 DESCRIPTION AMOUNT TOTAL RM INCL. OF GST CASH -10.00 CHANGE 2.70 ITEM COUNT 2 GST SUMMARY AMOUNT (RM) TAX (RM) T @ 6% 6.89 0.41 Z @ 0% 0.00 0.00 TOTAL SAVINGS 0.00 BE A POPULAR CARD MEMBER AND ENJOY SPECIAL DISCOUNTS THANK YOU. PLEASE COME AGAIN. WWW.POPULAR.COM.MY BUY CHINESE BOOKS ONLINE WWW.POPULARONLINE.COM.MY"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=7.30; subtotal=missing; grandTotal=7.3. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.746Z",
+  "updatedAt": "2026-09-11T00:44:31.746Z"
+}

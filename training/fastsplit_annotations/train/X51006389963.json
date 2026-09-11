@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006389963",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006389963.jpg",
+    "boxes": "SROIE2019/train/box/X51006389963.txt",
+    "entities": "SROIE2019/train/entities/X51006389963.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0034",
+        "t0038",
+        "t0040"
+      ],
+      "text": "VALUE PACK A - BP SER SR -CARBON FILTER - BP SERIES -SEDIMENT FILTER - BP SERIES",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "235.85",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "235.85",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "235.85"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "235.85"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0080"
+      ],
+      "text": "250.00"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0036",
+        "t0039",
+        "t0041",
+        "t0042",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0063",
+        "t0064",
+        "t0065",
+        "t0066",
+        "t0067",
+        "t0068",
+        "t0069",
+        "t0070",
+        "t0071",
+        "t0072",
+        "t0073",
+        "t0074",
+        "t0075",
+        "t0076",
+        "t0077",
+        "t0078",
+        "t0079",
+        "t0081",
+        "t0082",
+        "t0083",
+        "t0084",
+        "t0085",
+        "t0086",
+        "t0087",
+        "t0088",
+        "t0089",
+        "t0090",
+        "t0091",
+        "t0092",
+        "t0093",
+        "t0094",
+        "t0095",
+        "t0096",
+        "t0097",
+        "t0098",
+        "t0099",
+        "t0100"
+      ],
+      "text": "ELKEN SERVICE ELKEN SERVICE SDN BHD (310184-X) NO 2-1 JALAN 3/137B BATU 5 JALAN KELANG LAMA 58000 KUALA LUMPUR TEL: 603-79859377 FAX NO: 03-79807585 EMAIL : ELKENSERVICE@ELKEN.COM.MY GST REG NO : 000154042368 TAX INVOICE DATE : 10 OCT 2017 TUE S/O NO : SS3511032318 JOB TYPE : MAINTENANCE INVOICE NO : ESS447-004439 BILL TO . WONG PEI HAR ADDRESS : 2920/1, JALAN JINJANG INDAH 1, JINJANG UTARA, 52000 KEPONG, KUALA LUMPUR. TEL : 0122536936 TYPE OF UNIT DESCRIPTION SUPPLY PRICE QTY TOTAL RM RM 1 1 1 SUBTOTAL DISCOUNT - SUBTOTAL (EXCLUDING GST) GST (6%) 14.15 TOTAL AMOUNT DUE 250.00 PAYMENT MODE: CASH 250.00 GST SUMMARY : AMOUNT GST AMOUNT EXCLUSIVE INCLUSIVE RM RM RM 0% ZRL : ZERO RATE 0.00 0.00 0.00 6% SR : STANDARD RATE 235.85 14.15 250.00 0% RS : RELIEF SUPPLY 0.00 0.00 0.00 TOTAL AMOUNT 235.85 14.15 CHECKLIST - FEEDWATER PRESSURE(PSI) 20 - FEED WATER TDS 006 - BEFORE SERVICE RO TDS 000 - AFTER SERVICE RO TDS 000 REMARK BP37613 CHG 1 2 CUSTOMER ACCEPTANCE OF ATTENDED BY PRODUCT & SERVICE FONG MUN LOONG IN GOOD ORDER TECH ID: ESS447 01:55:59 PM MER SIGNATURE THANK YOU"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=235.85; subtotal=235.85; grandTotal=250. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.846Z",
+  "updatedAt": "2026-09-11T00:44:28.846Z"
+}

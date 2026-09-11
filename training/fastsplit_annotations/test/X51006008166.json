@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006008166",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006008166.jpg",
+    "boxes": "SROIE2019/test/box/X51006008166.txt",
+    "entities": "SROIE2019/test/entities/X51006008166.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0029",
+        "t0030"
+      ],
+      "text": "OPEN 1 NO",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "750.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "750.00 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "TAX",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "707.55"
+    },
+    {
+      "id": "a005",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "750.00"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0033",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049"
+      ],
+      "text": "TAX INVOICE FLORISM DE ART (940075-X) LOT 2.70.00, LEVEL 2, PAVILION KUALA LUMPUR, 168, JALAN BUKIT BINTANG, 55100 KUALA LUMPUR, MALAYSIA. TEL: 03-2142 3855 GST REG.: 000397606912 DOCUMENT NO. : T01005445 DATE : 14/01/2018 05:03:35 PM DEBTOR : MEMBER : PROMOTER : TERMINAL : T01 CASHIER : ADMIN DESC U. PRICE DISC AMOUNT TAX QTY RM RM CODE SUB TOTAL (EXCLUSIVE GST) : GST 6% : 42.45 ROUNDING ADJ. : ROUNDED TOTAL (RM): 750.00 CREDIT CARD GST SUMMARY AMOUNT(RM) TAX(RM) SR @ 6 % 707.55 42.45 *"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=750.00; subtotal=missing; grandTotal=750. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.565Z",
+  "updatedAt": "2026-09-11T00:44:24.565Z"
+}

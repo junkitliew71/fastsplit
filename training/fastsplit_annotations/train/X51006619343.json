@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619343",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006619343.jpg",
+    "boxes": "SROIE2019/train/box/X51006619343.txt",
+    "entities": "SROIE2019/train/entities/X51006619343.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "RM 22.90"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050"
+      ],
+      "text": "MR. D.I.Y. (KUCHAI) SDN BHD LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR (GST ID NO :000473792512) (SG WANG) PARTITION 1072 10CM *S IC12 - 12/72 4947989310729 1 X TELESCOPIC ROD 2PCS 4065#*VS *S MD22 - 12/96 9067903 1 X CURTAIN BAR-70CM *S JD32 - 100 9063983 3 X D/S TAPE 1.8*15M *S RH42 - 88 9080456 1 X ITEM(S) : 4 QTY(S) : 6 TOTAL INCL. GST@6% CASH RM 23.00 CHANGE RM 0.10 GST @6% INCLUDED IN TOTAL 17-04-16 14:01 SH01 B019 T3 R000034324 OPERATOR CHC - JIVAN EXCHANGE ARE ALLOWED WITHIN 3 DAY WITH RECEIPT. STRICTLY NO CASH REFUND. 7.30 7.30 4.80 4.80 3.10 9.30 1.50 1.50 RM 1.30"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.803Z",
+  "updatedAt": "2026-09-11T00:44:29.803Z"
+}

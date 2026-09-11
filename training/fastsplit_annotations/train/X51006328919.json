@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006328919",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006328919.jpg",
+    "boxes": "SROIE2019/train/box/X51006328919.txt",
+    "entities": "SROIE2019/train/entities/X51006328919.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "7.00"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "0.42"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "7.40"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0019",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031"
+      ],
+      "text": "B & BEST RESTAURANT (001610235-P) GST NO. : 001800839168 NO.12,JALAN SS4C/5,PETALING JAYA SELANGOR DARUL EHSAN TEL : 012-2060 778 **TAX INVOICE** BILL NO: 00118887 / POS01 BIZDATE: 10/02/2017 CASHIER: MANAGER PRINTED: 10/02/2017 01:09:47 PM RM 1 FISHBALL NOODLE 7.00 1 SUB TOTAL GST 6% ROUNDING ADJ -0.02 NET TOTAL 7.40 CASH CHANGE 0.00 THANK YOU...PLEASE COME AGAIN... HTTPS://M.FACEBOOK.COM/B-BEST-RESTAURANT ALL ITEM WILL BE CHARGES GST"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=7; grandTotal=7.4. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.540Z",
+  "updatedAt": "2026-09-11T00:44:28.540Z"
+}

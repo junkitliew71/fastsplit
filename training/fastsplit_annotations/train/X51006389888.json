@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006389888",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006389888.jpg",
+    "boxes": "SROIE2019/train/box/X51006389888.txt",
+    "entities": "SROIE2019/train/entities/X51006389888.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "52.08"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "52.10"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050"
+      ],
+      "text": "99 SPEED MART S/B (519537-X) LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1214-JINJANG UTARA GST ID. NO : 000181747712 INVOICE NO : 18203/102/T0466 09:06PM 567455 01-11-17 0515 SNEK KU TAM TAM CRAB F RM3.65 S 0649 TIC TAC CANDY MINT (WH RM2.10 S 5178 MENTOS SOUR MIX CHEWY RM2.45 S 2651 MUNCHYS CRACKER SANDWI RM8.38 S @2 X RM 4.19 0249 JULIES PEANUT BUTTER S RM7.55 S 820 PIPIT BLEACH 2*1KG TP RM4.20 S 480 TOP SUPER WHITE (RED) 2 RM12.65 S 9170 CA3210 CAMEL SHORTHAND RM1.90 S 9413 CS 1002 A5 H/COVER NOT RM4.80 S 8445 7CC UHU GLUE RM4.40 S @2 X RM 2.20 TOTAL SALES (INCLUSIVE GST) RM ROUNDING ADJUSTMENT RM .02 ROUNDING RM CASH RM 60.00 CHANGE RM 7.90 GST SUMMARY AMOUNT(RM) TAX(RM) S = 6% 49.12 2.96 THANK YOU. PLEASE COME AGAIN KEEP THE INVOICE FOR APPLICABLE RETURNS"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=52.1. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.830Z",
+  "updatedAt": "2026-09-11T00:44:28.830Z"
+}

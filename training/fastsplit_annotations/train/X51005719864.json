@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005719864",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005719864.jpg",
+    "boxes": "SROIE2019/train/box/X51005719864.txt",
+    "entities": "SROIE2019/train/entities/X51005719864.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "KAIN BEBOLA (S) SHA BU",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "2",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "14.90",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "29.80",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "28.11"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "29.80"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0018",
+        "t0020",
+        "t0021",
+        "t0023",
+        "t0025",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043"
+      ],
+      "text": "FUN N CHEER (MALURI) LOT 37636 , JALAN 6/37A , TAMAN BUKIT MALURI , 52100 KUALA LUMPUR TEL : 03-62612536 TAX INVOICE (GST ID NO . : 001439154176) 05/01/2018 CASHIER : CS01 11 : 44 : 44 S/P : MAL NO : 0200419363 ITEM/DESC . QTY PRICE AMT . 0412638 TOTAL QTY 2 SR TOTAL EXCL,GST ADD : GST @ 6% ON 1.69 CASH CHANGE 50.00 20.20 GST SUMMARY AMOUNT RM TAX RM SR = 6% 28.11 1.69 0.00 0.00 GOODS SOLD ARE NOT RETURNABLE ! THANK YOU ! PLEASE COME AGAIN !"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 1/1 item equations valid. lineSum=29.80; subtotal=missing; grandTotal=29.8. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.894Z",
+  "updatedAt": "2026-09-11T00:44:27.894Z"
+}

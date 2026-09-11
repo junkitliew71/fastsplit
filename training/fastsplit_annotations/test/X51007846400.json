@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007846400",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51007846400.jpg",
+    "boxes": "SROIE2019/test/box/X51007846400.txt",
+    "entities": "SROIE2019/test/entities/X51007846400.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "M(BUDAE JJIGAE)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "70.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "70.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "(KIMBAB)",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "16.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "16.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "(SEAFOOD PANCAKE)",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "25.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "25.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "(PORKCUTLET)",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "1",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "20.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "20.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "(STEAMEDRICE)",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a018",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "2",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a019",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "4.00",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a020",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "8.00",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a021",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "SUB-TOTAL : RM",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a022",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "139.00",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a023",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "SERVICE CHARGES 10%",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a024",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "13.90",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a025",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "TOTAL :",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a026",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "152.90",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a027",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "152.90"
+    },
+    {
+      "id": "a028",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0042",
+        "t0044",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052"
+      ],
+      "text": "NAM SAN SEOUL KOREAN BBQ KOREAN DINE SDN BHD(1077469-V) NO 4, JALAN PERMAS 10/5, BANDAR BARU PERMAS JAYA. 81750 JOHOR BAHRU, JOHOR. TEL : 07-380 8402 GST ID NO. : 000517836800 INVOICE REF NO. 00032375 TABLE 09 CASHIER 1 QTY DESCRIPTION PRICE AMOUNT RM PAID BY CASH TOTAL QTY : 6 CHANGE 0.00 THANK YOU PLEASE COME AGAIN 19/06/2018 06:56:10 PM"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a017",
+        "a018",
+        "a019",
+        "a020"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a021",
+        "a022"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a023",
+        "a024"
+      ]
+    },
+    {
+      "id": "item-008",
+      "assignmentIds": [
+        "a025",
+        "a026"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 8 item group(s); 5/8 item equations valid. lineSum=444.80; subtotal=missing; grandTotal=152.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.259Z",
+  "updatedAt": "2026-09-11T00:44:26.259Z"
+}

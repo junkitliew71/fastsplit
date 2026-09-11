@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008123450",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008123450.jpg",
+    "boxes": "SROIE2019/train/box/X51008123450.txt",
+    "entities": "SROIE2019/train/entities/X51008123450.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0010",
+        "t0013"
+      ],
+      "text": "010100 PAY PARKING TICKET LENGTH OF STAY: 0 DY. 0 HR. 19 MIN.",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0011"
+      ],
+      "text": "1.50 RM",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "1.50 RM"
+    },
+    {
+      "id": "a004",
+      "label": "TAX",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "0.00 RM"
+    },
+    {
+      "id": "a005",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0012",
+        "t0014",
+        "t0015",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0023"
+      ],
+      "text": "SANJUNG REALITI SDN. BHD. (779763-K) (GST REGISTRATION NO.: 001751072768) CAR PARK OFFICE, BASEMANT 1, LABUHRAYA SPRINT, PJU6A, 47400 PETALING JAYA, SELANGOR TEL.: +603 7726 2929 FAX: +603 7726 1326 TAX INVOICE TAX INVOICE NO.: 0714/0601/00601 27/06/18 10:08 27/06/18 09:49 - 27/06/18 10:08 02472951053011038178353570?? TOTAL AMOUNT ACCEPTED TOTAL 2.00 RM CHANGE 0.50 RM GST 0% THANK YOU"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=1.50; subtotal=missing; grandTotal=1.5. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.526Z",
+  "updatedAt": "2026-09-11T00:44:31.526Z"
+}

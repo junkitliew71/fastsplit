@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007846355",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51007846355.jpg",
+    "boxes": "SROIE2019/test/box/X51007846355.txt",
+    "entities": "SROIE2019/test/entities/X51007846355.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "8.96"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "8.95"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "8.96"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0025",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049"
+      ],
+      "text": "AEON CO. (M) BHD (126926-H) 3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR GST ID : 002017394688 SHOPPING HOURS SUN-THU:1000 HRS - 2200 HRS FRI-SAT:1000 HRS - 2300 HRS 1X 000000416405 1X 000000416993 SAKURA WALNUT B GRAIN & SEEDS B 2.83SR 6.13SR SUB-TOTAL TOTAL SALES INCL GST ROUNDING ADJ TOTAL AFTER ADJ INCL GST CASH ITEM COUNT 2 CHANGE AMT INVOICE NO: 2018061710130220258 8.96 -0.01 50.00 41.05 GST SUMMARY SR @ 0% AMOUNT 8.96 TAX 0.00 TOTAL 0.00 17/06/2018 18:35 1013 022 0220258 0305103 NORSUHAILA BINTI ABD RASHID AEON STAMPS LOYALTY PROGRAM \"PRODUCT(S)\" SOLD ARE NEITHER EXCHANGEABLE NOR REFUNDABLE AEON TEBRAU CITY TEL 1-300-80-AEON (2366) THANK YOU FOR YOUR PATRONAGE PLEASE COME AGAIN"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=8.96. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.133Z",
+  "updatedAt": "2026-09-11T00:44:26.133Z"
+}

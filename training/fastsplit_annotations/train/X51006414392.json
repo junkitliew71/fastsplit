@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006414392",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006414392.jpg",
+    "boxes": "SROIE2019/train/box/X51006414392.txt",
+    "entities": "SROIE2019/train/entities/X51006414392.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022",
+        "t0023",
+        "t0024"
+      ],
+      "text": "'#TAKE AWAY#' ROASTED DUCK WITH CHINESE HERB (HALF)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "106",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "33.00 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "TOTAL SALES AMOUNT",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "33.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "TAX",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "1.98"
+    },
+    {
+      "id": "a007",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "0.02"
+    },
+    {
+      "id": "a008",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "35.00"
+    },
+    {
+      "id": "a009",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0027",
+        "t0029",
+        "t0031",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049"
+      ],
+      "text": "DI HUAN YA RESTAURANT COMPANY REG.NO: JM0681589-W 5,JALAN PERMAS 10/5, BANDAR BARU PERMAS JAYA, 81750 JOHOR BAHRU,JOHOR TEL/FAX:07-3886322 [GST ID : 001914093568] TAX INVOICE TABLE TA3 INV NO : 199977 CASHIER : C001- DATE : 07/04/2018 - 18.10:59 QTY DESCRIPTION TOTAL(RM) TAX 1 GST 6% ROUNDING ADJUSTMENT TOTAL CASH 55.00 CHANGE RETURNED 20.00- ITEM COUNT: 1 GST SUMMARY AMOUNT(RM) TAX(RM) SR = 6% 33.00 1.98 THANK YOU! PLEASE COME AGAIN GOODS SOLD ARE NOT RETURNABLE! CLOSED BY - C001- 07/04/2018-18:11:05 [POSWAY - MYTH POS SOLUTION]"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 2 item group(s); 0/2 item equations valid. lineSum=66.00; subtotal=missing; grandTotal=35. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.929Z",
+  "updatedAt": "2026-09-11T00:44:28.929Z"
+}

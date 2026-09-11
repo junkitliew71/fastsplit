@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006329402",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006329402.jpg",
+    "boxes": "SROIE2019/train/box/X51006329402.txt",
+    "entities": "SROIE2019/train/entities/X51006329402.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "50.45"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "50.45"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0022",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036"
+      ],
+      "text": "REF NO: 0 00696305041961 GOODS SOLD AR NOT RETURNABLE. TQ SEGI CASH & CARRY SDN. BHD. PT17920 SEK U9, SHAH ALAM GST REG NO : 001951645696 05/SE200209/42193 06/04/17 11:43AM MIGHTY MARK DISHWASH 11L 2 X 11.50 23.00 S MIGHTY MARK BLEACH 10L 2 X 11.50 23.00 S GARDENIA SOMMERSET COTTAGE 300G 1 X 4.45 4.45 S NO OF ITEMS: 5 TOTAL INCL. GST:RM MASTER XXXXXXXXXXXX9113: CHANGE:RM 0.00 MISSED POINT TODAY: 47 SERVED BY ASHOK KUMAR GST SUMMARY GST CODE AMOUNT(RM) TAX(RM) S @6.0% 47.60 2.85 REF NO: 00600696305042193 GOODS SOLD ARE NOT RETURNABLE. TQ"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=50.45. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.567Z",
+  "updatedAt": "2026-09-11T00:44:28.567Z"
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006414633",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006414633.jpg",
+    "boxes": "SROIE2019/train/box/X51006414633.txt",
+    "entities": "SROIE2019/train/entities/X51006414633.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "0.46"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039"
+      ],
+      "text": "UNIHAKKA INTERNATIONAL SDN BHD 16 APR 2018 18:23 (867388-U) 12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR TAXINVOICE INVOICE # : OR18041602170486 ITEM QTY TOTAL SR I00100000035- 1 MEAT + 3 VEGE $7.10 1 $7.10 SR I00100000015- VEGETABLE $1.10 1 $1.10 TOTAL AMOUNT: $8.20 GST @6%: $0.46 NETT TOTAL: $8.20 PAYMENT MODE AMOUNT CASH $8.20 CHANGE $0.00 GST SUMMARY AMOUNT($) TAX($) SR = GST @6% 7.74 GST REG #000656195584 BAR WANG RICE@PERMAS JAYA (PRICE INCLUSIVE OF GST) THANK YOU & COME AGAIN! LIKE AND FOLLOW US ON FACEBOOK! FACEBOOK.COM/BARWANGRICE"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.014Z",
+  "updatedAt": "2026-09-11T00:44:29.014Z"
+}

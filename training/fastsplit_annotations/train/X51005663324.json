@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005663324",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005663324.jpg",
+    "boxes": "SROIE2019/train/box/X51005663324.txt",
+    "entities": "SROIE2019/train/entities/X51005663324.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "NAIL (PER/PACK)-RM2",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "2",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "2.12",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "4.24",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "1 1/2\" SANCORA PAINT BRUSH",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "7.95",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "7.95",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "7\" PAINT ROLLER SET",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "10.07",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "10.07",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "1LT BIG TREE HIGH GLOSS PAINT",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "2",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0048"
+      ],
+      "text": "26.50",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "53.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0057"
+      ],
+      "text": "CEMENT BRICK",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a018",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "450",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a019",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0054"
+      ],
+      "text": "0.30",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a020",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0055"
+      ],
+      "text": "133.56",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a021",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0063"
+      ],
+      "text": "6' X 35# CORRUGATED ROOFING SHEET",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a022",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0059"
+      ],
+      "text": "3",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a023",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0060"
+      ],
+      "text": "15.90",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a024",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0061"
+      ],
+      "text": "47.70",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a025",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0069"
+      ],
+      "text": "CEMENT (50KG)",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a026",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0065"
+      ],
+      "text": "4",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a027",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0066"
+      ],
+      "text": "18.02",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a028",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0067"
+      ],
+      "text": "72.08",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a029",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0075"
+      ],
+      "text": "10'2X3",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a030",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0071"
+      ],
+      "text": "2",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a031",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0072"
+      ],
+      "text": "16.96",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a032",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0073"
+      ],
+      "text": "33.92",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a033",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0081"
+      ],
+      "text": "10' 1X2",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a034",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0077"
+      ],
+      "text": "3",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a035",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0078"
+      ],
+      "text": "7.42",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a036",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0079"
+      ],
+      "text": "22.26",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a037",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0087"
+      ],
+      "text": "K10' 1 X 8",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a038",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0084"
+      ],
+      "text": "4028",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a039",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0085"
+      ],
+      "text": "80.56",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a040",
+      "label": "TAX",
+      "tokenIds": [
+        "t0092"
+      ],
+      "text": "439.00"
+    },
+    {
+      "id": "a041",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0094"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a042",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0098"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a043",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0102"
+      ],
+      "text": "465.34"
+    },
+    {
+      "id": "a044",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0032",
+        "t0034",
+        "t0038",
+        "t0040",
+        "t0044",
+        "t0046",
+        "t0050",
+        "t0052",
+        "t0056",
+        "t0058",
+        "t0062",
+        "t0064",
+        "t0068",
+        "t0070",
+        "t0074",
+        "t0076",
+        "t0080",
+        "t0082",
+        "t0083",
+        "t0086",
+        "t0088",
+        "t0089",
+        "t0090",
+        "t0091",
+        "t0093",
+        "t0095",
+        "t0096",
+        "t0097",
+        "t0099",
+        "t0100",
+        "t0101",
+        "t0103",
+        "t0104",
+        "t0105",
+        "t0106",
+        "t0107",
+        "t0108",
+        "t0109",
+        "t0110",
+        "t0111",
+        "t0112",
+        "t0113",
+        "t0114",
+        "t0115",
+        "t0116",
+        "t0117"
+      ],
+      "text": "SYARIKAT PERNIAGAAN GIN KEE (81109-A) NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR TEL : 03-40210276 GST ID : 000750673920 SIMPLIFIED TAX INVOICE CASH DOC NO : CS00012440 DATE: 28/12/2017 CASHIER : USER TIME: 11:57:00 SALESPERSON : REF. : ITEM QTY S/PRICE AMOUNT TAX 2623 SR 3483 SR 1452 SR 1664 SR 1665 SR 1041 SR 2430 SR 1812 SR 1792 SR 1840 2 SR TOTAL QTY: 470 465.34 TOTAL SALES (EXCLUDING GST) : DISCOUNT : TOTAL GST : 26.34 ROUNDING : TOTAL SALES (INCLUSIVE OF GST) : 465.34 CASH : CHANGE : 0.00 GST SUMMARY TAX CODE % AMT(RM) TAX(RM) SR 6 439.00 26.34 TOTAL : 439.00 26.34 GOODS SOLD ARE NOT RETURNABLE, THANK YOU"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a017",
+        "a018",
+        "a019",
+        "a020"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a021",
+        "a022",
+        "a023",
+        "a024"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a025",
+        "a026",
+        "a027",
+        "a028"
+      ]
+    },
+    {
+      "id": "item-008",
+      "assignmentIds": [
+        "a029",
+        "a030",
+        "a031",
+        "a032"
+      ]
+    },
+    {
+      "id": "item-009",
+      "assignmentIds": [
+        "a033",
+        "a034",
+        "a035",
+        "a036"
+      ]
+    },
+    {
+      "id": "item-010",
+      "assignmentIds": [
+        "a037",
+        "a038",
+        "a039"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 10 item group(s); 8/10 item equations valid. lineSum=465.34; subtotal=missing; grandTotal=465.34. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.444Z",
+  "updatedAt": "2026-09-11T00:44:27.444Z"
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619697",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006619697.jpg",
+    "boxes": "SROIE2019/train/box/X51006619697.txt",
+    "entities": "SROIE2019/train/entities/X51006619697.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "RM100.00"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "RM8.25"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048"
+      ],
+      "text": "OLD ASIA OWN BY: CHEF LEE SDN BHD CO.NO. (458592-T) LG226, LGF, 1 UTAMA SHOPPING CENTRE, LEBUH BANDAR UTAMA, 47800 PETALING JAYA. GST NO: 001406865408) TEL: 03-77100299 DUPLICATE RECEIPT MC #01 REG YENG LIN 13-02-2016 02:29 PM 088341 TABLE NO. 10 4CT SEAFOOD FRIED PRICE RM13.50 SR FISH HEAD RM11.50 SR FISH CAKE RM7.90 SR G. CRISPY CHIC RICE RM15.90 SR V. GRILL CHIC RICE RM16.50 SR W/MELON JUICE RM7.50 SR RIBENA RM5.90 SR 2X @ 1.90 ICED CHINESE TEA RM3.80 SR 9 NO SERV.CHG. 10% GST TA AMT GST 6% SUBTOTAL CASH YOUR CHANGE TAX INVOICE NO. RM90.75 RM5.45 RM96.20 RM3.80 039170 TAX INVOICE THANK YOU PLEASE COME AGAIN"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=100; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.867Z",
+  "updatedAt": "2026-09-11T00:44:29.867Z"
+}

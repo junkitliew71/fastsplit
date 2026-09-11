@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastSplit Annotation Studio</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><span class="eyebrow">LOCAL DATA TOOL</span><h1>FastSplit Annotation Studio</h1></div>
+    <div class="progress"><strong id="position">— / —</strong><span id="datasetSummary">Loading dataset…</span></div>
+  </header>
+  <nav class="nav-actions" aria-label="Receipt navigation">
+    <button id="previous">← Previous Receipt</button>
+    <label class="jump">Receipt <select id="receiptSelect"></select></label>
+    <button id="next">Next Receipt →</button>
+    <span class="spacer"></span>
+    <button id="skip" class="quiet">Skip</button>
+    <button id="unclear" class="warning">Mark Unclear</button>
+    <button id="save" class="primary">Save Annotation</button>
+  </nav>
+  <main>
+    <section class="receipt-pane">
+      <div class="pane-heading"><div><span class="eyebrow">ORIGINAL RECEIPT</span><h2 id="receiptTitle">—</h2></div><div id="statusBadge" class="status">UNLABELED</div></div>
+      <div id="imageStage" class="image-stage">
+        <img id="receiptImage" alt="Receipt being annotated">
+        <svg id="boxOverlay" aria-label="Original OCR bounding boxes"></svg>
+      </div>
+      <details><summary>Original entity annotation</summary><pre id="entities"></pre></details>
+    </section>
+    <aside class="annotation-pane">
+      <div class="pane-heading"><div><span class="eyebrow">SEMANTIC LAYER</span><h2>OCR tokens & labels</h2></div><strong id="selectedCount">0 selected</strong></div>
+      <div class="assigner">
+        <label>Label<select id="labelSelect"></select></label>
+        <label>Item group<select id="itemSelect"><option value="">Not an item field</option></select></label>
+        <button id="newItem">+ New item group</button>
+        <button id="assign" class="primary">Assign selected</button>
+        <button id="unassign" class="quiet">Clear labels</button>
+      </div>
+      <p id="hint" class="hint">Select OCR tokens from the image or list. No labels are generated automatically.</p>
+      <div class="token-head"><span>Original OCR regions</span><span id="labeledCount">0 labeled</span></div>
+      <div id="tokenList" class="token-list"></div>
+      <section class="groups"><div class="token-head"><span>Receipt item groups</span><span id="groupCount">0 groups</span></div><div id="groupList"></div></section>
+      <label class="notes">Annotation notes<textarea id="notes" rows="3" placeholder="Optional human notes…"></textarea></label>
+    </aside>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008164998",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008164998.jpg",
+    "boxes": "SROIE2019/train/box/X51008164998.txt",
+    "entities": "SROIE2019/train/entities/X51008164998.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0019",
+        "t0021"
+      ],
+      "text": "D FISH ITEM",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "30.00 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0023",
+        "t0025"
+      ],
+      "text": "D BEVERAGE",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "5.00 SR",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0027",
+        "t0029"
+      ],
+      "text": "D NOODLE ITEM SINGLE",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "3.00 SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "TAX",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "38.00"
+    },
+    {
+      "id": "a011",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "38.00"
+    },
+    {
+      "id": "a012",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0030",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050"
+      ],
+      "text": "ONE ONE THREE SEAFOOD RESTAURANT SDN BHD (1120908-M) NO.1, TAMAN SRI DENGKIL, JALAN AIR HITAM 43800 DENGKIL, SELANGOR. (GST REG. NO : 000670224384) TAX INVOICE TABLE 37 BILL#:V001-540835 ORDER#: 140933 DATE : 20-06-2018 21:36:11 CASHIER: 113 CASHIER PAX(S): 0 QTY DESCRIPTION TOTAL TAX TOTAL (EXCLUDING GST): TOTAL (INCLUSIVE OF GST): 38.00 TOTAL: 38.00 CLOSED: 1 20-06-2018 22:39:39 SERVER: 113 CASHIER CASH : GST SUMMARY AMOUNT(RM) TAX(RM) SR (@ 0%) 0.00 **** THANK YOU **** PLEASE COME AGAIN 38.00"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008",
+        "a009"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 3 item group(s); 0/3 item equations valid. lineSum=38.00; subtotal=missing; grandTotal=38. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.811Z",
+  "updatedAt": "2026-09-11T00:44:31.811Z"
+}

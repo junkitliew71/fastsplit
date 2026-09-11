@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006912959",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006912959.jpg",
+    "boxes": "SROIE2019/test/box/X51006912959.txt",
+    "entities": "SROIE2019/test/entities/X51006912959.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038"
+      ],
+      "text": "ROYAL MILK TEA BLACK TEA COLD PEARL LESS ICE 50% SUGAR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "10.90 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "10.90"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "0.62"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "10.90"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0052",
+        "t0053"
+      ],
+      "text": "**ROYALTEA** (1199794-K) NO. 23, JALAN SUTERA TANJUNG 8/3, TAMAN SUTERA UTAMA 81300 SKUDAI JOHOR,MALAYSIA. GST ID : 000344043520 WI-FI : 01134229888 TAX INVOICE INVOICE NO : STU001/59572 DATE CASHIER REF NO PRN ON : 09/05/2018 #1 : YU JIE : 50TA : 09/05/2018 12:23 PM 12:22 PM QTY ITEM RM *** RETAIL/TAKEAWAY *** 1 1 1 1 1 1 SUBTOTAL NET TOTAL CASH CHANGE *** 09/05/2018 12:23 PM *** 11.00 0.10 TAX SUMMARY AMOUNT TAX SR:INCLUSIVE OF GST @6% 10.28 THANK YOU, PLEASE COME AGAIN GOODS SOLD ARE NON REFUNDABLE"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=10.90; subtotal=10.9; grandTotal=10.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.732Z",
+  "updatedAt": "2026-09-11T00:44:25.732Z"
+}

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005663278",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005663278.jpg",
+    "boxes": "SROIE2019/train/box/X51005663278.txt",
+    "entities": "SROIE2019/train/entities/X51005663278.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "910347623 ALMOND CAK",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "22.50 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "999900245 IKEA RETAI",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "36.00 SR",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "599937000 IKEA DRINK",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "1.00 SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a007",
+      "label": "TAX",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "73.30"
+    },
+    {
+      "id": "a008",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a009",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "73.30"
+    },
+    {
+      "id": "a010",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044"
+      ],
+      "text": "IKANO HANDEL SDN BHD (1074617K) IKEA CHERAS NO 2A JALAN COCHRANE TAMAN MALURI 55100 KUALA LUMPUR GST NO.: 000115154944 TAX INVOICE SLIP: 0000000111000395667 DATE: 23/12/17 TIME: 7:13 TRANS: 411395668 STAFF: 95651 DESCRIPTION AMOUNT TX 999900701 DARK CHOCOLATE 70% U 2 PC @ 6.90 13.80 SR TOTAL RM INCLUDING GST 6% ROUNDING ADJ. TOTAL ROUNDED 73.30 CASH -73.30 GST 6% 4.15 AMT. EXCL. GST 69.15 NO. OF ITEMS 5 THANK YOU. PLEASE COME AGAIN. SR"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a005",
+        "a006"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 3 item group(s); 0/3 item equations valid. lineSum=59.50; subtotal=missing; grandTotal=73.3. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.366Z",
+  "updatedAt": "2026-09-11T00:44:27.366Z"
+}

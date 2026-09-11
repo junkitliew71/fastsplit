@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619863",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006619863.jpg",
+    "boxes": "SROIE2019/test/box/X51006619863.txt",
+    "entities": "SROIE2019/test/entities/X51006619863.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "2.11"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "2.10"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0019",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028"
+      ],
+      "text": "99 SPEED MART S/B (519537-X) LOT P.T. 33198, BATU 4 JALAN KAPAR, MUKIM KAPAR 42100 KLANG, SELANGOR 1181-TMN SRI SINAR GST ID. NO : 000181747712 INVOICE NO : 17692/102/T0515 07:13PM 561169 08-06-16 6145 WONG AH LEK KAYA (PAND RM2.11 S TOTAL SALES (INCLUSIVE GST) RM ROUNDING ADJUSTMENT RM ROUNDING RM CASH RM CHANGE RM -.01 2.20 .10 GST SUMMARY S = 6% AMOUNT(RM) TAX(RM) 1.99 .12"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=2.1. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.546Z",
+  "updatedAt": "2026-09-11T00:44:25.546Z"
+}

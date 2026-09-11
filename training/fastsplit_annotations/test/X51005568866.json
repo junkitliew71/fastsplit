@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005568866",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005568866.jpg",
+    "boxes": "SROIE2019/test/box/X51005568866.txt",
+    "entities": "SROIE2019/test/entities/X51005568866.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "5.04"
+    },
+    {
+      "id": "a002",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "-0.56"
+    },
+    {
+      "id": "a003",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "0.01"
+    },
+    {
+      "id": "a004",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "5.05"
+    },
+    {
+      "id": "a005",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0025",
+        "t0027",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050"
+      ],
+      "text": "POPULAR BOOK CO. (M) SDN BHD (CO. NO. 113825-W) (GST REG NO. 001492992000) NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA CHERAS LEISURE MALL TEL : 03-91322435/437 MEGA BOOKFAIR @ SPCC 2017 SUNWAY PYRAMID CONVENTION CENTRE 25 AUG - 3 SEPT 2017 20/08/17 12:48 SLIP NO.: 9020374693 YEN LEE TRANS: 304168 MEMBER CARD NO: 2002008362249 CARD EXPIRY: 31/08/20 DESCRIPTION AMOUNT H'MAN GLASS PAPER 4PC @ 1.40 5.60 T MEMBER DISCOUNT TOTAL RM INCL. OF GST ROUNDING ADJ TOTAL RM CASH -10.00 CHANGE 4.95 ITEM COUNT 4 GST SUMMARY AMOUNT (RM) TAX (RM) T @ 6% 4.75 0.29 TOTAL SAVINGS -0.56 BE A POPULAR CARD MEMBER AND ENJOY SPECIAL DISCOUNTS THANK YOU. PLEASE COME AGAIN. WWW.POPULAR.COM.MY BUY CHINESE BOOKS ONLINE WWW.POPULARONLINE.COM.MY"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=5.05. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.642Z",
+  "updatedAt": "2026-09-11T00:44:23.642Z"
+}

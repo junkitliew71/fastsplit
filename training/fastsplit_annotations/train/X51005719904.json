@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005719904",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005719904.jpg",
+    "boxes": "SROIE2019/train/box/X51005719904.txt",
+    "entities": "SROIE2019/train/entities/X51005719904.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "(BILL INCLUSIVE OF 6% GST : RM1.66)"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043"
+      ],
+      "text": "YAM FRESH NO. 145G, JALAN RIMBUNAN RAYA 1, LAMAN RIMBUNAN KEPONG, 52100 KUALA LUMPUR TEL: (603) 6243 5520 GST ID=001817907200 BILL NO. : 001-3246 DATE: 2018-03-18 13:18:48 DINE IN R05 OYSTER MEE :TAKE AWAY A07 BLACKSUGAR ICE :FRESH MILK :PEARL :HERB,J :TAKE AWAY S02 PUDDING SOYBEAN :TAKE AWAY 1 1 1 RM9.90 RM7.50 RM3.00 RM8.90 GRAND TOTAL RM29.30 CASH CHANGE RM30.30 RM1.00 THANK YOU. PLEASE VISIT US AT : - FACEBOOK : -YAM FRESH S WIFI SSID : YAMFRESH WIFI PASWORD : BUYADRINKFIRST 001-2018-03-18 13:21:02 RAINNY 001-3246 [1]"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.012Z",
+  "updatedAt": "2026-09-11T00:44:28.012Z"
+}

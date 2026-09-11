@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005757323",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005757323.jpg",
+    "boxes": "SROIE2019/train/box/X51005757323.txt",
+    "entities": "SROIE2019/train/entities/X51005757323.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "RM 28.00"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042"
+      ],
+      "text": "MR. D.I.Y. (M) SDN BHD (CO. REG :860671-D) LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR (GST ID NO :000306020352) (IOI PUCHONG) -TAX INVOICE- PILLAR SINK TAP 87601 *S 0Z05 - 5/60 9074624 1 X 19.90 19.90 NASCO SEAL TAPE NST *S WA33 - 100/1000 9180501 1 X 0.80 0.80 S/S COLANDER RH-008# 24.5CM *S AD41/2 - 5/100 9067474 1 X 7.30 7.30 ITEM(S) : 3 QTY(S) : 3 TOTAL INCL. GST@6% CASH RM 40.00 CHANGE RM 12.00 GST @6% INCLUDED IN TOTAL RM 1.58 26-03-18 15:25 SHO1 ZJ86 T1 R000112587 OPERATOR TRAINEE CASHIER EXCHANGE ARE ALLOWED WITHIN 7 DAY WITH RECEIPT . STRICTLY NO CASH REFUND ."
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=28. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.291Z",
+  "updatedAt": "2026-09-11T00:44:28.291Z"
+}

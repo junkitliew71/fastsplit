@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005757342",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005757342.jpg",
+    "boxes": "SROIE2019/test/box/X51005757342.txt",
+    "entities": "SROIE2019/test/entities/X51005757342.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "RM 6.20"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041"
+      ],
+      "text": "MR. D.I.Y. (M) SDN BHD (CO. REG :860671-D) LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG , 43300 SERI KEMBANGAN, SELANGOR (GST ID NO :000306020352) (IOI PUCHONG) -TAX INVOICE- MESH SPONGE 4S *S AN62-72 - 12/96 9064234 1 X 1.80 1.80 BROWN COCO BRUSH 6' V6N *S WA50 -20/300 9555221303658 2 X 2.10 4.20 PLASTIC BAGS *S 99999 1 X 0.20 0.20 ITEM(S) : 3 QTY(S) : 4 TOTAL INCL. GST@6% CASH RM 100.00 CHANGE RM 93.80 GST @6% INCLUDED IN TOTAL RM 0.35 23-03-18 16:43 SHO1 ZJ86 T1 R000111721 OPERATOR TRAINEE CASHIER EXCHANGE ARE ALLOWED WITHIN 7 DAY WITH RECEIPT . STRICTLY NO CASH REFUND ."
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=6.2. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.383Z",
+  "updatedAt": "2026-09-11T00:44:24.383Z"
+}

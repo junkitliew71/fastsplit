@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619694",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006619694.jpg",
+    "boxes": "SROIE2019/train/box/X51006619694.txt",
+    "entities": "SROIE2019/train/entities/X51006619694.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "2.56"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "2.56"
+    },
+    {
+      "id": "a003",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "50.55"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046"
+      ],
+      "text": "GUARDIAN HEALTH AND BEAUTY SDN BHD FIRST WORLD THEME PARK LOT F/L2A.4, LEVEL 2A FIRST WORLD PLAZA, FIRST WORLD TEL:03-61012425 COMPANY REG #01101083-T GST REG #000899874816 RM 2X 2.20 0092000 GDN WATER 500ML 4.40 S PRICE OVERIDE GDN WATER 500ML 1.84- REASON CODE:3 SUBTOTAL TOTAL (GST INCL) CASH ROUNDING ADJUSTMENTS CHANGE DUE 0.01- 48.00 YOUR SAVINGS FOR TODAY 1.84 GST S 6% 2.42 0.14 THANK YOU FOR SHOPPING AT GUARDIAN ALL AMOUNTS ARE IN RM GOODS SOLD ARE NON-REFUNDABLE. ALL EXCHANGES AND RETURNS INCLUDING GUARDIAN BRAND PRODUCTS MUST BE MADE WITHIN 7DAYS WITH ORIGINAL RECEIPTS AND PRODUCT IN ORIGINAL CONDITION. ST:512 CTR2 ID:3001 TAXINV:94542 15:55 11/02/16 RATE GST EXCL GST AMT"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=2.56; grandTotal=2.56. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.853Z",
+  "updatedAt": "2026-09-11T00:44:29.853Z"
+}

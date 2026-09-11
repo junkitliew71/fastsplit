@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008099100",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51008099100.jpg",
+    "boxes": "SROIE2019/test/box/X51008099100.txt",
+    "entities": "SROIE2019/test/entities/X51008099100.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "42.64"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0050"
+      ],
+      "text": "46.90"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0051",
+        "t0052",
+        "t0054"
+      ],
+      "text": "PAPPARICH BMC NO.19 & 21 JALAN TEMENGGUNG 23/9 BANDAR MAHKOTA CHERAS 43200 SELANGOR DARUL EHSAN, MALAYSIA TAX INVOICE GST ID:0 0 0 1 6 4 2 7 0 0 8 0 2 COUNTER1 2003 SAIFUL CHK 276703 GUEST1 29 JUN 18 06:01:34 PM TBL35 / 1 1 N22 SPRG NDL+SU+CR E 9.34 S 1 R02 N' LMK+CC+ST E 20.66 S 1 D27 MILO (I) E 5.19 S 1 D31 MOCHA (I) E 7.45 S CASH 56.90 42.64 SUBTOTAL 10% SRV CHG 4.25 TOTAL : 46.89 RND ADJ 0.01 TTL ATF RND 46.90 PAYMENT 56.90 CHANGE DUE 10.00 2003 CLOSED 29 JUN 18 06:25:04 PM THANK YOU! PLEASE COME AGAIN! GST AT 0% GSTSUMMARY S=GST @0%: Z=GST @0%: AMOUNT(RM) 0.00 GST(RM) 0.00"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=42.64; grandTotal=46.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.362Z",
+  "updatedAt": "2026-09-11T00:44:26.362Z"
+}

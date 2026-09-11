@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619780",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006619780.jpg",
+    "boxes": "SROIE2019/train/box/X51006619780.txt",
+    "entities": "SROIE2019/train/entities/X51006619780.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "RM0.47"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "-RM0.02"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032"
+      ],
+      "text": "YAM FRESH NO.145G, JALAN RIMBUNAN RAYA 1, LAMAN RIMBUNAN KEPONG, 52100 KUALA LUMPUR TEL: (603) 6243 5520 GST ID=001817907200 INVOICE: 001-9822 DATE: 2016-07-31 13:48:37 DINE IN 208 YAM FRESH SIGNATURE-C :1 :MILK 1 RM7.90 SUB-TOTAL 6% GST ROUNDING RM7.90 GRAND TOTAL RM8.35 CASH CHANGE RM10.50 RM2.15 THANK YOU. PLEASE VISIT US AT:- FACEBOOK:-YAM FRESH 001-2016-07-31 13:48:51 LIJIE 001-9822 [1]"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.919Z",
+  "updatedAt": "2026-09-11T00:44:29.919Z"
+}

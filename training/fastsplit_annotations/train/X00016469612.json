@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X00016469612",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X00016469612.jpg",
+    "boxes": "SROIE2019/train/box/X00016469612.txt",
+    "entities": "SROIE2019/train/entities/X00016469612.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "KF MODELLING CLAY KIDDY FISH",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "9.000",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "0.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "9.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "TOTAL:",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "9.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "ROUR DING ADJUSTMENT:",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "0.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "9.00"
+    },
+    {
+      "id": "a010",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0024",
+        "t0025",
+        "t0032",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043"
+      ],
+      "text": "TAN WOON YANN BOOK TA .K(TAMAN DAYA) SDN BND 789417-W NO.53 55,57 & 59, JALAN SAGU 18, TAMAN DAYA, 81100 JOHOR BAHRU, JOHOR. DOCUMENT NO : TD01167104 DATE: 25/12/2018 8:13:39 PM CASHIER: MANIS MEMBER: CASH BILL CODE/DESC PRICE DISC AMOUNT QTY RM RM 9556939040116 1 PC * ROUND D TOTAL (RM): CASH 10.00 CHANGE 1.00 GOODS SOLD ARE NOT RETURNABLE OR EXCHANGEABLE *** *** THANK YOU PLEASE COME AGAIN !"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 3 item group(s); 0/3 item equations valid. lineSum=18.00; subtotal=missing; grandTotal=9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.398Z",
+  "updatedAt": "2026-09-11T00:44:26.398Z"
+}

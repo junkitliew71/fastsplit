@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005746204",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005746204.jpg",
+    "boxes": "SROIE2019/test/box/X51005746204.txt",
+    "entities": "SROIE2019/test/entities/X51005746204.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "PRISTIN MOPL FISH OIL",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "143.70",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "143.70",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "ALPHA LIPID LIFE LINE",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "165.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "308.70"
+    },
+    {
+      "id": "a009",
+      "label": "TAX",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "308.70"
+    },
+    {
+      "id": "a010",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a011",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "308.70"
+    },
+    {
+      "id": "a012",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0017",
+        "t0019",
+        "t0023",
+        "t0025",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0033",
+        "t0035",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050"
+      ],
+      "text": "BEMED (SP) SDN. BHD. NO.49, JALAN DLNARG U3/G, SUBANG PERDANA, 40150 SHAH ALAM, SELANGOR D.E 03-7845 8155 GST REG : 001734164480 CASH RECEIPT CB# : 236100411023 27/MAR/2018 06:27:41 CASHIER : MIMIE O QTY CODE&DESO PRICE TOTAL SR 465920 SR 184810 165.0 2 TYPE: 2 SUB TOTAL: ROUNDING ADJ : TOTAL INCLUSIVE GST: MASTER GST SUMMARY: AMOUNT (MYR) TAX (MYR) SR 291.23 17.47 ONG GUAT CHYE POINTS : 1,546 THANK YOU. PLEASE COME AGAIN."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 2 item group(s); 1/2 item equations valid. lineSum=308.70; subtotal=308.7; grandTotal=308.7. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.273Z",
+  "updatedAt": "2026-09-11T00:44:24.273Z"
+}

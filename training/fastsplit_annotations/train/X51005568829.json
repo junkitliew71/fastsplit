@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005568829",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005568829.jpg",
+    "boxes": "SROIE2019/train/box/X51005568829.txt",
+    "entities": "SROIE2019/train/entities/X51005568829.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0025",
+        "t0029"
+      ],
+      "text": "06S BRAISED PORK LEG SMALL",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "20.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "20.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0031",
+        "t0035",
+        "t0036"
+      ],
+      "text": "32 PHRANAKON SALTED EGG SQUID",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "28.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "28.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0038",
+        "t0042"
+      ],
+      "text": "51 GARLIC FRIED KAILAN",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "13.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "13.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0044",
+        "t0048"
+      ],
+      "text": "84 THAI STYLE KERABUTOFU",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "1",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "15.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "15.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0050"
+      ],
+      "text": "130 PLAINRICE",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a018",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "4",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a019",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0052"
+      ],
+      "text": "1.80",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a020",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "7.20",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a021",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0055",
+        "t0059"
+      ],
+      "text": "113 COCONUT THAI",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a022",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0056"
+      ],
+      "text": "1",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a023",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0057"
+      ],
+      "text": "6.50",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a024",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0058"
+      ],
+      "text": "6.50",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a025",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0061",
+        "t0065"
+      ],
+      "text": "116 DISTILLED WATER",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a026",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0062"
+      ],
+      "text": "1",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a027",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0063"
+      ],
+      "text": "0.60",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a028",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0064"
+      ],
+      "text": "0.60",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a029",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0067",
+        "t0071",
+        "t0072"
+      ],
+      "text": "106B COLD PANDAN GINGER TEA",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a030",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0068"
+      ],
+      "text": "1",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a031",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0069"
+      ],
+      "text": "2.50",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a032",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0070"
+      ],
+      "text": "2.50",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a033",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0073"
+      ],
+      "text": "TOTAL:",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a034",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0074"
+      ],
+      "text": "92.80",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a035",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0076"
+      ],
+      "text": "92.80"
+    },
+    {
+      "id": "a036",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0030",
+        "t0037",
+        "t0043",
+        "t0049",
+        "t0054",
+        "t0060",
+        "t0066",
+        "t0075",
+        "t0077",
+        "t0078",
+        "t0079",
+        "t0080",
+        "t0081",
+        "t0082",
+        "t0083"
+      ],
+      "text": "THAI DELICIOUS RESTAURANT NO.22 JALAN PUTERI 2/4 BANDAR PUTERI 47100 PUCHONG, SELANGOR 03-8051 9514 BILL NO : 01-36870 TABLE DATE : 02/02/2017 7:31:08 PM A3 CASHIER : 123 PAX : 4 DESCRIPTION QTY PRICE AMOUNT 1 2 3 4 5 6 7 8 GRAND TOTAL: CASH RECEIVED: 100.00 CHANGE: 7.20 AVERAGE/PAX(S): 23.20 THANK YOU. PLEASE COME AGAIN."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a017",
+        "a018",
+        "a019",
+        "a020"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a021",
+        "a022",
+        "a023",
+        "a024"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a025",
+        "a026",
+        "a027",
+        "a028"
+      ]
+    },
+    {
+      "id": "item-008",
+      "assignmentIds": [
+        "a029",
+        "a030",
+        "a031",
+        "a032"
+      ]
+    },
+    {
+      "id": "item-009",
+      "assignmentIds": [
+        "a033",
+        "a034"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 9 item group(s); 8/9 item equations valid. lineSum=185.60; subtotal=missing; grandTotal=92.8. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.131Z",
+  "updatedAt": "2026-09-11T00:44:27.131Z"
+}

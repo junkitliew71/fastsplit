@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005677339",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005677339.jpg",
+    "boxes": "SROIE2019/train/box/X51005677339.txt",
+    "entities": "SROIE2019/train/entities/X51005677339.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "6 GAL WHITE CONTAINER",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "30.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "31.60",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "63.50",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "60.00"
+    },
+    {
+      "id": "a006",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a007",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a008",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "63.60"
+    },
+    {
+      "id": "a009",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0033",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0040",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0063",
+        "t0064"
+      ],
+      "text": "BEYOND BROTHERS HARDWARE (872981-V) LOT 1-0-2, JLN 1/50. DIAMOND SQUARE. OFF JLN GOMBAK 53000 KUALA LUMPUR TEL: 03-40211233 FAX: 03-40223233 IVAN_KONG12@HOTMAIL.COM GST ID: 001921974 TAX INVOICE DOC NO: : CS00065374 DATE: 05/02/2018 CASHIER : USER TIME: 11:14:00 SALESPERSON : REF.: (GST) (GST) ITEM QTY S/PRICE S/PRICE AMOUNT TAX 4432 2 SR TOTAL QTY: 2 63.60 TOTAL SALES (EXC G GST) : DISCOUNT : TOTAL GST : 3.60 ROUNDING : TOTAL SALES (INCLUSIVE OF GST) : 63.60 CASH : CHANGE : 0.00 GST SUMMARY TAX CODE % AMT (RM) TAX (RM) SR 6 60.00 3.60 TOTAL : 60.00 3.60 GOODS SOLD ARE NOT RETRNABLE TH"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=63.50; subtotal=missing; grandTotal=63.6. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.676Z",
+  "updatedAt": "2026-09-11T00:44:27.676Z"
+}

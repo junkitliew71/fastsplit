@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007846395",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51007846395.jpg",
+    "boxes": "SROIE2019/train/box/X51007846395.txt",
+    "entities": "SROIE2019/train/entities/X51007846395.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021"
+      ],
+      "text": "1 L 9NUGGETS 1 9NUGGETS 1 BARBECUE SAUCE 1 SWEET AND SOUR SAUCE 1 L SPRITE LESS ICE 1 L FRIES",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "12.80",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "TAX",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "12.80"
+    },
+    {
+      "id": "a004",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "12.80"
+    },
+    {
+      "id": "a005",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0022",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034"
+      ],
+      "text": "GERBANG ALAF RESTAURANTS SDN BHD (65351-M) LICENSEE OF MCDONALD'S LEVEL 6, BANGUNAN TH, DAMANSARA UPTOWN3 NO.3, JALAN SS21/39,47400 PETALING JAYA SELANGOR (GST ID NO: 000504664064) MCDONALD'S MUTIARA RINI DT (#309) TEL NO. 07-5542-467 TAX INVOICE MFY SIDE 1 INV# 003090200024723 ORD #60 -REG #2- 24/06/2018 22:43:04 QTY ITEM TOTAL EAT-IN TOTAL (INCL GST) TOTAL ROUNDED CASH TENDERED CHANGE TOTAL INCLUDES 0% GST 13.00 0.20 0.00 THANK YOU AND PLEASE COME AGAIN."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=12.80; subtotal=missing; grandTotal=12.8. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.132Z",
+  "updatedAt": "2026-09-11T00:44:31.132Z"
+}

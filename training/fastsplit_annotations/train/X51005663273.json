@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005663273",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005663273.jpg",
+    "boxes": "SROIE2019/train/box/X51005663273.txt",
+    "entities": "SROIE2019/train/entities/X51005663273.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "25KG SIKA CREAM-88",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "3",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "15.90",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "47.70",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a006",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "2.70"
+    },
+    {
+      "id": "a007",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a008",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "47.70"
+    },
+    {
+      "id": "a009",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0035",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058"
+      ],
+      "text": "SYARIKAT PERNIAGAAN GIN KEE (81109-A) NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR. TEL: 03-40210276 GST ID: 000750673920 SIMPLIFIED TAX INVOICE CASH DOC NO. : CS00011983 DATE: 04/12/2017 CASHIER : USER TIME: 16:15:00 SALESPERSON: REF. : QTY S/PRICE AMOUNT TAX 1476 SR TOTAL QTY: 3 47.70 TOTAL SALES(EXCLUDING GST) : 45.00 DISCOUNT : TOTAL GST : ROUNDING : TOTAL SALES(INCLUSIVE OF GST) : 47.70 CASH : CHANGE : 0.00 GST SUMMARY TAX CODE % AMT(RM) TAX(RM) SR 6 45.00 2.70 TOTAL: 45.00 2.70 GOODS SOLD ARE NOT RETURNABLE.THANK YOU IT"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 1/1 item equations valid. lineSum=47.70; subtotal=missing; grandTotal=47.7. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.340Z",
+  "updatedAt": "2026-09-11T00:44:27.340Z"
+}

@@ -1,0 +1,568 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006912976",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006912976.jpg",
+    "boxes": "SROIE2019/test/box/X51006912976.txt",
+    "entities": "SROIE2019/test/entities/X51006912976.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "CANTONESE",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "10.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "0.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "10.00 S",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "CHICKEN SOUP",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "0.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "8.50 S",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0033",
+        "t0032"
+      ],
+      "text": "NASI LEMAK (OTAK) 201C",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "0.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "8.80 S",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "HONEY LEMON (ICE)",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "1",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "0.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "4.40 S",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "TUNA MAYO",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a018",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "1",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a019",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0048"
+      ],
+      "text": "0.00",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a020",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "3.70 S",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a021",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "HORLICKS (ICE)",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a022",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "4.00",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a023",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0054"
+      ],
+      "text": "0.00",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a024",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0055"
+      ],
+      "text": "4.00 S",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a025",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0063"
+      ],
+      "text": "KOPI - HOT",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a026",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0064"
+      ],
+      "text": "1",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a027",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0066"
+      ],
+      "text": "0.00",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a028",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0067"
+      ],
+      "text": "2.80 S",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a029",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0069"
+      ],
+      "text": "CHRYSANTHEMUM (ICE)",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a030",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0070"
+      ],
+      "text": "1",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a031",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0072"
+      ],
+      "text": "0.00",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a032",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0073"
+      ],
+      "text": "2.90 S",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a033",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0075"
+      ],
+      "text": "CANTONESE",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a034",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0077"
+      ],
+      "text": "10.00",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a035",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0078"
+      ],
+      "text": "0.00",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a036",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0079"
+      ],
+      "text": "10.00 S",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a037",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0081"
+      ],
+      "text": "FRIED",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a038",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0082"
+      ],
+      "text": "1",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a039",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0084"
+      ],
+      "text": "0.00",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a040",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0085"
+      ],
+      "text": "9.50 S",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a041",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0089"
+      ],
+      "text": "71.10"
+    },
+    {
+      "id": "a042",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0095"
+      ],
+      "text": "71.10"
+    },
+    {
+      "id": "a043",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0091"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a044",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0093"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a045",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0022",
+        "t0026",
+        "t0029",
+        "t0035",
+        "t0038",
+        "t0041",
+        "t0044",
+        "t0047",
+        "t0050",
+        "t0052",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0065",
+        "t0068",
+        "t0071",
+        "t0074",
+        "t0076",
+        "t0080",
+        "t0083",
+        "t0086",
+        "t0087",
+        "t0088",
+        "t0090",
+        "t0092",
+        "t0094",
+        "t0096",
+        "t0097",
+        "t0098",
+        "t0099",
+        "t0100",
+        "t0101",
+        "t0102",
+        "t0103",
+        "t0104",
+        "t0105"
+      ],
+      "text": "THE TOAST F&B SDN BHD (965752-T) LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750,JOHOR BAHRU JOHOR TEL: 07-3886880 GST ID NO: 002069884928 TAX INVOICE PS8418056909 19/05/2018 S/P: POS LOC: PMS WALK IN TABLE: 1 ITEM QTY U.PRICE DISC AMOUNT 224 1 204 8.50 8.80 431 4.40 111 3.70 409 1 101 BUTTER KAYA 1 2.50 0.00 4.00 S 301 2.80 441 2.90 224 1 223 9.50 TOTAL ITEMS: 12 SUB TOTAL: LESS DISCOUNT: ROUND: TOTAL DUE (GST INC): PAID: CASH 100.00 CHANGE: 28.90 S:GST(6%) 67.06 4.04 PLEASE COME AGAIN! 19/05/2018 09:04:55 PM"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a017",
+        "a018",
+        "a019",
+        "a020"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a021",
+        "a022",
+        "a023",
+        "a024"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a025",
+        "a026",
+        "a027",
+        "a028"
+      ]
+    },
+    {
+      "id": "item-008",
+      "assignmentIds": [
+        "a029",
+        "a030",
+        "a031",
+        "a032"
+      ]
+    },
+    {
+      "id": "item-009",
+      "assignmentIds": [
+        "a033",
+        "a034",
+        "a035",
+        "a036"
+      ]
+    },
+    {
+      "id": "item-010",
+      "assignmentIds": [
+        "a037",
+        "a038",
+        "a039",
+        "a040"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 10 item group(s); 0/10 item equations valid. lineSum=64.60; subtotal=71.1; grandTotal=71.1. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.743Z",
+  "updatedAt": "2026-09-11T00:44:25.743Z"
+}

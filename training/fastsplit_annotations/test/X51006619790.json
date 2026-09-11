@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619790",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006619790.jpg",
+    "boxes": "SROIE2019/test/box/X51006619790.txt",
+    "entities": "SROIE2019/test/entities/X51006619790.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "14.50"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042"
+      ],
+      "text": "YIN MA (M) SDN.BHD.(974306-T) NO.2, JALAN UDANG SIAR 2, TAMAN SRI SEGAMBUT, 52000 KUALA LUMPUR. GST REG NO.:000119906304 INVOICE NO DATE COUNTER 6928835430158 HOOK-3015 6928835430158 HOOK-3015 9555221301524 TOILET BRUSH-1 6928835430158 HOOK-3015 6928835430158 HOOK-3015 2.90 S 2.90 S 2.90 S 2.90 S 2.90 S NO OF ITEMS: 5 TOTAL INCL. GST:RM CASH:RM CHANGE:RM SERVED BY YINMA SEGAMBUT 15.50 1.00 GST SUMMARY GST CODE S @6.0% AMOUNT(RM) TAX(RM) 13.70 0.80 REF NO: 00500056044048333 EXCHANGE ARE ALLOWED WITHIN 3 DAY WITH RECEIPT. STRICTLY NO CASH REFUND. THANK YOU. WELCOME AGAIN. : 48333 : 19 JUL 2016 01:25PM : 401"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=14.5. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.531Z",
+  "updatedAt": "2026-09-11T00:44:25.531Z"
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006311764",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006311764.jpg",
+    "boxes": "SROIE2019/train/box/X51006311764.txt",
+    "entities": "SROIE2019/train/entities/X51006311764.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "39.90"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "39.90"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0028",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048"
+      ],
+      "text": "TONYMOLY VIVA CITY (TONYMOLY SHOP (95874)) UNIT L1-044B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK. GST ID : 000349356032 TAX INVOICE TERMINAL : 880 SALES NO. : 8807947 SALES DATE : 29/03/2018 20:19:38 CASHIER : THEN FIONA CLIENT : CASH POINT EARNED : 0 PURE ECO SNAIL MOISTURE GEL BD06000800 1 * 39.90 39.90 ITEM COUNT 1 TOTAL SALES INCL. GST ROUNDING ADJUSTMENT TOTAL AFTER ROUNDING 39.90 VISA CARD NO 46 XXXXXXXX 1819 APP. CODE A0000000031010 46 XXXXXXXX 1819 GST SUMMARY AMOUNT(RM) TAX(RM) SR = 6% 37.64 2.26 PRINTED ON: 29-03-2018 20:19:59 300 [SR] THANK YOU"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=39.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.476Z",
+  "updatedAt": "2026-09-11T00:44:28.476Z"
+}

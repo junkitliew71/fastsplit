@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005444037",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005444037.jpg",
+    "boxes": "SROIE2019/train/box/X51005444037.txt",
+    "entities": "SROIE2019/train/entities/X51005444037.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "129.30"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "7.30"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "129.30"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0044",
+        "t0046",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0063",
+        "t0064",
+        "t0065",
+        "t0066"
+      ],
+      "text": "NANDO'S, PERI-PERI CHICKEN NANDO'S CHICKENLAND MALAYSIA SDN BHD NANDO'S 1 MONT KIARA UNIT G-13, GROUND FLOOR, NO.1 JLN KIARA, MONT KIARA 50480 KUALA LUMPUR TEL: 1300-88-6555 FAX: 603-6203 6355 TAX INVOICE GST ID:000097492992 4 NANDOS3 76 SYAFIQ 2 CHK 8660 GUEST0 28 MAR 18 18:32:36 1 DELIVERY CHG 4.00 S 4 1/4 CHIC+ 1SD-T @ 17.90 71.60 S 4 1/4-H S 4 CHARGRILL VEG(R)-TC S GRILLVEG-H GRILLVEG-H GRILLVEG-H GRILLVEG-H 3 1/4 CHIC+ 1SD-T @ 17.90 53.70 S 3 1/4-M S 3 COLES LAW(R)-TC S SUB TOTAL AMT DUE GST @6% HOW WAS IT FOR YOU? YOUR FEEDBACK IS IMPORTANT, SO PLEASE COMPLETE OUR WWW.HOWWASIT4YOU-MY.NET A MEAL FOR YOU & 10 FRIENDS IS UP FOR GRABS. SURVEY CODE:MAL025 T&C APPLY. FOR TAKE AWAY AND DELIVERY, FOOD IS BEST CONSUMED WITHIN 2 HOURS GSTSUMMARY AMOUNT(RM) GST(RM) S=GST @6%: 122.00 7.30 Z=GST @0%: 0.00 0.00"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=129.3; grandTotal=129.3. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.993Z",
+  "updatedAt": "2026-09-11T00:44:26.993Z"
+}

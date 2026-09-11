@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005361908",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005361908.jpg",
+    "boxes": "SROIE2019/test/box/X51005361908.txt",
+    "entities": "SROIE2019/test/entities/X51005361908.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "- ARTLINE 70",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "48",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "7.41",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "120.00 *",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "SUB-TOTAL (EX)",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "120.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "TOTAL TAX",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "7.20",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a010",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "127.20"
+    },
+    {
+      "id": "a011",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0019",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0030",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061"
+      ],
+      "text": "TEO HENG STATIONERY & BOOKS (001451637-M) NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN TEL : 03-3271 9872 GST NO. : 000689913856 SIMPLIFIED TAX INVOICE CASH RECEIPT NO. : CS1803/28617 DATE : 15/03/2018 ITEM QTY U/P DISC% AMOUNT (RM) 4974052801334 2.70 TOTAL QTY. : 48 120.00 ROUNDING TOTAL 127.20 CASH CHANGE 0.00 GST SUMMARY TAX CODE % AMOUNT (RM) TAX (RM) SR 6.00 120.00 7.20 TOTAL : 120.00 7.20 NOTE: (*) INDICATED THE ITEM SOLD HAS BEEN RELATED TO GST (GOODS & SERVICES TAX) GOODS SOLD ARE NOT RETURNABLE, THANK YOU. FAX : 03-3271 9481 : : : : :"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 3 item group(s); 0/3 item equations valid. lineSum=247.20; subtotal=missing; grandTotal=127.2. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.345Z",
+  "updatedAt": "2026-09-11T00:44:23.345Z"
+}

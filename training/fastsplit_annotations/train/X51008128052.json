@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008128052",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008128052.jpg",
+    "boxes": "SROIE2019/train/box/X51008128052.txt",
+    "entities": "SROIE2019/train/entities/X51008128052.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0002",
+        "t0003",
+        "t0005",
+        "t0009",
+        "t0007",
+        "t0012",
+        "t0013",
+        "t0015"
+      ],
+      "text": "M4-A-8, JALAN PANDAH INDAH 4/1A, PANDAH INDAH, 55100 KUALA LUMPUR, * GUEST CHECK * PAX(S): 0 CHECK #: SERVER : CASHIER KUO POH (C) (2 PAX)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "6.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "TEA EXTRA PERSON (1 PAX)",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "2",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "2.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "TONG HOU",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "10.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "MUTTAN SLICE",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a011",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "1",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "15.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "SOUP",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "1",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a015",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "0.00",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a016",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "TOM YUM",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a017",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "1",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a018",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "0.00",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a019",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "NO. OF HEAD (2 SET ABOVE)",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a020",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "3",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a021",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "60.00",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a022",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "93.00"
+    },
+    {
+      "id": "a023",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "93.00"
+    },
+    {
+      "id": "a024",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0004",
+        "t0006",
+        "t0008",
+        "t0010",
+        "t0011",
+        "t0035",
+        "t0037"
+      ],
+      "text": "PANDAH INDAH PULAU KETAM RESTAURANT TEL:012-2673122 / 010-2022293 TABLE 6 113355 DATE : 30-04-2018 19:50:14 SUBTOTAL : TOTAL :"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008",
+        "a009"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a016",
+        "a017",
+        "a018"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a019",
+        "a020",
+        "a021"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 7 item group(s); 0/7 item equations valid. lineSum=93.00; subtotal=93; grandTotal=93. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.578Z",
+  "updatedAt": "2026-09-11T00:44:31.578Z"
+}

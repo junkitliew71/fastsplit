@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619507",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006619507.jpg",
+    "boxes": "SROIE2019/test/box/X51006619507.txt",
+    "entities": "SROIE2019/test/entities/X51006619507.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "1 S CAPPUCINO",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "4.70",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "1 S GREEN TEA LATTE",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "10.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "14.70"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "14.70"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0018",
+        "t0020",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029"
+      ],
+      "text": "GOLDEN ARCHES RESTAURANTS SDN BHD (65351-M) LEVEL 6, BANGUNAN TH, DAMANSARA UPTOWN3 NO.3, JALAN SS21/39,47400 PETALING JAYA SELANGOR (GST ID NO: 000504664064) MCDONALD'S DATARAN PAHLAWAN 2(#241) TEL NO. 06-2866-079 TAX INVOICE INV# 002411100014400 ORD #54 -REG #11- 03/12/2016 11:06:11 QTY ITEM TOTAL TAKEOUT TOTAL (INCL GST) TOTAL ROUNDED CASH TENDERED 15.00 CHANGE 0.30 TOTAL INCLUDES 6% GST 0.83 THANK YOU AND PLEASE COME AGAIN. CUSTOMER SERVICE HOTLINE : 03-2726-5600"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 2 item group(s); 0/2 item equations valid. lineSum=14.70; subtotal=missing; grandTotal=14.7. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.414Z",
+  "updatedAt": "2026-09-11T00:44:25.414Z"
+}

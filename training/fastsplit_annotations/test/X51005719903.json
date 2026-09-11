@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005719903",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005719903.jpg",
+    "boxes": "SROIE2019/test/box/X51005719903.txt",
+    "entities": "SROIE2019/test/entities/X51005719903.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "2 CHOCTOP",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "4.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "1 MCFLURRYOREOS",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "4.50",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "8.50"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "8.50"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0020",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033"
+      ],
+      "text": "GERBANG ALAF RESTAURANTS SDN BHD (65351-M) FORMERLY KNOWN AS GOLDEN ARCHES RESTAURANTS SDN BHD LICENSEE OF MCDONALD'S LEVEL 6, BANGUNAN TH, DAMANSARA UPTOWN3 NO. 3, JALAN SS21/39, 47400 PETALING JAYA SELANGOR (GST ID NO: 000504664064) MCDONALD'S MRR2 KEPONG DT (#251) TEL NO. 03-6259-6498 TAX INVOICE INV# 002511900167877 ORD #41 -REG #19- 11/03/2018 14:31:11 QTY ITEM TOTAL TAKEOUT TOTAL (INCL GST) TOTAL ROUNDED CASH TENDERED CHANGE TOTAL INCLUDES 6% GST 10.00 1.50 0.48 THANK YOU AND PLEASE COME AGAIN."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 2 item group(s); 0/2 item equations valid. lineSum=8.50; subtotal=missing; grandTotal=8.5. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.131Z",
+  "updatedAt": "2026-09-11T00:44:24.131Z"
+}

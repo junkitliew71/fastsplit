@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006913073",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006913073.jpg",
+    "boxes": "SROIE2019/train/box/X51006913073.txt",
+    "entities": "SROIE2019/train/entities/X51006913073.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "0.61"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043"
+      ],
+      "text": "UNIHAKKA INTERNATIONAL SDN BHD 27 MAY 2018 18:25 (867388-U) 12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR TAX INVOICE INVOICE# : OR18052702160246 ITEM QTY TOTAL SR I00100000053- HERBAL TEA (ICED) $2.00 1 $2.00 SR I00100000035- 1 MEAT + 3 VEGE $7.10 1 $7.10 SR I00100000170- IMPORTED VEGGIES $1.60 1 $1.60 TOTAL AMOUNT: $10.70 GST @6%: $0.61 NETT TOTAL: $10.70 PAYMENT MODE AMOUNT CASH CHANGE $10.70 $0.00 GST SUMMARY AMOUNT($) TAX($) SR = GST @6% 10.09 GST REG #000656195584 BAR WANG RICE@PERMAS JAYA (PRICE INCLUSIVE OF GST) THANK YOU & COME AGAIN! LIKE AND FOLLOW US ON FACEBOOK! FACEBOOK.COM/BARWANGRICE"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:30.309Z",
+  "updatedAt": "2026-09-11T00:44:30.309Z"
+}

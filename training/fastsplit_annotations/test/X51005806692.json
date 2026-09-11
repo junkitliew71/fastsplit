@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005806692",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005806692.jpg",
+    "boxes": "SROIE2019/test/box/X51005806692.txt",
+    "entities": "SROIE2019/test/entities/X51005806692.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "200SHEET COMPACT SERVIETTES (NTE)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "1 PC",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "0.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "3.30 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0032",
+        "t0033"
+      ],
+      "text": "1.5\" RUBBER BAND 1 200G *",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "0.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "3.60 SR",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0037",
+        "t0038"
+      ],
+      "text": "PP 3X5 04 1 200G *",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "0.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "2.50 SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "18MMX90Y OPP TAPE",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a012",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "1 PC",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a013",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "0.00",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "1.60 SR",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0048"
+      ],
+      "text": "911 TAPE DISPENSER",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a016",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "1 PC",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a017",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0052"
+      ],
+      "text": "0.00",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a018",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "8.60 SR",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a019",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0054"
+      ],
+      "text": "PSI-890 PENSONIC DRY IRON WITH SPRAY",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a020",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0055"
+      ],
+      "text": "1 PC",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a021",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0058"
+      ],
+      "text": "0.00",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a022",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0059"
+      ],
+      "text": "49.90 SR",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a023",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0060"
+      ],
+      "text": "AP-17 APRON PLAIN CLOTH",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a024",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0061"
+      ],
+      "text": "20 PC",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a025",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0064"
+      ],
+      "text": "0.00",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a026",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0065"
+      ],
+      "text": "218.00 SR",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a027",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0066"
+      ],
+      "text": "TALI UKURAN",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a028",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0069"
+      ],
+      "text": "1.00",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a029",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0070"
+      ],
+      "text": "0.00",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a030",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0071"
+      ],
+      "text": "1.00 SR",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a031",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0072"
+      ],
+      "text": "CC-100 100PC CITE CANDLE",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a032",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0073"
+      ],
+      "text": "1 PC",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a033",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0076"
+      ],
+      "text": "0.00",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a034",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0077"
+      ],
+      "text": "22.90 SR",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a035",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0078"
+      ],
+      "text": "F1502 SCISSOR 08C (CH) (TLC)",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a036",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0081"
+      ],
+      "text": "6.00",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a037",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0082"
+      ],
+      "text": "0.00",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a038",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0083"
+      ],
+      "text": "36.00 SR",
+      "itemId": "item-010"
+    },
+    {
+      "id": "a039",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0084"
+      ],
+      "text": "2KG HC KITCHEN SCALE",
+      "itemId": "item-011"
+    },
+    {
+      "id": "a040",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0085"
+      ],
+      "text": "1 PC",
+      "itemId": "item-011"
+    },
+    {
+      "id": "a041",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0088"
+      ],
+      "text": "0.00",
+      "itemId": "item-011"
+    },
+    {
+      "id": "a042",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0089"
+      ],
+      "text": "19.90 SR",
+      "itemId": "item-011"
+    },
+    {
+      "id": "a043",
+      "label": "SERVICE_CHARGE",
+      "tokenIds": [
+        "t0097"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a044",
+      "label": "TAX",
+      "tokenIds": [
+        "t0095"
+      ],
+      "text": "346.51"
+    },
+    {
+      "id": "a045",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0098"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a046",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0101"
+      ],
+      "text": "367.30"
+    },
+    {
+      "id": "a047",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0028",
+        "t0029",
+        "t0034",
+        "t0039",
+        "t0044",
+        "t0045",
+        "t0050",
+        "t0051",
+        "t0056",
+        "t0057",
+        "t0062",
+        "t0063",
+        "t0067",
+        "t0068",
+        "t0074",
+        "t0075",
+        "t0079",
+        "t0080",
+        "t0086",
+        "t0087",
+        "t0090",
+        "t0091",
+        "t0092",
+        "t0093",
+        "t0094",
+        "t0096",
+        "t0099",
+        "t0100",
+        "t0102",
+        "t0103",
+        "t0104",
+        "t0105",
+        "t0106",
+        "t0107"
+      ],
+      "text": "TAX INVOICE GREAT ZONE HOUSEHOLD CENTRE SDN BHD (801049-U) 60 & 62. JALAN CIKU, 86000,KLUANG GST REG.: 001833082880 DOCUMENT NO. : DATE : DEBTOR : MEMBER : TERMINAL : CASHIER : KLG0201130227 18/02/2018 06:08:59 PM KLG0201 KLG2 DESC U.PRICE DISC AMOUNT TAX QTY RM RM CODE * 3.30 3.60 2.50 * 1.60 * 8.60 * 49.90 * 10.90 1 PC * * 22.90 6 PC * * 19.90 SUB TATAL (EXCLUSIVE GST) : GST 6% : SERVICE CHARGE : ROUNDING ADJUSTMENT : ROUNDED TOTAL (RM): 20.79 367.30 CREDIT CARD GST SUMMARY AMOUNT(RM) TAX(RM) SR @ 6% 346.51 20.79"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a008",
+        "a009",
+        "a010"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a011",
+        "a012",
+        "a013",
+        "a014"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a015",
+        "a016",
+        "a017",
+        "a018"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a019",
+        "a020",
+        "a021",
+        "a022"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a023",
+        "a024",
+        "a025",
+        "a026"
+      ]
+    },
+    {
+      "id": "item-008",
+      "assignmentIds": [
+        "a027",
+        "a028",
+        "a029",
+        "a030"
+      ]
+    },
+    {
+      "id": "item-009",
+      "assignmentIds": [
+        "a031",
+        "a032",
+        "a033",
+        "a034"
+      ]
+    },
+    {
+      "id": "item-010",
+      "assignmentIds": [
+        "a035",
+        "a036",
+        "a037",
+        "a038"
+      ]
+    },
+    {
+      "id": "item-011",
+      "assignmentIds": [
+        "a039",
+        "a040",
+        "a041",
+        "a042"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 11 item group(s); 0/11 item equations valid. lineSum=367.30; subtotal=missing; grandTotal=367.3. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.444Z",
+  "updatedAt": "2026-09-11T00:44:24.444Z"
+}

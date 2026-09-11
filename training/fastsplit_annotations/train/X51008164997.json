@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008164997",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008164997.jpg",
+    "boxes": "SROIE2019/train/box/X51008164997.txt",
+    "entities": "SROIE2019/train/entities/X51008164997.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "CAT FISH ITEM",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "D 120.00 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022",
+        "t0024"
+      ],
+      "text": "D VAGE ITEM",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "18.00 SR",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0026",
+        "t0028"
+      ],
+      "text": "D WHITE RICE",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "5.50 SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0030",
+        "t0032"
+      ],
+      "text": "D BEVERAGE",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a011",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "1",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "5.00 SR",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a013",
+      "label": "TAX",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "148.50"
+    },
+    {
+      "id": "a014",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "148.50"
+    },
+    {
+      "id": "a015",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0033",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053"
+      ],
+      "text": "ONE ONE THREE SEAFOOD RESTAURANT SDN BHD (1120908-M) NO.1, TAMAN SRI DENGKIL, JALAN AIR HITAM 43800 DENGKIL, SELANGOR. (GST REG. NO : 000670224384) TAX INVOICE TABLE 37 BILL#:V001-540417 ORDER#: 140523 DATE : 15-06-2018 11:35:35 CASHIER: 113 CASHIER PAX(S): 0 QTY DESCRIPTION TOTAL TAX TOTAL (EXCLUDING GST): TOTAL (INCLUSIVE OF GST): 148.50 TOTAL : 148.50 CLOSED: 1 15-06-2018 2:08:44 SERVER: 113 CASHIER CASH : 148.50 GST SUMMARY AMOUNT(RM) TAX(RM) (@ 0%) 0.00 **** THANK YOU **** PLEASE COME AGAIN SR"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008",
+        "a009"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a010",
+        "a011",
+        "a012"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 4 item group(s); 0/4 item equations valid. lineSum=148.50; subtotal=missing; grandTotal=148.5. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.804Z",
+  "updatedAt": "2026-09-11T00:44:31.804Z"
+}

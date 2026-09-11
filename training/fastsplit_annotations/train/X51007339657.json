@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007339657",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51007339657.jpg",
+    "boxes": "SROIE2019/train/box/X51007339657.txt",
+    "entities": "SROIE2019/train/entities/X51007339657.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "1/2\" PVC BIB TAP ??",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "2.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "2.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "9001 BM SEALING TAPE (YELLOW) ???",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "0.50",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "0.50",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "TAX",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "2.50"
+    },
+    {
+      "id": "a010",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a011",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "2.50"
+    },
+    {
+      "id": "a012",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0025",
+        "t0027",
+        "t0031",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0042",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0063",
+        "t0064"
+      ],
+      "text": "AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD 822737-X NO. 17-G, JALAN SETIA INDAH (X) U13/X, SETIA ALAM, SEKSYEN U13, 40170 SHAH ALAM, TEL: 012 - 6651783 FAX: 03 - 33623608 GST NO: 000394528768 SIMPLIFIED TAX INVOICE CASH RECEIPT #: CSP0422102 DATE: 25/12/2017 SALESPERSON : AH019 TIME: 15:46:00 ITEM QTY U/P AMOUNT (RM) (RM) 4536000000012 S 2000070000010 S TOTAL QUANTITY 2 SUB-TOTAL (GST) DISC ROUNDING TOTAL CASH CHANGE 0.00 10.00 7.50 *GST @ 6% INCLUDED IN TOTAL GST SUMMARY CODE AMOUNT % TAX/AMT SR 2.36 6 0.14 TAX TOTAL: 0.14 GOODS SOLD ARE NOT REFUNDABLE, THANK YOU FOR CHOOSING US. PLS PROVIDE ORIGINAL BILL FOR GOODS EXCHANGE WITHIN 1 WEEK FROM TRANSACTION GOODS MUST BE IN ORIGINAL STATE TO BE ENTITLED FOR EXCHANGE."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 2 item group(s); 2/2 item equations valid. lineSum=2.50; subtotal=missing; grandTotal=2.5. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:30.889Z",
+  "updatedAt": "2026-09-11T00:44:30.889Z"
+}

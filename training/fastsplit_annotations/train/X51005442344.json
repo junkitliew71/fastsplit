@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005442344",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005442344.jpg",
+    "boxes": "SROIE2019/train/box/X51005442344.txt",
+    "entities": "SROIE2019/train/entities/X51005442344.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "10\"WING COMPASS",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "48.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "50.88",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "50.88",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "1/8\"-3/4\" 12PCS HOLLOW PUNCH SET",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "5736",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "60.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "50.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "TAX",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "95.17"
+    },
+    {
+      "id": "a010",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a011",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0055"
+      ],
+      "text": "100.90"
+    },
+    {
+      "id": "a012",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0034",
+        "t0037",
+        "t0038",
+        "t0041",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0048",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0063",
+        "t0064",
+        "t0065",
+        "t0066",
+        "t0067",
+        "t0068",
+        "t0069",
+        "t0070",
+        "t0071"
+      ],
+      "text": "YONG TAT HARDWARE TRADING GOODS SOLD ARE NOT RETURNABLE,THANK YOU (JM0292487-D) NO4,JALAN PERJIRANAN 10, TAMAN AIR BIRU, 81700 PASIR GUDANG, JOHOR. TEL : 07-2614733 FAX : 07-2514733 YONGTAT99@YAHOO.COM.MY GST ID : 001570349056 TAX INVOICE DOC NO. : CS00035863 DATE: 13/03/2018 CASHIER : USER TIME: 12:49:00 SALESPERSON: REF: (GST) (GST) ITEM QTY S/PRICE S/PRICE AMOUNT TAX 2697 1.00 PCS SR 1.00 SET 47.17 SR TOTAL QTY: 2 100.88 TOTAL SALES(EXCLUDING GST) : DISCOUNT : TOTAL GST : 5.71 ROUNDLNG : 0.02 TOTAL SALES(INCLUSIVE OF GST) : CASH : 101.00 CHANGE : 0.10 GST SUMMARY TAX CODE % AMT(RM) TAX(RM) SR 6 95.17 5.71 TOTAL : 95.17 5.71"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 2 item group(s); 0/2 item equations valid. lineSum=100.88; subtotal=missing; grandTotal=100.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.892Z",
+  "updatedAt": "2026-09-11T00:44:26.892Z"
+}

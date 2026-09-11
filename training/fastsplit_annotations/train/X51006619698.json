@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619698",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006619698.jpg",
+    "boxes": "SROIE2019/train/box/X51006619698.txt",
+    "entities": "SROIE2019/train/entities/X51006619698.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "RM 21.00"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035"
+      ],
+      "text": "MR. D.I.Y. (M) SDN BHD CO-REG:860671-D LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR (GST ID NO :000306020352) (SELAYANG MALL) -TAX INVOICE- BASKET W/HOOK 9314# *S UF31/3-41/ - 12/144 6934091453268 1 X TOILET PAPER HOLDER BWJ-2503# *S W-18 - 24 6946208425037 1 X 17.50 ITEM(S) : 2 QTY(S) : 2 TOTAL INCL. GST@6% CASH RM 21.00 GST @6% INCLUDED IN TOTAL RM 1.19 25-01-16 11:59 SH01 ZJ08 T3 R000276342 OPERATOR SLC - NOR RUZITA EXCHANGE ARE ALLOWED WITHIN 3 DAY WITH RECEIPT. STRICTLY NO CASH REFUND. 3.50 3.50 17.50"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.873Z",
+  "updatedAt": "2026-09-11T00:44:29.873Z"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619869",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006619869.jpg",
+    "boxes": "SROIE2019/test/box/X51006619869.txt",
+    "entities": "SROIE2019/test/entities/X51006619869.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "1.31"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "23.20"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036"
+      ],
+      "text": "HOME'S HARMONY @ 1 UTAMA SHOPPING CENTRE MONSIEUR ( M ) SDN. BHD. ( 121889-W ) ( GST REG. NO. 000992739328 ) LOT S319A, 2ND FLOOR, 1 UTAMA SHOPPING CENTRE - PHASE 2 PERSIARAN BANDAR UTAMA, 47800 PETALING JAYA. MALAYSIA TEL. 03-7729 9662 FAX. 03-7726 8124 TAX INVOICE 12/06/2016-13:30:10-28-NORBAIZURA BT-101 -002 RECEIPT NO. : 138352 1) 400001-HH-STORG-BLUE-STD <ADMIN> HH MILTON NYLON BASKET-HMT143188 1X 29.00-( 20%= 23.20 1 0.00 23.20 ROUNDING ADJ TOTAL GST 6% INCLUDED - CASH CHANGE MEMBER PURCHASE : N15046033 - LEE MEI YEIN 50.20 27.00 THANK YOU GOODS SOLD ARE NOT REFUNDABLE. 5.80) ="
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=23.2. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.579Z",
+  "updatedAt": "2026-09-11T00:44:25.579Z"
+}

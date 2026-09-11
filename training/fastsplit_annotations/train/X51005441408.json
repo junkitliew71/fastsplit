@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005441408",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005441408.jpg",
+    "boxes": "SROIE2019/train/box/X51005441408.txt",
+    "entities": "SROIE2019/train/entities/X51005441408.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "HEINEKEN (5 BTL)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "2 X",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "95.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "190.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "10.75"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "190.00"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043"
+      ],
+      "text": "32 PUB & BISTRO OWN BY CNU TRADING 78G, JALAN SS21/62, DAMANSARA UTAMA, 47400 PETALING JAYA. (GST REG. NO : 000416321536) TAX INVOICE TABLE 5 INV NO. 504233 PAX(S): 0 DATE : 10-03-2018 23:03:06 CASHIER: CHEN DESCRIPTION QTY U.PRICE TOTAL TAX SR TOTAL (EXCLUDING GST): GST PAYABLE: TOTAL (INCLUSIVE OF GST): 190.00 TOTAL: CLOSED: 32 11-03-2018 00:32:02 SERVER: CHEN CASH : 200.00 CHANGE : 10.00 GST SUMMARY AMOUNT (RM) TAX (RM) SR (@ 6%) **** THANK YOU ****"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 1/1 item equations valid. lineSum=190.00; subtotal=missing; grandTotal=190. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.814Z",
+  "updatedAt": "2026-09-11T00:44:26.814Z"
+}

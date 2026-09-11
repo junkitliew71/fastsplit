@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006857265",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006857265.jpg",
+    "boxes": "SROIE2019/train/box/X51006857265.txt",
+    "entities": "SROIE2019/train/entities/X51006857265.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "31.47"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "-0.02"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "31.45"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0016",
+        "t0018",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044"
+      ],
+      "text": "MPH BOOKSTORES SDN BHD GST NO: 000542572544 MPH ONE UTAMA PHASE 2 LOT S319, 2ND FLOOR, 1 UTAMA SHOPPING CENTRE, NO1, LEBUH BANDAR UTAMA,47800 P.JAYA TEL:03-77259003 FAX:03-77224003 STICKERS & OTHER GIFT 2312475009906 3X10.49 31.47 S TOTAL AMOUNT(INCL. GST) ROUNDING TOTAL CASH 50.00 CHANGE 18.55 Z - 0% GST 0.00 0.00 S- 6% GST 29.69 1.78 ITEMS: 3 CASHIER: TRAIN2 TRAINEE STAFF INVOICE NO: 008558 TRANS: 009628 SHF:1 POS:12 04BFRTL 11/12/2017 21:42: 10 GOODS SOLD ARE NON-RETURNABLE EXCHANGES MAY BE MADE FOR BOOKS ONLY WITHIN 7 DAYS FROM THE DATE OF PURCHASE WITH THIS RECEIPT (CONDITIONS APPLY) THANK YOU FOR SHOPPING AT MPH AT ONE UTAMA"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=31.45. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:30.156Z",
+  "updatedAt": "2026-09-11T00:44:30.156Z"
+}

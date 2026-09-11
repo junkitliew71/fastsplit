@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007846321",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51007846321.jpg",
+    "boxes": "SROIE2019/test/box/X51007846321.txt",
+    "entities": "SROIE2019/test/entities/X51007846321.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0008",
+        "t0009"
+      ],
+      "text": "CHICKEN BLACK PEPPER SAUCE",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "37.60",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0010"
+      ],
+      "text": "CHIC PASTA W TOMATO",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "14.80",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0011"
+      ],
+      "text": "GREEN TEA",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "4.80",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0012"
+      ],
+      "text": "LEMON TEA",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "5.80",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0013"
+      ],
+      "text": "MASHED POTATO",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a010",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "5.00",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a011",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "MIXED COMBO",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "36.80",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "MOJITO",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a014",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "0.00",
+      "itemId": "item-007"
+    },
+    {
+      "id": "a015",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0016",
+        "t0017"
+      ],
+      "text": "SEAFOOD PASTA W O/OIL-LESS SPICY",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "15.80",
+      "itemId": "item-008"
+    },
+    {
+      "id": "a017",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "SUB-TOTAL",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a018",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "120.60",
+      "itemId": "item-009"
+    },
+    {
+      "id": "a019",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "DISCOUNT 20.00 %"
+    },
+    {
+      "id": "a020",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "103.85"
+    },
+    {
+      "id": "a021",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0036",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053"
+      ],
+      "text": "CHEF HENRY RIBS HOUSE ( JM0828301-X ) 4, JALAN KEBUDAYAAN 1 TAMAN UNIVERSITI 81300, SKUDAI TEL: 016-7057219 INVOICE NO: 001853 AMT (RM) 2@18.80 1@14.80 1@4.80 1@5.80 1@5.00 1@36.80 1@0.00 1@15.80 ADJUSTMENT 16.76 0.01 TOTAL (RM) : CASH (RM) : CHANGE (RM) : 200.00 96.15 QUANTITY COUNT 21:07:08 05/06/2018 THANK YOU.PLEASE COME AGAIN!! :"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a009",
+        "a010"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-007",
+      "assignmentIds": [
+        "a013",
+        "a014"
+      ]
+    },
+    {
+      "id": "item-008",
+      "assignmentIds": [
+        "a015",
+        "a016"
+      ]
+    },
+    {
+      "id": "item-009",
+      "assignmentIds": [
+        "a017",
+        "a018"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 9 item group(s); 0/9 item equations valid. lineSum=241.20; subtotal=missing; grandTotal=103.85. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.126Z",
+  "updatedAt": "2026-09-11T00:44:26.126Z"
+}

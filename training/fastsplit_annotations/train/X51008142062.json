@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008142062",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008142062.jpg",
+    "boxes": "SROIE2019/train/box/X51008142062.txt",
+    "entities": "SROIE2019/train/entities/X51008142062.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "PASIR HALUS (D)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0043"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "65.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "68.90",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0052"
+      ],
+      "text": "341.00"
+    },
+    {
+      "id": "a006",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0055"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a007",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0061"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a008",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0067"
+      ],
+      "text": "361.46"
+    },
+    {
+      "id": "a009",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0053",
+        "t0054",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0062",
+        "t0063",
+        "t0064",
+        "t0065",
+        "t0066",
+        "t0068",
+        "t0069",
+        "t0070",
+        "t0071",
+        "t0072",
+        "t0073",
+        "t0074",
+        "t0075",
+        "t0076",
+        "t0077",
+        "t0078",
+        "t0079",
+        "t0080",
+        "t0081",
+        "t0082",
+        "t0083"
+      ],
+      "text": "KEDAI PAPAN YEW CHUAN (0005583085-K) LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR. TEL : 03-87686092 FAX : 03-87686092 GST ID : 000781500416 TAX INVOICE BILL TO : SUCI ALAM JAYA TRANSPORT NO 1 JALAN AMAN 2 TAMAN DESA 43800 DENGKIL SELANGOR 017-6057770 DOC NO. : CS00012389 DATE: 02/05/2018 CASHIER : USER TIME: 14:17:00 SALESPERSON : REF.: ITEM QTY S/PRICE (GST) (GST) S/PRICE AMOUNT TAX 100211 BATU SIMEN 1,200 0.23 0.24 292.56 SR 101870 SR TOTAL QTY: 1,201 361.46 TOTAL SALES (EXCLUDING GST) : DISCOUNT : TOTAL GST : 20.46 ROUNDING : TOTAL SALES (INCLUSIVE OF GST) : 361.46 CASH : CHANGE : 0.00 GST SUMMARY TAX CODE % AMT (RM) TAX (RM) SR 6 341.00 20.46 TOTAL : 341.00 20.46 GOODS SOLD ARE NOT RETURNABLE, THANK YOU."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=68.90; subtotal=missing; grandTotal=361.46. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.688Z",
+  "updatedAt": "2026-09-11T00:44:31.688Z"
+}

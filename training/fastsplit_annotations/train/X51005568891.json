@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005568891",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005568891.jpg",
+    "boxes": "SROIE2019/train/box/X51005568891.txt",
+    "entities": "SROIE2019/train/entities/X51005568891.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0016",
+        "t0019"
+      ],
+      "text": "2 1\" TOWEL ROD BRACKET(END)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "6.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "12.00 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0020",
+        "t0023"
+      ],
+      "text": "2 3/4\" TOWEL ROD BRACKET",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "4.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "8.00 SR",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0024",
+        "t0027"
+      ],
+      "text": "5 3/4\" TOWEL ROD BRACKET(END)",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "4.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "20.00 SR",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "4 3/4\"TOWEL ROD",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "5.50",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "22.00 SR",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a013",
+      "label": "TAX",
+      "tokenIds": [
+        "t0063"
+      ],
+      "text": "277.00"
+    },
+    {
+      "id": "a014",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a015",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0061"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a016",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0080"
+      ],
+      "text": "277.00"
+    },
+    {
+      "id": "a017",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0062",
+        "t0064",
+        "t0065",
+        "t0066",
+        "t0067",
+        "t0068",
+        "t0069",
+        "t0070",
+        "t0071",
+        "t0072",
+        "t0073",
+        "t0074",
+        "t0075",
+        "t0076",
+        "t0077",
+        "t0078",
+        "t0079",
+        "t0081",
+        "t0082"
+      ],
+      "text": "HON HWA HARDWARE TRADING COMPANY REG. NO. : 001055194X NO 37, JALAN MANIS 7, TAMAN SEGAR, 56100 CHERAS, KUALA LUMPUR. +603-9130 2672 GST REG : 001125220352 TAX INVOICE CB#: 69158 08/02/2017 3:43:01 PM M# : C1 - 0 CASHIER : CASH3 - QTY DESCRIPTION PRICE TOTAL(RM) BRACKET(ROUND) 1 25MM X 10 WALL PLUG 3.50 3.50 SR 1 SANDFLEX SAW 4.50 4.50 SR BLADE 18T 1 SCREW 7.00 7.00 SR 5 3/4\" V BRACKET 1.50 7.50 SR 6 1\" S/STEEL ROD 15.80 94.80 SR ITEM DISCOUNT 17 3/4\" ALUMINIUM ROD 5.80 98.60 SR 44 TYPE: 10 TOTAL 277.90 DISCOUNT: 0.90 ROUNDING ADJ TOTAL INCLUSIVE GST: CASH 277.00 GST SUMMARY CODE % NET AMT GST TOTAL(RM) SR SR 261.32 15.68 277.00 TOTAL 261.32 15.68 THANK YOU ! & PLEASE COME AGAIN !! GOODS SOLD ARE NOT RETURNABLE FOR REFUND OR EXCHANGE !!"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008",
+        "a009"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a010",
+        "a011",
+        "a012"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 4 item group(s); 0/4 item equations valid. lineSum=62.00; subtotal=missing; grandTotal=277. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.167Z",
+  "updatedAt": "2026-09-11T00:44:27.167Z"
+}

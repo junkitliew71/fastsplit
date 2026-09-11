@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006466060",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006466060.jpg",
+    "boxes": "SROIE2019/train/box/X51006466060.txt",
+    "entities": "SROIE2019/train/entities/X51006466060.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "RM1.30"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "RM0.02"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "RM1.38"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032"
+      ],
+      "text": "3180404 WESTERN EASTERN STATIONERY SDN. BHD CO REG NO : 210038-K GST ID : 000517095424 42-46, JLN SULTAN AZLAN SHAH 51200 KUALA LUMPUR TEL : 03-4043 7678 TAX INVOICE REG 30-04-2018 15:57 C01 KL 001 038354 B/W P.S A4/A3 S RM1.38 1 NO GST TA AMT GST 6% RM0.08 TOTAL ROUNDING CASH RM1.40 TAX INVOICE OF GST GOODS SOLD ARE NOT RETURNABLE"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=1.38. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.215Z",
+  "updatedAt": "2026-09-11T00:44:29.215Z"
+}

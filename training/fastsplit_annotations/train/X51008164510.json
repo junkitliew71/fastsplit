@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008164510",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008164510.jpg",
+    "boxes": "SROIE2019/train/box/X51008164510.txt",
+    "entities": "SROIE2019/train/entities/X51008164510.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "RM152.00"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "RM0.00"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0021",
+        "t0022",
+        "t0023"
+      ],
+      "text": "OCEAN LC PACKAGING ENTERPRISE GST NO: 000945983488 41-1, JLN RADIN ANUM 2, SRI PETALING, 57000 KUALA LUMPUR. H/P:012-3163818 FAX:0390542829 TAX INVOICE #027553 27/06/2018 12:45 01 LAI 000000 4X 38.00 RM152.00 OTHERS SUBTOTAL GST TAXABLE RM152.00 GST 0% ITEMS 4Q CASH RM152.00"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=152; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.752Z",
+  "updatedAt": "2026-09-11T00:44:31.752Z"
+}

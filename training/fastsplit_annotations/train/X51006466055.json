@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006466055",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006466055.jpg",
+    "boxes": "SROIE2019/train/box/X51006466055.txt",
+    "entities": "SROIE2019/train/entities/X51006466055.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "0.01"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "19.99"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051"
+      ],
+      "text": "0.00 3180404 * * * * * * THANK YOU * * * * * * ===== PLEASE VISIT US AGAIN ===== GOODS SOLD ARE NOT REFUNDABLE RETURNABLE Or EXCHANGEABLE CHECKERS HYPERMARKET SDN BHD (JALAN KLANG LAMA) LOT 2942 & 2945, JLN SERI SENTOSA 8, SERI SENTOSA, OFF JLN KLANG LAMA, 58000 KUALA LUMPUR. COMPANY NO: 564429-W GST NO: 002013487104 TEL : 03 - 7781 8333 DATE/TIME : 20180428/191204 CASHIER : AZIZAH CNTR/MCH NO SHIFT NO : 3 INVOICE NO. **** OFFICIAL RECEIPT **** 1) SAJI MINYAK MASAK - 5KG(Z) (BTL) 1 @ 22.90 - (13%= 19.99 TOTAL 19.99 ROUNDING ADJ ROUNDING 20.00 GST INCLUDED CASH 20.00 CHANGE 0.00 TOTAL LOADING CHARGES 0.00 NO OF ITEM(S) : 1 GST SUMMARY AMOUNT(RM) TAX(RM) ZRL@0%(Z) 0.00 : CHJKL/222 : 222221980 2.91) ="
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=19.99. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.200Z",
+  "updatedAt": "2026-09-11T00:44:29.200Z"
+}

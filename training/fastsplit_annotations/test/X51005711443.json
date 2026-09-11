@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005711443",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005711443.jpg",
+    "boxes": "SROIE2019/test/box/X51005711443.txt",
+    "entities": "SROIE2019/test/entities/X51005711443.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "TEH (B)",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "1 X",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "2.20",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "2.20",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "CHAM (B)",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "1 X",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "2.20",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "2.20",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "BUNGA KEKWA",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "1 X",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "1.70",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "1.70",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "TAKE AWAY",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "3 X",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "0.20",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "0.60",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "TAX",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "0.37"
+    },
+    {
+      "id": "a018",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "6.70"
+    },
+    {
+      "id": "a019",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0021",
+        "t0026",
+        "t0031",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054"
+      ],
+      "text": "RESTORAN WAN SHENG 002043319-W NO.2, JALAN TEMENGGUNG 19/9, SEKSYEN 9, BANDAR MAHKOTA CHERAS, 43200 CHERAS, SELANGOR GST REG NO: 001335787520 TAX INVOICE INV NO.: 1057981 CASHIER: THANDAR DATE : 23-03-2018 13:28:55 DESCRIPTION QTY U.PRICE TOTAL TAX SR SR SR SR TATAL QTY: 6 TOTAL (EXCLUDING GST): 6.33 GST PAYABLE (6%): TOTAL (INCLUSIVE OF GST): 6.70 TOTAL: 6.70 CASH: GST SUMMARY AMOUNT (RM) TAX (RM) SR (@ 6%) 6.33 0.37"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 4 item group(s); 4/4 item equations valid. lineSum=6.70; subtotal=missing; grandTotal=6.7. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.011Z",
+  "updatedAt": "2026-09-11T00:44:24.011Z"
+}

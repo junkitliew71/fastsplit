@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005568855",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005568855.jpg",
+    "boxes": "SROIE2019/test/box/X51005568855.txt",
+    "entities": "SROIE2019/test/entities/X51005568855.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "SHOE WHITE SW1101*2S",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "4.29 T",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "MR C. TAPE REF WH624R-",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "31.99 T",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "KIT KAT 2F (PM) 17G",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "1.35 T",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0023",
+        "t0024",
+        "t0025"
+      ],
+      "text": "OXFORD-COIN BOX BTS RM10 VOUCHER ISSU FC GRIP BP0.5 BLK PK",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "4.20 T",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a009",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0063"
+      ],
+      "text": "140.65"
+    },
+    {
+      "id": "a010",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "-0.42"
+    },
+    {
+      "id": "a011",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0027",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0064",
+        "t0065",
+        "t0066",
+        "t0067",
+        "t0068",
+        "t0069",
+        "t0070",
+        "t0071",
+        "t0072",
+        "t0073",
+        "t0074",
+        "t0075",
+        "t0076",
+        "t0077",
+        "t0078",
+        "t0079",
+        "t0080",
+        "t0081",
+        "t0082",
+        "t0083",
+        "t0084"
+      ],
+      "text": "POPULAR BOOK CO. (M) SDN BHD (CO. NO. 113825-W) (GST REG NO. 001492992000) NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA CHERAS LEISURE MALL TEL : 03-91322435/437 23/12/17 15:53 SLIP NO.: 9050338975 AINAA TRANS: 309782 MEMBER CARD NO: 2002008362249 CARD EXPIRY: 31/08/20 DESCRIPTION AMOUNT MEMBER DISCOUNT; FC GRIP BP0.5 BLU PK 4.20 T MEMBER DISCOUNT; -0.42 3M GLUESTICK 7GM 4'S 10.59 T STAT-PROMO SPECIAL -3.69 PU F/C B/L A4 450'S 16.99 T STAT-PROMO SPECIAL -2.99 PLUS STAPLER SET 010E 8.89 T STAT-PROMO SPECIAL -3.89 FC EXM. ERS 4S 187016 3.90 T STAT-PROMO SPECIAL -0.91 S4 SUPER S M AKT SPM [BK] 9.90 Z REV-BTS PROMOTION -1.49 SUCCESS SPM ADD MATHS [BK] 37.00 Z REV-BTS PROMOTION -7.40 SUCCESS SPM SCI [BK] 35.70 Z REV-BTS PROMOTION -7.14 TOTAL RM INCL. OF GST MASTERCARD -140.65 ITEM COUNT 14 GST SUMMARY AMOUNT (RM) TAX (RM) T @ 6% 69.90 4.18 Z @ 0% 66.57 0.00 TOTAL SAVINGS -28.35 BE A POPULAR CARD MEMBER AND ENJOY SPECIAL DISCOUNTS THANK YOU. PLEASE COME AGAIN. WWW.POPULAR.COM.MY BUY CHINESE BOOKS ONLINE WWW.POPULARONLINE.COM.MY"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a007",
+        "a008"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 4 item group(s); 0/4 item equations valid. lineSum=41.83; subtotal=missing; grandTotal=140.65. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.594Z",
+  "updatedAt": "2026-09-11T00:44:23.594Z"
+}

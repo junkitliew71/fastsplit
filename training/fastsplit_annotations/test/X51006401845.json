@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006401845",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006401845.jpg",
+    "boxes": "SROIE2019/test/box/X51006401845.txt",
+    "entities": "SROIE2019/test/entities/X51006401845.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0012"
+      ],
+      "text": "TNL149/V070F/COOKING POT",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "1 X",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "26.90",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "26.90",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "26.90"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "DISCOUNT 0.00 %: 26.90"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0013",
+        "t0018",
+        "t0019",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036"
+      ],
+      "text": "BUY SELL TRADE SDN. BHD. 604412-X TAX INVOICE GST ID: 001869250560 2 & 2A, JALAN KASUARINA 1/KS 7, BANDAR BOTANIK, 41200 KLANG, SELANGOR CS NO.: 0007/0112423 04/02/2017 07:14PM SOLD TO: CASH DESCRIPTION AMOUNT(RM) SR TOTAL QTY: 1 TOTAL SALES INCLUSIVE GST CASH 27.00 VOUCHER 0.00 CHEQUE 0.00 CHANGE 0.10 GST SUMMARY AMOUNT(RM) TAX(RM) SR @ 6.00% 25.38 1.52 CASHIER: 435007 THANK YOU. PLEASE COME AGAIN"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 1/1 item equations valid. lineSum=26.90; subtotal=missing; grandTotal=26.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.885Z",
+  "updatedAt": "2026-09-11T00:44:24.885Z"
+}

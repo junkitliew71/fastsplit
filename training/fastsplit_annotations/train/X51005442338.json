@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005442338",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005442338.jpg",
+    "boxes": "SROIE2019/train/box/X51005442338.txt",
+    "entities": "SROIE2019/train/entities/X51005442338.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "28.60"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "0.07"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "28.60"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0037",
+        "t0039",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0063"
+      ],
+      "text": "PASAR MINI JIN SENG 379,JALAN PERMAS SATU, BANOAR BARU PERMAS JAYA 81750 PLENTONG,JOHOR. TEL : 07-3874904 (CO.NO. JM0195368-D) (GST NO. 000150511616) TAXINV:002-1550040 18/03/18 CASHIER : CASHTER2 1 VEGETABLES 2.20 ZRL 1 LTK OMEGA 5.70 ZRL 1 VEGETABLES 1.00 ZRL 1 VEGETABLES 2.00 ZRL 1 VEGETABLES 8.00 ZRL 1 SEAFOOD 8.50 ZRL 1 FISH BALL / CAKE 1.20 SR ITEM COUNT 7 SUBTOTAL: TL:RM 6% GST PAYMENT DETAILS CASH 100.00 CASH CHANGE 71.40 18/03/18 09:03 #002-1550040# CASHIER2 GST SUMMARY AMOUNT(RM) TAX(RM) SR ((@6%) 1.20 0.07 ZRL ((@6%) 27.40 0.00 THANK YOU PLEASE COME AGAIN *** GOODS SOLD ARE NOT REFUNOABLE PLUS IOS"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=28.6; grandTotal=28.6. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.876Z",
+  "updatedAt": "2026-09-11T00:44:26.876Z"
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005361946",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005361946.jpg",
+    "boxes": "SROIE2019/train/box/X51005361946.txt",
+    "entities": "SROIE2019/train/entities/X51005361946.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "RM 50.00"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "RM 37.10"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048"
+      ],
+      "text": "MR. D.I.Y. (M) SDN BHD (CO REG :860671-D) LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR (GST ID NO :000306020352) (TESCO MUTIARA DAMANSARA) TAX INVOICE SOURING PAD 1018-4 4S *S WA03 - 24/240 9555221301081 4 X EXCHANGE ARE ALLOWED WITHIN 2.80 11.20 SCISSOR G/FISH *S AD51 - 24/360 9064422 2 X OPERATOR TMDC - SAH BIJAY KUMAR 1.50 3.00 TRAILING SKT 5GN+SP 3X1.25MM CABLE 2 *S WA27 - 20 9553114461966 1 X 22.90 STRICTLY NO CASH REFUND . 7 DAYS WITH RECEIPT . 22.90 ITEM(S) : 3 QTY(S) : 7 TOTAL INCL. GST@6% CASH CHANGE RM 12.90 GST SUMMARY AMT(RM) TAX(RM) GST S@6% 35.00 2.10 14-03-18 21:49 SH03 ZJ20 T1 R000418193"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=37.1. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.679Z",
+  "updatedAt": "2026-09-11T00:44:26.679Z"
+}

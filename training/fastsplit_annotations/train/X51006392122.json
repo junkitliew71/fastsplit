@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006392122",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006392122.jpg",
+    "boxes": "SROIE2019/train/box/X51006392122.txt",
+    "entities": "SROIE2019/train/entities/X51006392122.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "45.00"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041"
+      ],
+      "text": "Z = 0% 4.00 0.00 THANK YOU AND DO VISIT US AGAIN CASHIER [P.NISANTHI] MACHINE [003] [19/06/17] [11:37] FIVE STAR CASH & CARRY (1365663-P) G.23 & G.22, PLAZA SERI SETIA, NO.1 JALAN SS 9/1, 47300 PJ, SELANGOR, TEL/FAX : 603-7877 9712 (POS 3) (GST NO.: 000610435072) TAX INVOICE RECEIPT NO.[00550388] 19/06/17 11:43 9555339300051 X 1 45.00 S [AKS]APPALAM 3KG QUANTITY OUT : 1 NET TOTAL : POSTED 45.00 CASH : GST SUMMARY AMOUNT(RM) TAX(RM) S = 6% 42.45 2.55 Z = 0% 0.00 0.00 THANK YOU AND DO VISIT US AGAIN CASHIER [P.NISANTHI] MACHINE [003] [19/06/17] [11:43]"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=45. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.854Z",
+  "updatedAt": "2026-09-11T00:44:28.854Z"
+}

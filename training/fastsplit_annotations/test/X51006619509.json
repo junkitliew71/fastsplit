@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619509",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006619509.jpg",
+    "boxes": "SROIE2019/test/box/X51006619509.txt",
+    "entities": "SROIE2019/test/entities/X51006619509.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "RM20.00"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "RM14.91"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025"
+      ],
+      "text": "GUDANG HASIL RESTAURANT SDN BHD (1157059-U) NO.33, LRG HANG JEBAT, MELAKA (GST ID:001706905600) MC #03 REG KER YUN 02-12-2016 12:33 PM 000093 PEANUT C.CRC200G RM7.90 S #9555798500023 TARO C.CRAC 200G RM7.90 S #9555798500016 2 NO SUBTOTAL RM15.80 CASH YOUR CHANGE RM4.20 GST TAX AMT GST 6% RM0.89 THANK YOU PLEASE COME AGAIN"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=20; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.421Z",
+  "updatedAt": "2026-09-11T00:44:25.421Z"
+}

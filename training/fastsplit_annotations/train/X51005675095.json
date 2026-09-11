@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005675095",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005675095.jpg",
+    "boxes": "SROIE2019/train/box/X51005675095.txt",
+    "entities": "SROIE2019/train/entities/X51005675095.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "RM0.23"
+    },
+    {
+      "id": "a002",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038"
+      ],
+      "text": "SOLARIS DUTAMAS SUN VICTORY SDN BHD (NO. 193573-M) LEVEL G2, BLOCK D1. SOLARIS DUTAMAS. NO. 1, JALAN DUTAMAS 1, 50480 KUALA LUMPUR. (GST ID NO: 000377700352) TEL: 03-6205 5386 TAX INVOICE P/S #07 A INV-NO. 0207140118000488 T/D #44 TICKET NO.028165 ENTRY TIME 14/01/2018 (SUN) 12:06 PAID TIME 14/01/2018 (SUN) 13:51 PARKING TIME 1:45 PARKING FEE RATE A RM4.00 AMOUNT RM3.77 GST 6.00 % TOTAL RM4.00 PAID RM4.00 CHANGE RM0.00 INCLUSIVE 6% GST THANK YOU"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.486Z",
+  "updatedAt": "2026-09-11T00:44:27.486Z"
+}

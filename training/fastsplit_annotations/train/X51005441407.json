@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005441407",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005441407.jpg",
+    "boxes": "SROIE2019/train/box/X51005441407.txt",
+    "entities": "SROIE2019/train/entities/X51005441407.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0020",
+        "t0021"
+      ],
+      "text": "S TIGER BUCKET GTG02",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "55.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "58.30",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "RM 5.83"
+    },
+    {
+      "id": "a006",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "RM 0.00"
+    },
+    {
+      "id": "a007",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "RM 0.02"
+    },
+    {
+      "id": "a008",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "RM 64.15"
+    },
+    {
+      "id": "a009",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0024",
+        "t0026",
+        "t0027",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0033",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053"
+      ],
+      "text": "GEOVENTURE TASTE OF THE WORLD SDN BHD 965857-A LOT 38, 39 101 BOULEVARD, JALAN KENARI 5, BANDAR PUCHONG JAYA, 47170 PUCHONG, SELANGOR TEL: 03 - 8079 0255 GST REG NO: 000136577024 RESERVATION NO: 010 - 7745055 SIMPLIFIED TAX INVOICE INVOICE :581355 CASHIER NINI POS NO:1 PAX : 0 DATE : 5/3/2018 22:52:33 TABLE NO : C38 ITEM QTY U/P(RM)DISC(%)AMT+GST(RM) 0+0 S SERVICE CHRG(INCL GST 6%) TOTAL SALES(INCL GST 6%) RM 64.13 ROUNDING ADJUSTMENT : TOTAL CASH RM 100.00 CHANGE RM 35.85 MAIN ITEM COUNT 1 TOTAL DISCOUNT GST SUMMARY AMOUNT (RM) TAX (RM) S 6% 60.50 3.63 Z 0% 0.00 0.00"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=58.30; subtotal=missing; grandTotal=64.15. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.806Z",
+  "updatedAt": "2026-09-11T00:44:26.806Z"
+}

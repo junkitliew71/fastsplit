@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008114284",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008114284.jpg",
+    "boxes": "SROIE2019/train/box/X51008114284.txt",
+    "entities": "SROIE2019/train/entities/X51008114284.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "RM 17.45"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "17.45"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034"
+      ],
+      "text": "MR. D.I.Y. (KUCHAI) SDN BHD (CO REG : 750441-W) LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR (GST ID NO :000473792512) (KEPONG) - TAX INVOICE - CYLINDRICAL LOCK 3871SS *S GA06-07 - 6/24 6942131718178 1 X 17.45 17.45 ITEM(S) : 1 QTY(S) : 1 TOTAL INCL. GST CASH RM 50.00 CHANGE RM 32.55 GST SUMMARY AMT(RM) TAX(RM) GST SR@0% 0.00 25-06-18 11:25 SH01 B003 T1 R000637565 OPERATOR KPOT - SHAHRUL NIZAM EXCHANGE ARE ALLOWED WITHIN 7 DAYS WITH RECEIPT. STRICTLY NO CASH REFUND."
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=17.45. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.490Z",
+  "updatedAt": "2026-09-11T00:44:31.490Z"
+}

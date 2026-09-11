@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006828200",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006828200.jpg",
+    "boxes": "SROIE2019/test/box/X51006828200.txt",
+    "entities": "SROIE2019/test/entities/X51006828200.txt"
+  },
+  "status": "complete",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0020",
+        "t0025"
+      ],
+      "text": "FG-H00030 KARAAGE",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "3.80",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "3.80",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0026",
+        "t0031"
+      ],
+      "text": "FG-H00088 OTM BEEF BUKKAKE L",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "17.80",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "17.80",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "21.60"
+    },
+    {
+      "id": "a010",
+      "label": "TAX",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "20.37"
+    },
+    {
+      "id": "a011",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0037"
+      ],
+      "text": "21.60"
+    },
+    {
+      "id": "a012",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0024",
+        "t0030",
+        "t0032",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0038",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0059"
+      ],
+      "text": "YHM MID VALLEY LOT T-015B, LEVEL 3, MID VALLEY CITY, LINGKARAN SYED PUTRA, 59200 KUALA LUMPUR MALAYSIA. 002105827328 * TAX INVOICE * ORD 1000758 15/12/2017 08:00 PM RECEIPT NO.:001-1402935 PAX: CASHIER EAT IN ITEM QTY U.PRICE AMOUNT TAX SR SR SUBTOTAL TOTAL 21.60 TOTAL:MYR TOTAL EXCLUDED TAX 1.23 PAYMENT DETAIL CASH 22.00 CASH CHANGE 0.40 TAX SUMMARY TAX CODE AMOUNT(MYR) TAX(MYR) SR 6 20.37 1.23 THANK YOU PLEASE COME AGAIN. O. 1 :CASHIER %"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 2 item group(s); 2/2 item equations valid. lineSum=21.60; subtotal=21.6; grandTotal=21.6. Validation passed.",
+  "createdAt": "2026-09-11T00:44:25.663Z",
+  "updatedAt": "2026-09-11T00:44:25.663Z"
+}

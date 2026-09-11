@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51007846360",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51007846360.jpg",
+    "boxes": "SROIE2019/test/box/X51007846360.txt",
+    "entities": "SROIE2019/test/entities/X51007846360.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0017",
+        "t0018",
+        "t0019"
+      ],
+      "text": "599914018 1/2 SPRI 598314504 SOFT BUN 2 PC @ 0.90",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "14.00 SR-0",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0020"
+      ],
+      "text": "599912000 MUSHROOM",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0029"
+      ],
+      "text": "3.90 SR-0",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "598314524 ADD-ON C",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "4.20 SR-0",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "599913501 CHICKEN",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "4.20 SR-0",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "999900369 15 MEATB",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a010",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "14.10 SR-0",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a011",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0024",
+        "t0025",
+        "t0026"
+      ],
+      "text": "598314505 MINIDISH 999900372 SOFT DRINK 2 GLASS @ 1.80",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "0.40 SR-0",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a013",
+      "label": "TAX",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a014",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0050"
+      ],
+      "text": "46.20"
+    },
+    {
+      "id": "a015",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0028",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0051",
+        "t0052",
+        "t0053"
+      ],
+      "text": "IKANO HANDEL SDN BHD (1074617K) IKEA TEBRAU NO.33, JALAN HARMONIUM TAMAN DESA TEBRAU 81100 JOHOR BAHRU GST NO. : 000115154944 TAX INVOICE SLIP: 0000000102000120921 DATE: 09/06/18 TIME: 6:10 TRANS: 602120917 STAFF: 98052 DESCRIPTION AMOUNT TX 1.80 SR-0 3.60 SR-0 TOTAL RM INCLUDING GST 0% ROUNDING ADJ. TOTAL ROUNDED CASH - SAFEPAY CHANGE 46.20 46.20 -100.00 53.80 GST SR-0 0% 46.20 0.00 AMT. EXCL. GST NO. OF ITEMS 10 THANK YOU. PLEASE COME AGAIN."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a009",
+        "a010"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a011",
+        "a012"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 6 item group(s); 0/6 item equations valid. lineSum=40.80; subtotal=missing; grandTotal=46.2. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.149Z",
+  "updatedAt": "2026-09-11T00:44:26.149Z"
+}

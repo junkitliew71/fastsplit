@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006620192",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006620192.jpg",
+    "boxes": "SROIE2019/test/box/X51006620192.txt",
+    "entities": "SROIE2019/test/entities/X51006620192.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "0.50"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "-0.02"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "8.80"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0024",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034"
+      ],
+      "text": "HOME'S HARMONY @ 1 UTAMA SHOPPING CENTRE MONSIEUR ( M ) SDN. BHD. ( 121889-W ) ( GST REG. NO. 000992739328 ) LOT S319A, 2ND FLOOR, 1 UTAMA SHOPPING CENTRE - PHASE 2 PERSIARAN BANDAR UTAMA, 47800 PETALING JAYA. MALAYSIA TEL. 03-7729 9662 FAX. 03-7726 8124 4.20) = TAX INVOICE 01/05/2016-13:19:16-29-NORBAIZURA BT-101 -002 RECEIPT NO. : 135914 1) 400007-HH-STORG-LIME-STD <CASHIER> HH MILTON NYLON BASKET-HMT143194 1X 14.00-( 30%= 8.82 1 0.00 8.82 ROUNDING ADJ TOTAL GST 6% INCLUDED - CASH 10.00 CHANGE 1.20 THANK YOU GOODS SOLD ARE NOT REFUNDABLE."
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=8.8. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.606Z",
+  "updatedAt": "2026-09-11T00:44:25.606Z"
+}

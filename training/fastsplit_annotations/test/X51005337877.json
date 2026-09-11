@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005337877",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005337877.jpg",
+    "boxes": "SROIE2019/test/box/X51005337877.txt",
+    "entities": "SROIE2019/test/entities/X51005337877.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022",
+        "t0024",
+        "t0025",
+        "t0027"
+      ],
+      "text": "1 KO NABE INANIWA UDON @ 24.00 1 GREEN TEA @ 1.00 1 GYOZA 5PCS @ 15.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "24.00 SR",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0029",
+        "t0030",
+        "t0032"
+      ],
+      "text": "1 GARLIC CHAHAN @ [T A]",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "6.00 SR",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "TOTAL :",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "4",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a007",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "46.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "TAX",
+      "tokenIds": [
+        "t0041"
+      ],
+      "text": "3.00"
+    },
+    {
+      "id": "a009",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "53.00"
+    },
+    {
+      "id": "a010",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0026",
+        "t0028",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053"
+      ],
+      "text": "UROKO JAPANESE CUISINE SDN BHD 22A-1, JALAN 17/54, SECTION 17, 46400 PETALING JAYA, SELANGOR. 03-7932 1023/0191 GST REG NO: 001126838272 BILL NO : 01H-25029 DATE : 20/03/2018 6:41:02 PM CASHIER : RESAN TABLE NO : S09 QTY DESCRIPTION AMOUNT 1.00 SR 15.00 SR DISCOUNT : (.00) SERVICE CHG 10.00% : 4.00 GST : GRAND TOTAL : 53.00 NET TOTAL : GST SUMMARY % AMOUNT(RM TAX (RM) SR 6.00 50.00 3.00"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 3 item group(s); 0/3 item equations valid. lineSum=76.00; subtotal=missing; grandTotal=53. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.324Z",
+  "updatedAt": "2026-09-11T00:44:23.324Z"
+}

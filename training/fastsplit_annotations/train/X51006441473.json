@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006441473",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006441473.jpg",
+    "boxes": "SROIE2019/train/box/X51006441473.txt",
+    "entities": "SROIE2019/train/entities/X51006441473.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "38.37"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "40.35"
+    },
+    {
+      "id": "a003",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "2.00"
+    },
+    {
+      "id": "a004",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "38.37"
+    },
+    {
+      "id": "a005",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0027",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0053",
+        "t0054",
+        "t0055",
+        "t0056",
+        "t0057",
+        "t0058"
+      ],
+      "text": "GUARDIAN HEALTH AND BEAUTY SDN BHD JALAN LOKE YEW BENTONG 90 GROUND FLOOR JALAN BENTONG TEL:09-222 6498 COMPANY REG #1101083-T GST REG #000899874816 RM 121093307 G BX TISSU 4X150 6.88 S 2X 6.88 121087265 HK BX TISS PO4 ^ 13.76 S 121095623 GDN CMINT H/WASHP3 12.90 S 121096057 GDN KTCH LILY500ML 6.90 S PWP121096057 2.07- SUBTOTAL TOTAL (GST INCL) CASH ROUNDING ADJUSTMENTS 0.02- CHANGE DUE YOUR SAVINGS FOR TODAY 7.53 GST - RATE GST EXCL GST AMT S 6% 36.20 2.17 ^ PROMO PRICE ITEMS THANK YOU FOR SHOPPING AT GUARDIAN ALL AMOUNTS ARE IN RM GOODS SOLD ARE NON-REFUNDABLE. DISPENSED MEDICINES SOLD ARE NOT RETURNABLE. ALL EXCHANGES AND RETURNS INCLUDING GUARDIAN BRAND PRODUCTS MUST BE MADE WITHIN 7DAYS WITH ORIGINAL RECEIPTS AND PRODUCT IN ORIGINAL CONDITION. ST:8303 CTR2 ID:3000 TAXINV:14072 16:58 19/05/18 ^"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=38.37; grandTotal=38.37. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.185Z",
+  "updatedAt": "2026-09-11T00:44:29.185Z"
+}

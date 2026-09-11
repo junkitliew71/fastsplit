@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005676541",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005676541.jpg",
+    "boxes": "SROIE2019/train/box/X51005676541.txt",
+    "entities": "SROIE2019/train/entities/X51005676541.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "4\" ROLLER SET",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "2",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "6.89",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "13.78",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "7LT TOPLUS EMULSION PAINT",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "1",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "40.28",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0034"
+      ],
+      "text": "40.28",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "CEMENT (50KG)",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "2",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "18.02",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "36.04",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0048"
+      ],
+      "text": "PLASTIC TRAP (L)",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "1",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0045"
+      ],
+      "text": "4.77",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "4.77",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "TAX",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "89.50"
+    },
+    {
+      "id": "a018",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0055"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a019",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0059"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a020",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0063"
+      ],
+      "text": "94.87"
+    },
+    {
+      "id": "a021",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0029",
+        "t0031",
+        "t0035",
+        "t0037",
+        "t0041",
+        "t0043",
+        "t0047",
+        "t0049",
+        "t0050",
+        "t0051",
+        "t0052",
+        "t0054",
+        "t0056",
+        "t0057",
+        "t0058",
+        "t0060",
+        "t0061",
+        "t0062",
+        "t0064",
+        "t0065",
+        "t0066",
+        "t0067",
+        "t0068",
+        "t0069",
+        "t0070",
+        "t0071",
+        "t0072",
+        "t0073",
+        "t0074",
+        "t0075",
+        "t0076"
+      ],
+      "text": "SYARIKAT PERNIAGAAN GIN KEE (81109-A) NO 290, JALAN AIR PANAS, SETAPAK, 53200, KUALA LUMPUR TEL : 03-40210276 GST ID : 000750673920 SIMPLIFIED TAX INVOICE CASH DOC NO. GOODS SOLD ARE NOT RETURNABLE, THANK YOU. : CS00012514 DATE: 03/01/2018 CASHIER 5.37 : USER TIME: 10:37:00 SALESPERSON : REF. : ITEM QTY S/PRICE AMOUNT TAX 1938 SR 1618 SR 2430 SR 2225 SR TOTAL QTY: 6 94.87 TOTAL SALES (EXCLUDING GST) : DISCOUNT : TOTAL GST : 5.37 ROUNDING : TOTAL SALES (INCLUSIVE OF GST) : 94.87 CASH : CHANGE : 0.00 GST SUMMARY TAX CODE % AMT(RM) TAX(RM) SR 6 89.50 5.37 TOTAL : 89.50"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 4 item group(s); 4/4 item equations valid. lineSum=94.87; subtotal=missing; grandTotal=94.87. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:27.530Z",
+  "updatedAt": "2026-09-11T00:44:27.530Z"
+}

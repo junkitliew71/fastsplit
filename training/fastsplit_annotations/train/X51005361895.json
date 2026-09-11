@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005361895",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005361895.jpg",
+    "boxes": "SROIE2019/train/box/X51005361895.txt",
+    "entities": "SROIE2019/train/entities/X51005361895.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0015",
+        "t0033"
+      ],
+      "text": "013 SUMMER CUP 48X230ML KOTA",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0016"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "8.49",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "9.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "TAX",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "GST 6% + 0.51"
+    },
+    {
+      "id": "a006",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "9.00"
+    },
+    {
+      "id": "a007",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0034",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041"
+      ],
+      "text": "FUYI MINI MARKET BR NO.: 0195932-X NO 43-45-47G, TAMAN SEJATI, IJOK, 45600 BESTARI JAYA, KUALA SELANGOR. 03-3279 1851, GST NO.:001601310720 25/01/2018 1:22:56PM TAX INVOICE TRN: 1CR0576494 COUNTER 1 CASHIER: HOCK QTY UOM U.PRICE AMT AMT INC. TAX CODE *TOTAL QTY: 1.00 TOTAL INCLUDES GST 6% CUSTOMER'S PAYMENT CASH CHANGE GST SUMMARY 9.00 50.00 41.00 GST SUMMARY SR *GOODS SOLD ARE NOT RETURNABLE THANK YOU FOR SHOPPING AT FUYI MINI MARKET 8.49 SR AMOUNT TAX 8.49 0.51"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 1 item group(s); 0/1 item equations valid. lineSum=9.00; subtotal=missing; grandTotal=9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.628Z",
+  "updatedAt": "2026-09-11T00:44:26.628Z"
+}

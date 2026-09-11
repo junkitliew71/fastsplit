@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005365187",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005365187.jpg",
+    "boxes": "SROIE2019/test/box/X51005365187.txt",
+    "entities": "SROIE2019/test/entities/X51005365187.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0035"
+      ],
+      "text": "HOMECARE GASCOAL 50MG",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "1",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "6.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "6.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a005",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0042"
+      ],
+      "text": "P.P NAPROXEN NA 275 MG",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "6.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0039"
+      ],
+      "text": "6.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a008",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0040"
+      ],
+      "text": "6.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a009",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0049"
+      ],
+      "text": "YELLOW LOTION 30 ML",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0044"
+      ],
+      "text": "1",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a011",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0046"
+      ],
+      "text": "4.30",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a012",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0047"
+      ],
+      "text": "4.30",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a013",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0056"
+      ],
+      "text": "PANADOL SOLUBLE TABLET",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a014",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0051"
+      ],
+      "text": "1",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a015",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0053"
+      ],
+      "text": "3.80",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a016",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0054"
+      ],
+      "text": "3.80",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a017",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0063"
+      ],
+      "text": "PMS GAUZE BANDAGE 5CM X 4M",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a018",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0058"
+      ],
+      "text": "1",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a019",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0060"
+      ],
+      "text": "6.50",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a020",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0061"
+      ],
+      "text": "6.50",
+      "itemId": "item-005"
+    },
+    {
+      "id": "a021",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0070"
+      ],
+      "text": "DETTOL 50 ML",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a022",
+      "label": "QUANTITY",
+      "tokenIds": [
+        "t0066"
+      ],
+      "text": "5.00",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a023",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0067"
+      ],
+      "text": "5.30",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a024",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0068"
+      ],
+      "text": "5.30",
+      "itemId": "item-006"
+    },
+    {
+      "id": "a025",
+      "label": "TAX",
+      "tokenIds": [
+        "t0075"
+      ],
+      "text": "30.68"
+    },
+    {
+      "id": "a026",
+      "label": "DISCOUNT",
+      "tokenIds": [
+        "t0077"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a027",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0081"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a028",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0083"
+      ],
+      "text": "31.90"
+    },
+    {
+      "id": "a029",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0031",
+        "t0034",
+        "t0036",
+        "t0037",
+        "t0041",
+        "t0043",
+        "t0045",
+        "t0048",
+        "t0050",
+        "t0052",
+        "t0055",
+        "t0057",
+        "t0059",
+        "t0062",
+        "t0064",
+        "t0065",
+        "t0069",
+        "t0071",
+        "t0072",
+        "t0073",
+        "t0074",
+        "t0076",
+        "t0078",
+        "t0079",
+        "t0080",
+        "t0082",
+        "t0084",
+        "t0085",
+        "t0086",
+        "t0087",
+        "t0088",
+        "t0089",
+        "t0090",
+        "t0091",
+        "t0092",
+        "t0093",
+        "t0094",
+        "t0095",
+        "t0096",
+        "t0097",
+        "t0098",
+        "t0099",
+        "t0100",
+        "t0101",
+        "t0102",
+        "t0103",
+        "t0104",
+        "t0105",
+        "t0106"
+      ],
+      "text": "3-1707067 F&P PHARMACY (002309592-P) NO.20. GROUND FLOOR, JALAN BS 10/6 TAMAN BUKIT SERDANG, SEKSYEN 10, 43300 SERI KEMBANGAN, SELANGOR DARUL EHSAN TEL 03-89599823 GST REG NO TAX INVOICE DOC NO CS00110840 DATE: 02/03/2018 CASHIER F&P TIME: 16.46.00 SALESPERSON REF (GST) (GST) ITEM QTY S/PRICE S/PRICE AMOUNT TAX 9557892105258 5.66 SR 1486 1 ZRL 9557837400035 4.30 ZRL 1014 3.68 SR 1155 6.13 SR 95506104 1 SR TOTAL QTY 6 31.90 TOTAL SALES (EXCLUDING GST) DISCOUNT TOTAL GST 1.22 ROUNDING TOTAL SALES (INCLUSIVE OF GST) : CASH : 50.00 CHANGE : 18.10 GST SUMMARY TAX CODE % AMT (RM) TAX (RM) SR 6 20.38 1.22 ZRL 0 10.30 0.00 TOTAL : 30.68 1.22 GOODS SOLD ARE NOT RETURNABLE & EXCHANGABLE, THANK YOU. 001880666112"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003",
+        "a004"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a005",
+        "a006",
+        "a007",
+        "a008"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a009",
+        "a010",
+        "a011",
+        "a012"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ]
+    },
+    {
+      "id": "item-005",
+      "assignmentIds": [
+        "a017",
+        "a018",
+        "a019",
+        "a020"
+      ]
+    },
+    {
+      "id": "item-006",
+      "assignmentIds": [
+        "a021",
+        "a022",
+        "a023",
+        "a024"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 6 item group(s); 4/6 item equations valid. lineSum=31.90; subtotal=missing; grandTotal=31.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:23.414Z",
+  "updatedAt": "2026-09-11T00:44:23.414Z"
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005889296",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005889296.jpg",
+    "boxes": "SROIE2019/train/box/X51005889296.txt",
+    "entities": "SROIE2019/train/entities/X51005889296.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "22.00"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041"
+      ],
+      "text": "IKANO HANDEL SDN BHD (1074617K) IKEA CHERAS NO 2A JALAN COCHRANE TAMAN MALURI 55100 KUALA LUMPUR GST NO. : 000115154944 TAX INVOICE SLIP: 0000000109000712950 DATE: 25/04/18 TIME: 11:06 TRANS: 409712949 STAFF: 95897 DESCRIPTION AMOUNT TX 598336001 6 CHICKEN CURRY PUFF 4 BAG @ 5.50 22.00 SR TOTAL RM INCLUDING GST 6% 22.00 ROUNDING ADJ , TOTAL ROUNDED 22.00 CASH -22.00 GST SR 6% 1.25 AMT. EXCL. GST 20.75 NO. OF ITEMS 4 THANK YOU. PLEASE COME AGAIN. APPROVED BY DATE"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=22. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.398Z",
+  "updatedAt": "2026-09-11T00:44:28.398Z"
+}

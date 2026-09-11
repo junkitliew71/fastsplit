@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005301659",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51005301659.jpg",
+    "boxes": "SROIE2019/train/box/X51005301659.txt",
+    "entities": "SROIE2019/train/entities/X51005301659.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "15.90"
+    },
+    {
+      "id": "a002",
+      "label": "TAX",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "15.00"
+    },
+    {
+      "id": "a003",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "15.90"
+    },
+    {
+      "id": "a004",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044"
+      ],
+      "text": "HOME MASTER HARDWARE & ELECTRICAL NO.113G & 115G, JALAN SETIA GEMBILANG U13/BG BANDAR SETIA ALAM, 40170 BANDAR SETIA ALAM, SELANGOR. COMPANY REG NO.:SA03711551-P GST REG NO.:001637511168 TAX INVOICE INVOICE NO.: CS 67832 DATE : 22/12/2017 14:03 CASHIER#: CASHIER RM CODE 24MMX7Y M.ONE TAPE 1.00 X 15.90 15.90 SR SUBTOTAL : TOTAL EXCL. OF GST TOTAL INCL. OF GST 15.90 TOTAL AMT ROUNDED PAYMENT : 50.00 CHANGE DUE : 34.10 TOTAL ITEM(S) : 1 G UMMARY AMOUNT(RM) TAX (RM) SR @ 6% 15.00 0.90"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=15.9; grandTotal=15.9. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:26.562Z",
+  "updatedAt": "2026-09-11T00:44:26.562Z"
+}

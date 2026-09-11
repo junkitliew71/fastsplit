@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006619757",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51006619757.jpg",
+    "boxes": "SROIE2019/test/box/X51006619757.txt",
+    "entities": "SROIE2019/test/entities/X51006619757.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "71.60"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0031"
+      ],
+      "text": "71.60"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0026",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040"
+      ],
+      "text": "99 SPEED MART S/B (519537-X) LOT P.T. 33198, BATU 4 JALAN KAPAR, MUKIM KAPAR 42100 KLANG, SELANGOR 1605-TMN SRI BINTANG GST ID. NO : 000181747712 INVOICE NO : 17545/102/T0040 11:29AM 558853 13-01-16 9500 MASSIMO WHEAT GERM 400 1988 PANTENE HAIR FALL CONT 739 PANTENE TTL DAMAGE CARE 1817 AJI-SHIO BLACK PEPPER 2747 COLGATE BERUS GIGI ZIG 2267 COLGATE GREAT REGULAR 532 YEO'S SOYA BEAN PEK 4*6 533 YEO'S TEH BUNGA PEK 4*6 RM2.25 S RM10.95 S RM10.95 S RM5.75 S RM7.20 S RM7.50 S RM13.50 S RM13.50 S TOTAL SALES (INCLUSIVE GST) RM CREDIT RM CHANGE RM .00 GST SUMMARY S = 6% AMOUNT(RM) 67.55 TAX(RM) 4.05 THANK YOU. PLEASE COME AGAIN KEEP THE INVOICE FOR APPLICABLE RETURNS"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=71.6. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:25.478Z",
+  "updatedAt": "2026-09-11T00:44:25.478Z"
+}

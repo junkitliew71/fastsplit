@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51005741929",
+  "split": "test",
+  "source": {
+    "image": "SROIE2019/test/img/X51005741929.jpg",
+    "boxes": "SROIE2019/test/box/X51005741929.txt",
+    "entities": "SROIE2019/test/entities/X51005741929.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "5.50"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045"
+      ],
+      "text": "MYMYDIN SUBANG BESTARI 2300 MY MYDIN SDN BHD (257229-K) NO 13, 15, 17 & 19 JALAN NOVA Q U5/Q, SEKSYEN U5, SUBANG BESTARI 40150 SHAH ALA SELANGOR DARUL EHSAN TEL : 03-78322935 GST ID : 001400971264 RECEIPT TERMINAL : 1670 INVOICE NO. : 1670327566 DATE : 15/01/2018 10:59:13 CASHIER : AZHAR - 928374 EVEREADY BAT S/H/D 1212BP4 AAAEA .S 9556500903668 1 * 5.50 5.50 ITEM COUNT 1 TOTAL ROUNDING ADJUSTMENT TOTAL AFTER ROUNDING 5.50 CASH 100.00 CHANGE CASH 94.50 GST RATE AMT EXCL GST (RM) TAX (RM) S = 6% 5.19 0.31 POINTS EARNED IN THIS TRANS. RECEIPT NO: 1670327566 PRINT DATE: 15/01/2018 10:59:23 THANK YOU PLEASE COME AGAIN : 0"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=5.5. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:24.224Z",
+  "updatedAt": "2026-09-11T00:44:24.224Z"
+}

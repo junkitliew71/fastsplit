@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006008197",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006008197.jpg",
+    "boxes": "SROIE2019/train/box/X51006008197.txt",
+    "entities": "SROIE2019/train/entities/X51006008197.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0005",
+        "t0006",
+        "t0010"
+      ],
+      "text": "RELAIS TOTAL OULMES AUTOROUTE RABAT MEKNES 15000 KHEMISSET LE 30/03/2018 A 12:36 V201855892CAISSIER 1, C DESIGNATION CAFE CREME",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0011"
+      ],
+      "text": "12.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0013"
+      ],
+      "text": "24.00",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0014"
+      ],
+      "text": "CAFE EXPRESSO",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0015"
+      ],
+      "text": "10.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0017"
+      ],
+      "text": "20.00",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0018"
+      ],
+      "text": "CHOCOLAT CHAUD",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0019"
+      ],
+      "text": "12.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0021"
+      ],
+      "text": "12.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0022",
+        "t0023"
+      ],
+      "text": "TOTAL FACTURE : 56.00 DH REGLE PAR ESPECE",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a011",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0024"
+      ],
+      "text": "56.00 DH",
+      "itemId": "item-004"
+    },
+    {
+      "id": "a012",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0004",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0012",
+        "t0016",
+        "t0020",
+        "t0025",
+        "t0026",
+        "t0027"
+      ],
+      "text": "TEL. : 05.22.95.66.66 P.U. QTE TOTAL 2 2 1 ****MERCI DE VOTRE VISITE**** PAT:37993027/RC:209031/IF:40132774 ICE:000081241000051"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008",
+        "a009"
+      ]
+    },
+    {
+      "id": "item-004",
+      "assignmentIds": [
+        "a010",
+        "a011"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 4 item group(s); 0/4 item equations valid. lineSum=112.00; subtotal=missing; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:28.461Z",
+  "updatedAt": "2026-09-11T00:44:28.461Z"
+}

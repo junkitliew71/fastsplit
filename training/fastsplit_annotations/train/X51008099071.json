@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008099071",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008099071.jpg",
+    "boxes": "SROIE2019/train/box/X51008099071.txt",
+    "entities": "SROIE2019/train/entities/X51008099071.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "TAX",
+      "tokenIds": [
+        "t0026"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a002",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0030"
+      ],
+      "text": "50.00"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0025",
+        "t0027",
+        "t0028",
+        "t0029",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038",
+        "t0039",
+        "t0040",
+        "t0041"
+      ],
+      "text": "LEONG HENG SHELL SERVICE STATION COMPANY NO :256628-W LOT 26151 BANDAR SG LONG, 11 1/4 MILES CHERAS, 43000 KAJANG, SELANGOR SITE : 2188 TELEPHONE : 03-90805318 GST NO : 001934041088 INVOICE NUMBER: 01000339450 PRE AUTH CODE A01A1529424173 22.73 LITRE PUMP # 06 FUELSAVE 95 RM 50.00 C 2.200 RM / LITRE TOTAL RM 50.00 CASH RM 50.00 RELIEF GST C RM TOTAL GROSS C RM CASHIER: KKHALEK DATE TIME NUM POS CNO SHIFT 20/06/18 00:05 90554 01 4145 331 DIESEL & PETROL RON95 GIVEN RELIEF UNDER SECTION 56(3)(B) GST ACT 2014 THANK YOU AND PLEASE COME AGAIN"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=missing; grandTotal=50. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.359Z",
+  "updatedAt": "2026-09-11T00:44:31.359Z"
+}

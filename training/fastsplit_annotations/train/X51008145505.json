@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51008145505",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51008145505.jpg",
+    "boxes": "SROIE2019/train/box/X51008145505.txt",
+    "entities": "SROIE2019/train/entities/X51008145505.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0020",
+        "t0021"
+      ],
+      "text": "BERAS ASAS 10KG*** 15*BAG *",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a002",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0022"
+      ],
+      "text": "24.90",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a003",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0023"
+      ],
+      "text": "373.50",
+      "itemId": "item-001"
+    },
+    {
+      "id": "a004",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0025",
+        "t0026"
+      ],
+      "text": "SUN SOS TIRAM 6KG 4BOTOL *",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a005",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "15.95",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a006",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0028"
+      ],
+      "text": "63.80",
+      "itemId": "item-002"
+    },
+    {
+      "id": "a007",
+      "label": "ITEM_NAME",
+      "tokenIds": [
+        "t0030",
+        "t0031"
+      ],
+      "text": "COKE 24 X 325ML 2PETI *",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a008",
+      "label": "UNIT_PRICE",
+      "tokenIds": [
+        "t0032"
+      ],
+      "text": "26.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a009",
+      "label": "LINE_TOTAL",
+      "tokenIds": [
+        "t0033"
+      ],
+      "text": "52.00",
+      "itemId": "item-003"
+    },
+    {
+      "id": "a010",
+      "label": "TAX",
+      "tokenIds": [
+        "t0036"
+      ],
+      "text": "489.30"
+    },
+    {
+      "id": "a011",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0038"
+      ],
+      "text": "0.00"
+    },
+    {
+      "id": "a012",
+      "label": "GRAND_TOTAL",
+      "tokenIds": [
+        "t0050"
+      ],
+      "text": "489.30"
+    },
+    {
+      "id": "a013",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0024",
+        "t0029",
+        "t0034",
+        "t0035",
+        "t0037",
+        "t0039",
+        "t0040",
+        "t0041",
+        "t0042",
+        "t0043",
+        "t0044",
+        "t0045",
+        "t0046",
+        "t0047",
+        "t0048",
+        "t0049"
+      ],
+      "text": "CASH SALE KT WONG TRADING (001904043-H) 22, JALAN PERINDUSTRIAN HIJAU 5, TAMAN PERINDUSTRIAN HIJAU, PHONE: +603-6093-9078 GST REGISTRATION NO.: 000613294080 DOCUMENT NO. : KTW031475 DATE : 09/06/2018 12:17:20 PM DESC QTY PRICE DISC AMOUNT TAX CODE SR SR SR SUB TOTAL INCLUSIVE GST : ROUNDING ADJ. : ROUNDED TOTAL (RM): 489.30 GST SUMMARY SR @ 0% AMOUNT 489.30 TAX 0.00 PAYMENT DETAIL 09/06/2018 CASH"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "assignmentIds": [
+        "a001",
+        "a002",
+        "a003"
+      ]
+    },
+    {
+      "id": "item-002",
+      "assignmentIds": [
+        "a004",
+        "a005",
+        "a006"
+      ]
+    },
+    {
+      "id": "item-003",
+      "assignmentIds": [
+        "a007",
+        "a008",
+        "a009"
+      ]
+    }
+  ],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 3 item group(s); 0/3 item equations valid. lineSum=489.30; subtotal=missing; grandTotal=489.3. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:31.738Z",
+  "updatedAt": "2026-09-11T00:44:31.738Z"
+}

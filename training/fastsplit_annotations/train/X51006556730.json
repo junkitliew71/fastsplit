@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "X51006556730",
+  "split": "train",
+  "source": {
+    "image": "SROIE2019/train/img/X51006556730.jpg",
+    "boxes": "SROIE2019/train/box/X51006556730.txt",
+    "entities": "SROIE2019/train/entities/X51006556730.txt"
+  },
+  "status": "unclear",
+  "assignments": [
+    {
+      "id": "a001",
+      "label": "SUBTOTAL",
+      "tokenIds": [
+        "t0025"
+      ],
+      "text": "RM40.00"
+    },
+    {
+      "id": "a002",
+      "label": "ROUNDING",
+      "tokenIds": [
+        "t0027"
+      ],
+      "text": "RM0.00"
+    },
+    {
+      "id": "a003",
+      "label": "OTHER",
+      "tokenIds": [
+        "t0001",
+        "t0002",
+        "t0003",
+        "t0004",
+        "t0005",
+        "t0006",
+        "t0007",
+        "t0008",
+        "t0009",
+        "t0010",
+        "t0011",
+        "t0012",
+        "t0013",
+        "t0014",
+        "t0015",
+        "t0016",
+        "t0017",
+        "t0018",
+        "t0019",
+        "t0020",
+        "t0021",
+        "t0022",
+        "t0023",
+        "t0024",
+        "t0026",
+        "t0028",
+        "t0029",
+        "t0030",
+        "t0031",
+        "t0032",
+        "t0033",
+        "t0034",
+        "t0035",
+        "t0036",
+        "t0037",
+        "t0038"
+      ],
+      "text": "MAKASSAR FRESH MARKET S/B. (CO.NO. 1208604-T) GROUND FLOOR, NO. 4 & 6, JALAN SS15/4B, 47500 SUBANG JAYA, SELANGOR. TEL:03-56131328 OUTLET : PLU RECEIPT NO : 16741 [TERMINAL :002] [CASHIER :SV2] 05-AUG-2017 02:11:23 PM FRUITS @24.00 40158 *1 24.00 FRUITS @16.00 40158 *1 16.00 VOLUME : 2 ITEMS SUB TOTAL ROUNDING ADJ. TOTAL RM40.00 PAYMENT TYPE CASH RECEIVED CASH RM50.00 CHANGE RM10.00 THANK YOU ! PLS COME AGAIN. GOODS SOLD ARE NOT RETURNABLE ! PLS VERIFY YOUR BILL BEFORE LEAVING THE"
+    }
+  ],
+  "items": [],
+  "notes": "Geometry-and-math assisted annotation generated from original OCR boxes; no OCR text was invented. 0 item group(s); 0/0 item equations valid. lineSum=0.00; subtotal=40; grandTotal=missing. Needs human review because layout or totals were ambiguous.",
+  "createdAt": "2026-09-11T00:44:29.445Z",
+  "updatedAt": "2026-09-11T00:44:29.445Z"
+}
