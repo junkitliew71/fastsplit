@@ -1,9 +1,10 @@
-import type { Receipt } from '../types';
+import type { OcrToken, Receipt } from '../types';
 import { parseMalaysiaReceiptText } from '../receipt-malaysia/receiptParser';
-import { classifyReceiptRow, itemsFromLayout, layoutFromTsv, receiptColumns } from '../receipt-malaysia/receiptLayout';
+import { classifyReceiptRow, itemsFromLayout, layoutFromTsv, receiptColumns, receiptRegions, receiptSummaryFields, type ReceiptLayout } from '../receipt-malaysia/receiptLayout';
 import { validateReceiptTotal } from '../receipt-malaysia/receiptValidator';
 
 export type ScanProgress = (message: string) => void;
+export type ScannedReceipt = Receipt & { ocrTokens: OcrToken[]; imageWidth:number; imageHeight:number };
 export function validateReceiptImage(file: File) {
   if (!['image/jpeg','image/png','image/webp'].includes(file.type)) throw new Error('Choose a JPG, PNG, or WebP receipt. For HEIC photos, export as JPG first.');
   if (file.size > 25 * 1024 * 1024) throw new Error('Choose an image smaller than 25 MB.');
@@ -46,15 +47,19 @@ export function receiptRowsFromTsv(tsv: string): string {
   return layoutFromTsv(tsv).text;
 }
 export function parseReceiptTsv(tsv: string): Receipt {
-  const layout = layoutFromTsv(tsv), semantic = parseReceiptText(layout.text), layoutItems = itemsFromLayout(layout);
+  return parseReceiptLayout(layoutFromTsv(tsv));
+}
+export function parseReceiptLayout(layout:ReceiptLayout):Receipt {
+  const semantic = parseReceiptText(layout.text), layoutItems = itemsFromLayout(layout), summary=receiptSummaryFields(layout);
   const items = layoutItems.length ? layoutItems : semantic.items;
-  const calculated = items.reduce((sum, item) => sum + item.totalPriceCents, 0) + semantic.serviceChargeCents + semantic.taxCents - semantic.discountCents;
-  const totalsMatch = validateReceiptTotal(calculated, semantic.printedTotalCents ?? null);
+  const hasSpatialSummary=Object.keys(summary).length>0,serviceChargeCents=summary.serviceChargeCents??(hasSpatialSummary?0:semantic.serviceChargeCents),taxCents=summary.taxCents??(hasSpatialSummary?0:semantic.taxCents),discountCents=summary.discountCents??(hasSpatialSummary?0:semantic.discountCents),roundingCents=summary.roundingCents??0,printedTotalCents=summary.netTotalCents??semantic.printedTotalCents;
+  const calculated = items.reduce((sum, item) => sum + item.totalPriceCents, 0) + serviceChargeCents + taxCents + roundingCents - discountCents;
+  const totalsMatch = validateReceiptTotal(calculated, printedTotalCents ?? null);
   const reviewedItems = totalsMatch ? items : items.map(item => ({ ...item, needsReview: true }));
   const warnings = ['Please check the detected items before continuing.'];
   if (!reviewedItems.length) warnings.push('No priced item rows were certain enough to add. Enter the receipt manually.');
-  if (!totalsMatch) warnings.push(`Detected entries add up to ${(calculated / 100).toFixed(2)}, while the printed total is ${((semantic.printedTotalCents || 0) / 100).toFixed(2)}. Low-confidence entries are marked for review.`);
-  return { ...semantic, items: reviewedItems, receiptNeedsReview: !totalsMatch || reviewedItems.some(item => item.needsReview), scanWarning: warnings.join(' ') };
+  if (!totalsMatch) warnings.push(`Detected entries add up to ${(calculated / 100).toFixed(2)}, while the printed total is ${((printedTotalCents || 0) / 100).toFixed(2)}. Low-confidence entries are marked for review.`);
+  return { ...semantic, items: reviewedItems,serviceChargeCents,taxCents,discountCents,roundingCents,printedSubtotalCents:summary.subtotalCents??null,printedTotalCents, receiptNeedsReview: !totalsMatch || reviewedItems.some(item => item.needsReview), scanWarning: warnings.join(' ') };
 }
 function scanQuality(receipt: Receipt) {
   const calculated=receipt.items.reduce((sum,item)=>sum+item.totalPriceCents,0)+receipt.serviceChargeCents+receipt.taxCents-receipt.discountCents;
@@ -62,15 +67,16 @@ function scanQuality(receipt: Receipt) {
   const average=receipt.items.reduce((sum,item)=>sum+(item.confidence??.5),0)/Math.max(1,receipt.items.length),review=receipt.items.filter(item=>item.needsReview).length;
   return receipt.items.length*4+average*10-review*2-(difference??0)*4+(difference!==null&&difference<=.02?30:0)-(receipt.items.length?0:100);
 }
-export interface OcrDebugPass { mode:string; rawText:string; words:ReturnType<typeof layoutFromTsv>['words']; rows:ReturnType<typeof layoutFromTsv>['rows']; imageWidth:number; imageHeight:number; columns:ReturnType<typeof receiptColumns>; classifications:string[]; items:Receipt['items']; score:number; metrics?:Record<string,number>; imageSource?:'original'|'preprocessed' }
+export interface OcrDebugPass { mode:string; rawText:string; words:ReturnType<typeof layoutFromTsv>['words']; rows:ReturnType<typeof layoutFromTsv>['rows']; imageWidth:number; imageHeight:number; columns:ReturnType<typeof receiptColumns>; regions:ReturnType<typeof receiptRegions>; classifications:string[]; items:Receipt['items']; score:number; metrics?:Record<string,number>; imageSource?:'original'|'preprocessed'; engineTokens?:unknown[] }
 export interface OcrDebugSnapshot { originalImageUrl:string; preprocessedImageUrl:string; passes:OcrDebugPass[]; finalItems:Receipt['items']; finalReceipt:Receipt }
 declare global { interface Window { __fastSplitOcrDebug?:OcrDebugSnapshot } }
 const debugEnabled=()=>typeof location!=='undefined'&&new URLSearchParams(location.search).get('ocrDebug')==='1';
-function debugPass(mode:string,rawText:string,tsv:string,receipt:Receipt,metrics?:Record<string,number>,imageSource:'original'|'preprocessed'='preprocessed'):OcrDebugPass {const layout=layoutFromTsv(tsv),page=tsv.split('\n').map(row=>row.split('\t')).find(cells=>cells[0]==='1');return{mode,rawText,words:layout.words,rows:layout.rows,imageWidth:Number(page?.[8])||layout.width,imageHeight:Number(page?.[9])||layout.height,columns:receiptColumns(layout),classifications:layout.rows.map(classifyReceiptRow),items:receipt.items,score:scanQuality(receipt),metrics,imageSource};}
+function debugPass(mode:string,rawText:string,tsv:string,receipt:Receipt,metrics?:Record<string,number>,imageSource:'original'|'preprocessed'='preprocessed',engineTokens?:unknown[]):OcrDebugPass {const layout=layoutFromTsv(tsv),page=tsv.split('\n').map(row=>row.split('\t')).find(cells=>cells[0]==='1');return{mode,rawText,words:layout.words,rows:layout.rows,imageWidth:Number(page?.[8])||layout.width,imageHeight:Number(page?.[9])||layout.height,columns:receiptColumns(layout),regions:receiptRegions(layout),classifications:layout.rows.map(classifyReceiptRow),items:receipt.items,score:scanQuality(receipt),metrics,imageSource,engineTokens};}
 // Resolve from the document URL so Vite's relative base (`./`) remains inside
 // the GitHub Pages project path (for example, `/fastsplit/ocr/...`).
 const asset = (path: string) => new URL(`${import.meta.env.BASE_URL}ocr/${path}`, document.baseURI).toString();
-export async function scanReceipt(file: File, progress: ScanProgress = () => {}): Promise<Receipt> {
+function tokensFromTsv(tsv:string): OcrToken[] { const rows=tsv.split('\n').slice(1); return rows.map((row,index)=>{const c=row.split('\t');return {id:`token_${index+1}`,text:c.slice(11).join('\t').trim(),confidence:(Number(c[10])||0)/100,bbox:{x:Number(c[6])||0,y:Number(c[7])||0,width:Number(c[8])||1,height:Number(c[9])||1}};}).filter(token=>token.text); }
+export async function scanReceipt(file: File, progress: ScanProgress = () => {}): Promise<ScannedReceipt> {
   progress('Preparing image locally…'); const prepared = await prepareReceiptImage(file);
   const debug=debugEnabled(),passes:OcrDebugPass[]=[],originalImageUrl=debug?URL.createObjectURL(file):'',preprocessedImageUrl=debug?URL.createObjectURL(prepared):'';
   try {
@@ -82,8 +88,8 @@ export async function scanReceipt(file: File, progress: ScanProgress = () => {})
     const paddle = await recognizeReceiptWithPaddle(file);
     progress('Extracting receipt rows…');
     const selected = parseReceiptTsv(paddle.tsv);
-    if(debug){passes.push(debugPass('PaddleOCR PP-OCRv5',paddle.rawText,paddle.tsv,selected,paddle.metrics,'original'));window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);const{renderOcrDebugPanel}=await import('./ocrDebugPanel');renderOcrDebugPanel(window.__fastSplitOcrDebug);}
-    return selected;
+    if(debug){passes.push(debugPass('PaddleOCR PP-OCRv5',paddle.rawText,paddle.tsv,selected,paddle.metrics,'original',paddle.tokens));window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);const{renderOcrDebugPanel}=await import('./ocrDebugPanel');renderOcrDebugPanel(window.__fastSplitOcrDebug);}
+    return {...selected,ocrTokens:paddle.tokens.map((token,index)=>({id:`token_${index+1}`,text:token.text,confidence:token.confidence/100,bbox:{x:token.x,y:token.y,width:token.width,height:token.height}})),imageWidth:paddle.tokens.reduce((max,t)=>Math.max(max,t.x+t.width),1),imageHeight:paddle.tokens.reduce((max,t)=>Math.max(max,t.y+t.height),1)};
   } catch (paddleError) {
     console.warn('Enhanced local OCR unavailable; falling back to Tesseract.', paddleError);
     progress('Enhanced OCR unavailable; loading local fallback…');
@@ -97,7 +103,10 @@ export async function scanReceipt(file: File, progress: ScanProgress = () => {})
     if(debug&&sparse.data.tsv)passes.push(debugPass('PSM 11 sparse',sparse.data.text,sparse.data.tsv,primary));let selected=primary;
     if(primary.items.length<2||primary.scanWarning?.includes('while the printed total')){progress('Checking receipt table…');await worker.setParameters({tessedit_pageseg_mode:'6' as Tesseract.PSM,preserve_interword_spaces:'1'});const blockResult=await worker.recognize(prepared,{},{text:true,tsv:true}),block=blockResult.data.tsv?parseReceiptTsv(blockResult.data.tsv):parseReceiptText(blockResult.data.text);if(debug&&blockResult.data.tsv)passes.push(debugPass('PSM 6 block',blockResult.data.text,blockResult.data.tsv,block));if(scanQuality(block)>scanQuality(primary))selected=block;}
     if(debug){window.__fastSplitOcrDebug={originalImageUrl,preprocessedImageUrl,passes,finalItems:selected.items,finalReceipt:selected};console.info('FastSplit OCR debug: window.__fastSplitOcrDebug',window.__fastSplitOcrDebug);const{renderOcrDebugPanel}=await import('./ocrDebugPanel');renderOcrDebugPanel(window.__fastSplitOcrDebug);}
-    return selected;
+    const tsv=selected===primary?sparse.data.tsv:'';
+    const tokens=tsv?tokensFromTsv(tsv):[];
+    const layout=tsv?layoutFromTsv(tsv):null;
+    return {...selected,ocrTokens:tokens,imageWidth:layout?.width||1,imageHeight:layout?.height||1};
   } finally { await worker.terminate(); }
 }
 export function demoReceipt(): Receipt { return {restaurant:'Sushi House · Demo',items:[{id:crypto.randomUUID(),name:'Salmon sushi',quantity:2,unitPriceCents:800,totalPriceCents:1600},{id:crypto.randomUUID(),name:'Chicken ramen',quantity:1,unitPriceCents:1800,totalPriceCents:1800},{id:crypto.randomUUID(),name:'Iced green tea',quantity:3,unitPriceCents:300,totalPriceCents:900}],serviceChargeCents:430,taxCents:258,discountCents:0}; }

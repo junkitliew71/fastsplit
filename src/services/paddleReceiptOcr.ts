@@ -5,10 +5,12 @@ interface PaddleLine {
   text: string;
   score: number;
 }
+export interface PaddleOcrToken {text:string;confidence:number;boundingBox:[number,number][];x:number;y:number;width:number;height:number}
 
 export interface PaddleReceiptOcrResult {
   rawText: string;
   tsv: string;
+  tokens:PaddleOcrToken[];
   metrics: {
     modelLoadMs: number;
     detectionMs: number;
@@ -61,11 +63,13 @@ export async function recognizeReceiptWithPaddle(image: Blob): Promise<PaddleRec
       textDetBoxThresh: 0.5,
     });
     if (!result) throw new Error('Local PaddleOCR returned no receipt result.');
+    const tokens=(result.items as PaddleLine[]).map(line=>{const xs=line.poly.map(point=>point[0]),ys=line.poly.map(point=>point[1]),x=Math.floor(Math.min(...xs)),y=Math.floor(Math.min(...ys)),width=Math.max(1,Math.ceil(Math.max(...xs))-x),height=Math.max(1,Math.ceil(Math.max(...ys))-y);return{text:line.text,confidence:line.score*100,boundingBox:line.poly,x,y,width,height};});
     return {
       // PaddleOCR returns recognized lines, not a separately rewritten text
       // field. This is a direct, lossless line join for the debug panel.
       rawText: result.items.map(item => item.text).join('\n'),
       tsv: resultToTsv(result.items as PaddleLine[], result.image.width, result.image.height),
+      tokens,
       metrics: {
         modelLoadMs: Math.round(initializedAt - startedAt),
         detectionMs: Math.round(result.metrics.detMs),
