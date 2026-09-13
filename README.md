@@ -63,13 +63,18 @@ The external CORD and SROIE reports in `debug/` use their own documented pass de
 
 ## Deployment
 
-GitHub Pages hosts the frontend only. Deploy `backend/` to a Python-capable service and configure:
+GitHub Pages hosts the frontend only. The included `render.yaml` and `backend/Dockerfile` deploy the OCR API as a Render web service with `/health` checks. Render builds from the repository and exposes the FastAPI service over HTTPS. [Deploy this repository to Render](https://render.com/deploy?repo=https://github.com/junkitliew71/fastsplit).
+
+After Render finishes, copy the service's exact `https://...onrender.com` URL into the GitHub repository variable `VITE_API_BASE_URL`, then rerun the **Deploy FastSplit** workflow. The workflow defaults to `https://junkitliew71-fastsplit-ocr.onrender.com` when that exact service name is available.
+
+Deployment variables:
 
 ```env
-VITE_API_BASE_URL=https://api.fastsplit.example.com
+VITE_API_BASE_URL=https://junkitliew71-fastsplit-ocr.onrender.com
+VITE_FASTSPLIT_API_URL=https://script.google.com/...  # optional history API
 ```
 
-Set `CORS_ORIGINS` on the backend to the specific production site origin, for example `https://username.github.io`, plus any required local origins. Use HTTPS for the API in production.
+`render.yaml` restricts backend CORS to `https://junkitliew71.github.io`. Receipt images remain request-only and are not written to Render's filesystem. Render's free plan is suitable for testing but sleeps when idle; FastSplit performs a health wake-up before uploading the receipt. For production traffic, select a plan with sufficient CPU/RAM.
 
 ## Persistence
 

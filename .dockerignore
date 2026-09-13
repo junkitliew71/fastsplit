@@ -1,0 +1,13 @@
+.git
+.github
+node_modules
+dist
+debug
+backend/.venv
+backend/__pycache__
+backend/**/__pycache__
+backend/dataset/samples
+*.pyc
+*.log
+.env
+.env.local

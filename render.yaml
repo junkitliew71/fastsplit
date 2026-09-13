@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: junkitliew71-fastsplit-ocr
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://junkitliew71.github.io
+      - key: FASTSPLIT_PRIMARY_OCR
+        value: PP-OCRv4

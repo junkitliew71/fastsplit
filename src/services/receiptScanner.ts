@@ -2,7 +2,8 @@ import type { OcrToken, Receipt } from '../types';
 
 export type ScanProgress = (message: string) => void;
 export type ScannedReceipt = Receipt & { ocrTokens: OcrToken[]; imageWidth:number; imageHeight:number };
-const apiBase = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000').replace(/\/$/, '');
+const localHost=['localhost','127.0.0.1'].includes(location.hostname);
+const apiBase = (import.meta.env.VITE_API_BASE_URL || (localHost?'http://localhost:8000':'')).replace(/\/$/, '');
 const MAX_UPLOAD_BYTES = 12 * 1024 * 1024;
 
 export function validateReceiptImage(file: File) {
@@ -31,10 +32,13 @@ type ScanResponse={success:boolean; imageWidth:number; imageHeight:number; ocrBl
 function errorMessage(status:number, payload?:ScanResponse) { const code=payload?.error?.code; if(code==='LOW_IMAGE_QUALITY') return payload?.error?.message||'This receipt photo is too blurry. Please retake it.'; if(code==='NO_TEXT_FOUND') return 'No readable receipt text was found. Try a clearer photo.'; if(code==='INVALID_IMAGE') return 'That file is not a supported receipt image.'; if(code==='IMAGE_TOO_LARGE') return 'This image is too large to scan. Choose a smaller photo.'; if(code==='SERVER_BUSY') return 'The receipt scanner is busy. Please try again shortly.'; if(status===0) return 'Unable to reach the receipt scanner. Check your connection and try again.'; return payload?.error?.message || 'Unable to scan this receipt. Please try again.'; }
 const cents=(value:number|null|undefined)=>value==null?0:Math.round(value*100);
 export async function scanReceipt(file:File, progress:ScanProgress=()=>{}):Promise<ScannedReceipt> {
+  if(!apiBase)throw new Error('The online receipt scanner is not configured yet.');
   progress('Preparing upload…'); const image=await prepareReceiptImage(file);
+  progress('Waking receipt scanner…');
+  try{const health=await fetch(`${apiBase}/health`,{signal:AbortSignal.timeout(90_000)});if(!health.ok)throw new Error();}catch{throw new Error(errorMessage(0));}
   progress('Uploading receipt…'); const form=new FormData(); form.append('image',image,file.name.replace(/\.[^.]+$/,'')+'.jpg');
   let response:Response;
-  try { response=await fetch(`${apiBase}/api/receipt/scan`,{method:'POST',body:form,signal:AbortSignal.timeout(90_000)}); } catch { throw new Error(errorMessage(0)); }
+  try { response=await fetch(`${apiBase}/api/receipt/scan`,{method:'POST',body:form,signal:AbortSignal.timeout(180_000)}); } catch { throw new Error(errorMessage(0)); }
   const payload=await response.json().catch(()=>undefined) as ScanResponse|undefined;
   if(!response.ok||!payload?.success) throw new Error(errorMessage(response.status,payload));
   progress('Organizing items…');
