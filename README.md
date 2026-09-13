@@ -1,41 +1,76 @@
 # FastSplit
 
-FastSplit is a mobile-first React, TypeScript and Vite app for splitting restaurant bills by what each person ate. It is a static GitHub Pages site backed by Google Apps Script and a private Google Sheet for history only.
+FastSplit is a mobile-first React application for splitting restaurant bills. Receipt recognition is self-hosted: the browser uploads a receipt to the FastAPI service, where PaddleOCR reads it and the server reconstructs rows and parses charges before returning bounding boxes and editable items.
 
-## Local receipt OCR
+## Architecture
 
-Receipt scanning uses [Tesseract.js](https://github.com/naptha/tesseract.js) wholly in the browser. A receipt image is resized/contrast-adjusted locally, read by a local Web Worker and parsed conservatively into editable items, service charge, SST/tax and discounts. No receipt image, OCR text, API key or AI/OCR request is sent to Apps Script or any third-party OCR service.
+```text
+Browser (capture, upload, mapping UI)
+  -> FastAPI /api/receipt/scan
+  -> image-quality analysis -> adaptive preparation -> cached PaddleOCR
+  -> geometric row/column reconstruction -> item-price matching
+  -> receipt parser -> mathematical validation/recovery -> confidence and warnings
+  -> structured JSON + OCR bounding boxes
+```
 
-### OCR debug mode
+The frontend performs only lightweight compression for images over 12 MB. It does not load OCR models, browser Python, TensorFlow, ONNX OCR, PaddleOCR, or Tesseract. The API keeps receipt images in memory for the request only; it does not persist them.
 
-Open the app with `?ocrDebug=1` before the hash route (for example `/?ocrDebug=1#/scan`) and scan a receipt. A developer panel shows the original and preprocessed images, bounding-box overlay, exact unmodified OCR text, every word and confidence/rectangle, reconstructed lines, inferred columns and final parsed items. The same data remains available at `window.__fastSplitOcrDebug`. Debug image URLs live only in that browser tab and are never uploaded.
+The backend now evaluates blur, resolution, exposure, darkness, contrast and shadows before OCR. Preprocessing is adaptive and geometry-preserving, OCR retains polygons and box centers, and layout reconstruction infers quantity/unit/total columns from repeated X positions. Parsing handles multi-line item names and Malaysian summary terms, then mathematical validation checks the item subtotal and printed grand total. Low-confidence results return structured warnings for the mapping UI.
 
-The English OCR worker, WASM core and language data live in `public/ocr/`. The service worker caches them with the app shell, so scanning works offline after the app has been opened once and those assets have been cached. The first installation/load needs the site assets to be downloaded. OCR is best with clear English/Latin text; Malaysian receipts with complex layouts, poor photos or other scripts may need manual correction. Always review names, quantities and prices before continuing.
+Every successful scan includes a `debug` object with raw OCR, blocks, reconstructed rows, detected columns, parser output, validation output, image-quality metrics and OCR-pass decisions. Expensive enhanced OCR runs only when the normal pass is weak.
 
-## Offline and sync
+The current Phase 1 implementation is deliberately model-compatible: `FASTSPLIT_PRIMARY_OCR` defaults to `PP-OCRv4`, and a supported PaddleOCR model can be selected through the environment after compatibility testing. It keeps per-block polygons, model source, text type and candidate metadata. Handwriting recognition, mixed-region classification and PaddleOCR-VL are later phases; the API currently reports text type as `unknown` instead of pretending that those classifiers exist.
 
-Camera capture, upload, local OCR, editing, assignment and calculation do not need a network connection once app assets are cached. If save fails, the completed bill is saved as **Pending Sync** in browser storage with its existing request ID. It is retried when the browser returns online; the server's request-ID idempotency prevents duplicates. Cloud history, cross-device availability and payment/history changes need a connection.
+Quantity ambiguity recovery now records both candidates and its reason. Suspicious or mathematically recovered rows are returned with `needsReview`, and the Review screen highlights them until the user edits the row.
 
-## Google Sheets and Apps Script
+## Local development
 
-`google-apps-script/Code.gs` is deliberately a persistence-only API: `createReceipt`, `history`, `getReceipt` and `deleteReceipt`. Paste it into a standalone Apps Script project, run `setupFastSplit`, then deploy as a Web app running as you and accessible to anyone. Set `VITE_FASTSPLIT_API_URL` to its `/exec` URL in `.env.local` locally or as a GitHub Actions repository variable.
+Start the OCR API (the first run downloads PaddleOCR model files):
 
-The backend verifies the anonymous `fs_<256-bit random>` session ID on every request and applies that session check server-side for reads and deletes. It reconstructs totals rather than trusting client totals, creates a 72-hour expiry timestamp itself, excludes expired rows immediately, and cleans expired rows hourly. Keep the Sheet private.
+```sh
+cd backend
+python -m venv .venv
+# Windows: .venv\\Scripts\\activate
+# macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 
-## Develop and deploy
+In another terminal, run the frontend:
 
 ```sh
 npm install
-npm test
-npm run build
+# .env.local: VITE_API_BASE_URL=http://localhost:8000
+npm run dev
 ```
 
-Push `main` to GitHub and select GitHub Actions under Pages. Relative Vite paths and hash routes allow deployment at `https://<user>.github.io/fastsplit/`.
+Run checks with `npm test` and `npm run build`. The OCR health probe is `GET http://localhost:8000/health`.
 
-## Verification checklist
+Backend regression and accuracy checks:
 
-1. Upload a clear JPG/PNG/WebP receipt, wait for “Reading receipt locally”, then correct detected entries.
-2. Use the phone camera and repeat the flow.
-3. Open the installed app once online, then disable the network and scan/edit/calculate a receipt.
-4. Complete it offline and confirm the summary says Pending Sync; reconnect and open History to sync it.
-5. Use a different browser session and verify it cannot read or delete another session's receipt.
+```sh
+cd backend
+.venv/Scripts/python -m unittest discover -s tests -v
+.venv/Scripts/python evaluate_dataset.py
+.venv/Scripts/python evaluate_cord_archive.py "path/to/cord.zip" --output ../debug/cord-evaluation
+.venv/Scripts/python evaluate_sroie_archive.py "path/to/sroie.zip" --output ../debug/sroie-evaluation
+.venv/Scripts/python evaluate_images.py "path/to/receipt.jpg" --output ../debug/local-image-evaluation.json
+```
+
+Human-reviewed samples live in `backend/dataset/`. The evaluator reports item detection, item-price pairing, missing/false item rates, summary-field accuracy and fully correct receipt rate, comparing the saved baseline with the current pipeline.
+
+The external CORD and SROIE reports in `debug/` use their own documented pass definitions. They are regression indicators, not a claim that every receipt in the dataset is fully understood.
+
+## Deployment
+
+GitHub Pages hosts the frontend only. Deploy `backend/` to a Python-capable service and configure:
+
+```env
+VITE_API_BASE_URL=https://api.fastsplit.example.com
+```
+
+Set `CORS_ORIGINS` on the backend to the specific production site origin, for example `https://username.github.io`, plus any required local origins. Use HTTPS for the API in production.
+
+## Persistence
+
+The existing Google Apps Script integration remains a persistence-only API for completed bill history. It does not receive receipt images or perform OCR.

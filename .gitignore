@@ -1,4 +1,7 @@
 node_modules/
+.venv/
+__pycache__/
+*.pyc
 dist/
 .env
 .env.local
@@ -6,3 +9,5 @@ dist/
 coverage/
 *.log
 *.tsbuildinfo
+debug/
+backend/dataset/samples/

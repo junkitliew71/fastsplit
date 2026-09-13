@@ -1,0 +1,28 @@
+{
+  "image": "samples/royal_dining.jpg",
+  "expected": {
+    "items": [
+      {"name":"DAAL CHANAFRY","price":25.00},
+      {"name":"PLAIN NAAN","price":33.00},
+      {"name":"PALAK PANEER","price":50.00},
+      {"name":"CHICKEN CHEESY KOFTA","price":30.00},
+      {"name":"DAAL MASH FRY","price":25.00},
+      {"name":"CH TANDOORILEG","price":30.00},
+      {"name":"PLAIN PARATHA","price":5.00},
+      {"name":"SOFT DRINK (LARGE) COKE","price":0.00},
+      {"name":"FRESH LIME JUICE","price":10.00},
+      {"name":"MINERAL WATER (LARGE)","price":0.00}
+    ],
+    "subtotal":208.00,"tax":13.73,"serviceCharge":20.80,"rounding":0.02,"grandTotal":242.55
+  },
+  "baseline": {
+    "items": [
+      {"name":"PLAIN NAAN","price":25.00},{"name":"CHICKEN CHEESY","price":50.00},{"name":"KOFTA","price":30.00},
+      {"name":"DAAL MASH FRY","price":25.00},{"name":"CH TANDOORI LEG","price":30.00},{"name":"PLAIN PARATHA","price":5.00},
+      {"name":"23COKE SOFT DRINK(LARGE)","price":6.00},{"name":"24FRESH LIME JUICE","price":10.00},
+      {"name":"26(LARGE) 25MINERAL WATER","price":4.00},{"name":"27Bill Amount","price":208.00},
+      {"name":"28Discount","price":0.00},{"name":"31Service Charges","price":20.80}
+    ],
+    "subtotal":208.00,"tax":13.73,"serviceCharge":null,"rounding":0.02,"grandTotal":242.55
+  }
+}

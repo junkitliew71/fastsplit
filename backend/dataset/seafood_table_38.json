@@ -1,0 +1,5 @@
+{
+  "image":"samples/seafood_table_38.jpg",
+  "expected":{"items":[{"name":"Unidentified item check receipt","price":32.00},{"name":"Chicken Item","price":4.00},{"name":"White Rice","price":18.00},{"name":"Vege Item M","price":8.00},{"name":"Rice w Seafood Meat Item Single","price":5.00}],"subtotal":67.00,"tax":4.02,"serviceCharge":0,"grandTotal":71.00},
+  "baseline":{"items":[],"subtotal":null,"tax":71.02,"serviceCharge":null,"grandTotal":null}
+}

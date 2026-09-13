@@ -1,0 +1,5 @@
+{
+  "image":"samples/seafood_table_03.jpg",
+  "expected":{"items":[{"name":"Unidentified item check receipt","price":70.00},{"name":"Grouper","price":15.00},{"name":"Vege item","price":8.00},{"name":"Omellete Item","price":8.00},{"name":"White Rice","price":5.00}],"subtotal":106.00,"tax":6.36,"serviceCharge":0,"grandTotal":112.35},
+  "baseline":{"items":[],"subtotal":106.00,"tax":112.36,"serviceCharge":null,"grandTotal":null}
+}
