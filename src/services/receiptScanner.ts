@@ -1,7 +1,4 @@
 import type { OcrToken, Receipt } from '../types';
-import { parseMalaysiaReceiptText } from '../receipt-malaysia/receiptParser';
-import { itemsFromLayout, layoutFromTsv, receiptColumns, receiptRegions, receiptSummaryFields, type ReceiptLayout } from '../receipt-malaysia/receiptLayout';
-import { validateReceiptTotal } from '../receipt-malaysia/receiptValidator';
 
 export type ScanProgress = (message: string) => void;
 export type ScannedReceipt = Receipt & { ocrTokens: OcrToken[]; imageWidth:number; imageHeight:number };
@@ -30,21 +27,7 @@ export async function prepareReceiptImage(file: File): Promise<Blob> {
   } finally { URL.revokeObjectURL(url); }
 }
 
-export const parseReceiptText = parseMalaysiaReceiptText;
-export const receiptRowsFromTsv = (tsv:string) => layoutFromTsv(tsv).text;
-/** Kept for parser unit tests and any migration tooling; production parsing is server-side. */
-export function parseReceiptTsv(tsv:string):Receipt {
-  const layout=layoutFromTsv(tsv), semantic=parseReceiptText(layout.text), layoutItems=itemsFromLayout(layout), summary=receiptSummaryFields(layout);
-  const items=layoutItems.length?layoutItems:semantic.items, serviceChargeCents=summary.serviceChargeCents??semantic.serviceChargeCents, taxCents=summary.taxCents??semantic.taxCents, discountCents=summary.discountCents??semantic.discountCents, roundingCents=summary.roundingCents??0, printedTotalCents=summary.netTotalCents??semantic.printedTotalCents??null;
-  const calculated=items.reduce((sum,item)=>sum+item.totalPriceCents,0)+serviceChargeCents+taxCents+roundingCents-discountCents, totalsMatch=validateReceiptTotal(calculated,printedTotalCents);
-  return {...semantic,items:totalsMatch?items:items.map(item=>({...item,needsReview:true})),serviceChargeCents,taxCents,discountCents,roundingCents,printedSubtotalCents:summary.subtotalCents??null,printedTotalCents,receiptNeedsReview:!totalsMatch||items.some(item=>item.needsReview),scanWarning:!totalsMatch?'Please check the detected items before continuing.':undefined};
-}
-export function parseReceiptLayout(layout:ReceiptLayout):Receipt { return parseReceiptTsv(layout.rows.length ? ['level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext',...layout.words.map((w,i)=>`5\t1\t1\t1\t${i}\t1\t${w.x}\t${w.y}\t${w.width}\t${w.height}\t${w.confidence}\t${w.text}`)].join('\n') : ''); }
-export interface OcrDebugPass { mode:string; rawText:string; words:ReturnType<typeof layoutFromTsv>['words']; rows:ReturnType<typeof layoutFromTsv>['rows']; imageWidth:number; imageHeight:number; columns:ReturnType<typeof receiptColumns>; regions:ReturnType<typeof receiptRegions>; classifications:string[]; items:Receipt['items']; score:number; metrics?:Record<string,number>; imageSource?:'original'|'preprocessed'; engineTokens?:unknown[] }
-export interface OcrDebugSnapshot { originalImageUrl:string; preprocessedImageUrl:string; passes:OcrDebugPass[]; finalItems:Receipt['items']; finalReceipt:Receipt }
-declare global { interface Window { __fastSplitOcrDebug?:OcrDebugSnapshot } }
-
-type ScanResponse={success:boolean; imageWidth:number; imageHeight:number; ocrBlocks:{text:string;confidence:number;source?:string;textType?:'printed'|'handwritten'|'unknown';polygon?:number[][];candidates?:{text:string;confidence:number;source:string}[];x:number;y:number;width:number;height:number}[]; items:{name:string;quantity:number;unitPrice:number;totalPrice:number;confidence?:number;needsReview?:boolean}[]; restaurant?:string; subtotal?:number|null; serviceCharge?:number|null; tax?:number|null; discount?:number|null; rounding?:number|null; grandTotal?:number|null; warning?:string; debug?:{rawText:string;rows:string[]}; error?:{code:string;message:string}};
+type ScanResponse={success:boolean; imageWidth:number; imageHeight:number; ocrBlocks:{text:string;confidence:number;source?:string;textType?:'printed'|'handwritten'|'unknown';polygon?:number[][];candidates?:{text:string;confidence:number;source:string}[];x:number;y:number;width:number;height:number}[]; items:{name:string;quantity:number;unitPrice:number;totalPrice:number;confidence?:number;needsReview?:boolean}[]; restaurant?:string; subtotal?:number|null; serviceCharge?:number|null; tax?:number|null; discount?:number|null; rounding?:number|null; grandTotal?:number|null; warning?:string; error?:{code:string;message:string}};
 function errorMessage(status:number, payload?:ScanResponse) { const code=payload?.error?.code; if(code==='LOW_IMAGE_QUALITY') return payload?.error?.message||'This receipt photo is too blurry. Please retake it.'; if(code==='NO_TEXT_FOUND') return 'No readable receipt text was found. Try a clearer photo.'; if(code==='INVALID_IMAGE') return 'That file is not a supported receipt image.'; if(code==='IMAGE_TOO_LARGE') return 'This image is too large to scan. Choose a smaller photo.'; if(code==='SERVER_BUSY') return 'The receipt scanner is busy. Please try again shortly.'; if(status===0) return 'Unable to reach the receipt scanner. Check your connection and try again.'; return payload?.error?.message || 'Unable to scan this receipt. Please try again.'; }
 const cents=(value:number|null|undefined)=>value==null?0:Math.round(value*100);
 export async function scanReceipt(file:File, progress:ScanProgress=()=>{}):Promise<ScannedReceipt> {
@@ -58,7 +41,7 @@ export async function scanReceipt(file:File, progress:ScanProgress=()=>{}):Promi
   const items=payload.items.map((item,index)=>({id:`server_item_${index+1}`,name:item.name,quantity:item.quantity||1,unitPriceCents:cents(item.unitPrice),totalPriceCents:cents(item.totalPrice),confidence:item.confidence,needsReview:item.needsReview}));
   const calculated=items.reduce((sum,item)=>sum+item.totalPriceCents,0)+cents(payload.serviceCharge)+cents(payload.tax)+cents(payload.rounding)-cents(payload.discount);
   const printedTotal=payload.grandTotal==null?null:cents(payload.grandTotal);
-  const totalsMatch=validateReceiptTotal(calculated,printedTotal);
+  const totalsMatch=printedTotal===null||Math.abs(calculated-printedTotal)<=2;
   const receipt:ScannedReceipt={restaurant:payload.restaurant||'',items,serviceChargeCents:cents(payload.serviceCharge),taxCents:cents(payload.tax),discountCents:cents(payload.discount),roundingCents:cents(payload.rounding),printedSubtotalCents:payload.subtotal==null?null:cents(payload.subtotal),printedTotalCents:printedTotal,receiptNeedsReview:!totalsMatch||items.some(item=>item.needsReview),scanWarning:payload.warning||(!totalsMatch?'Please check the detected items before continuing.':'OCR complete. Review and map the receipt text.'),ocrTokens:payload.ocrBlocks.map((block,index)=>({id:`token_${index+1}`,text:block.text,confidence:block.confidence,source:block.source,textType:block.textType,polygon:block.polygon,candidates:block.candidates,bbox:{x:block.x,y:block.y,width:block.width,height:block.height}})),imageWidth:payload.imageWidth,imageHeight:payload.imageHeight};
   progress('Done'); return receipt;
 }
