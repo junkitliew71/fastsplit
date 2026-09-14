@@ -1,4 +1,7 @@
 import os
+import csv
+import io
+import subprocess
 from functools import lru_cache
 
 # Render's free instance has a tight memory limit. Configure Paddle before it is
@@ -15,6 +18,10 @@ def engine():
     # Constructed once at startup and reused for every request.
     # Receipt photos are orientation-normalized by the capture UI, so omitting
     # the separate angle-classifier model saves substantial server RAM.
+    if OCR_ENGINE == 'tesseract':
+        subprocess.run(['tesseract', '--version'], check=True,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return 'tesseract'
     if OCR_ENGINE == 'rapidocr':
         from rapidocr_onnxruntime import RapidOCR
         return RapidOCR(det_limit_side_len=960, det_thresh=.25, box_thresh=.5,
@@ -29,6 +36,42 @@ def engine():
                      use_space_char=True,det_limit_side_len=1600,det_db_thresh=.25,det_db_box_thresh=.5,drop_score=.2)
 
 def recognize(image):
+    if OCR_ENGINE == 'tesseract':
+        import cv2
+        ok, encoded = cv2.imencode('.png', image)
+        if not ok:
+            return []
+        completed = subprocess.run(
+            ['tesseract', 'stdin', 'stdout', '--psm', '6', 'tsv'],
+            input=encoded.tobytes(), stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL, check=True,
+        )
+        rows = csv.DictReader(io.StringIO(completed.stdout.decode('utf-8', errors='replace')), delimiter='\t')
+        lines = {}
+        for row in rows:
+            text = (row.get('text') or '').strip()
+            try:
+                confidence = float(row.get('conf', '-1'))
+            except ValueError:
+                continue
+            if not text or confidence < 0:
+                continue
+            key = (row.get('page_num'), row.get('block_num'), row.get('par_num'), row.get('line_num'))
+            x, y = int(row['left']), int(row['top'])
+            width, height = int(row['width']), int(row['height'])
+            entry = lines.setdefault(key, {'words': [], 'scores': [], 'x1': x, 'y1': y, 'x2': x + width, 'y2': y + height})
+            entry['words'].append(text); entry['scores'].append(confidence / 100)
+            entry['x1'] = min(entry['x1'], x); entry['y1'] = min(entry['y1'], y)
+            entry['x2'] = max(entry['x2'], x + width); entry['y2'] = max(entry['y2'], y + height)
+        blocks = []
+        for entry in lines.values():
+            x, y = entry['x1'], entry['y1']; width = max(1, entry['x2'] - x); height = max(1, entry['y2'] - y)
+            text = ' '.join(entry['words']); score = round(sum(entry['scores']) / len(entry['scores']), 4)
+            points = [[x, y], [x + width, y], [x + width, y + height], [x, y + height]]
+            blocks.append({'id':len(blocks),'text':text,'confidence':score,'polygon':points,'source':'Tesseract',
+                           'textType':'printed','candidates':[{'text':text,'confidence':score,'source':'Tesseract'}],
+                           'x':x,'y':y,'width':width,'height':height,'centerX':round(x+width/2,2),'centerY':round(y+height/2,2)})
+        return blocks
     if OCR_ENGINE == 'rapidocr':
         result, _ = engine()(image)
         pages = [result or []]

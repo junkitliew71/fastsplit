@@ -5,10 +5,10 @@ FROM python:3.10-slim-bookworm
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     HOME=/home/fastsplit \
-    FASTSPLIT_OCR_ENGINE=rapidocr
+    FASTSPLIT_OCR_ENGINE=tesseract
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends libgomp1 libglib2.0-0 libgl1 \
+    && apt-get install -y --no-install-recommends libgomp1 libglib2.0-0 libgl1 tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
