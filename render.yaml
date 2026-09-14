@@ -12,3 +12,5 @@ services:
         value: https://junkitliew71.github.io
       - key: FASTSPLIT_PRIMARY_OCR
         value: PP-OCRv4
+      - key: FASTSPLIT_OCR_ENGINE
+        value: rapidocr
