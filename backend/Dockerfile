@@ -1,4 +1,6 @@
-FROM python:3.10-slim
+# PaddlePaddle 2.6.x can segfault on the newer glibc shipped by Debian Trixie.
+# Pin Bookworm so the native OCR runtime stays on a tested ABI.
+FROM python:3.10-slim-bookworm
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
