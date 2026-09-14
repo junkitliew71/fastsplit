@@ -17,7 +17,8 @@ def engine():
     # the separate angle-classifier model saves substantial server RAM.
     if OCR_ENGINE == 'rapidocr':
         from rapidocr_onnxruntime import RapidOCR
-        return RapidOCR(det_limit_side_len=1280, det_thresh=.25, box_thresh=.5)
+        return RapidOCR(det_limit_side_len=960, det_thresh=.25, box_thresh=.5,
+                        intra_op_num_threads=1, inter_op_num_threads=1)
 
     # Keep PaddleOCR as the full primary engine for local development and
     # servers with enough RAM. Import lazily so low-memory deployments do not

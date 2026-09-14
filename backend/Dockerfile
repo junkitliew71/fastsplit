@@ -12,10 +12,8 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-COPY backend/requirements.txt ./requirements.txt
-RUN pip install --no-cache-dir \
-    --find-links https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html \
-    -r requirements.txt
+COPY backend/requirements-render.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY backend/ ./
 RUN useradd --create-home --uid 10001 fastsplit \
