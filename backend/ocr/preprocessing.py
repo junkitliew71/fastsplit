@@ -4,8 +4,8 @@ import numpy as np
 
 def prepare(image:np.ndarray,quality:dict,enhanced:bool=False):
     operations=[]; height,width=image.shape[:2]
-    if max(height,width)>3000:
-        scale=3000/max(height,width); image=cv2.resize(image,(round(width*scale),round(height*scale)),interpolation=cv2.INTER_AREA); operations.append('DOWNSIZE')
+    if max(height,width)>2200:
+        scale=2200/max(height,width); image=cv2.resize(image,(round(width*scale),round(height*scale)),interpolation=cv2.INTER_AREA); operations.append('DOWNSIZE')
     # No deskew/crop here: OCR boxes must still map exactly onto the preview.
     if 'LOW_CONTRAST' in quality['issues'] or 'DARK' in quality['issues'] or enhanced:
         lab=cv2.cvtColor(image,cv2.COLOR_BGR2LAB); limit=1.35 if not enhanced else 1.8
