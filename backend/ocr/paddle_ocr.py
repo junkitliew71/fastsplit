@@ -2,6 +2,7 @@ import os
 import csv
 import io
 import subprocess
+import logging
 from functools import lru_cache
 
 # Render's free instance has a tight memory limit. Configure Paddle before it is
@@ -12,6 +13,7 @@ os.environ.setdefault('MKL_NUM_THREADS','1')
 
 PRIMARY_OCR_MODEL=os.getenv('FASTSPLIT_PRIMARY_OCR','PP-OCRv4')
 OCR_ENGINE=os.getenv('FASTSPLIT_OCR_ENGINE','paddle').lower()
+logger=logging.getLogger('fastsplit.ocr')
 
 @lru_cache(maxsize=1)
 def engine():
@@ -20,7 +22,10 @@ def engine():
     # the separate angle-classifier model saves substantial server RAM.
     if OCR_ENGINE == 'tesseract':
         subprocess.run(['tesseract', '--version'], check=True,
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                       stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=10)
+        languages=subprocess.run(['tesseract','--list-langs'],check=True,capture_output=True,text=True,timeout=10)
+        if 'eng' not in languages.stdout.split():
+            raise RuntimeError('Tesseract English language data is unavailable')
         return 'tesseract'
     if OCR_ENGINE == 'rapidocr':
         from rapidocr_onnxruntime import RapidOCR
@@ -42,12 +47,17 @@ def recognize(image):
         if not ok:
             return []
         completed = subprocess.run(
-            ['tesseract', 'stdin', 'stdout', '--psm', '6', 'tsv'],
+            ['tesseract', 'stdin', 'stdout', '-l', 'eng', '--psm', '6', 'tsv'],
             input=encoded.tobytes(), stdout=subprocess.PIPE,
-            stderr=subprocess.DEVNULL, check=True,
+            stderr=subprocess.PIPE, check=False, timeout=90,
         )
+        if completed.returncode:
+            logger.error('[FastSplit OCR] Tesseract returncode=%s stderr=%s',completed.returncode,completed.stderr.decode('utf-8',errors='replace')[:500])
+            raise RuntimeError('Tesseract execution failed')
+        if completed.stderr and os.getenv('FASTSPLIT_DIAGNOSTICS')=='1':
+            logger.info('[FastSplit OCR] Tesseract stderr=%s',completed.stderr.decode('utf-8',errors='replace')[:500])
         rows = csv.DictReader(io.StringIO(completed.stdout.decode('utf-8', errors='replace')), delimiter='\t')
-        lines = {}
+        blocks = []
         for row in rows:
             text = (row.get('text') or '').strip()
             try:
@@ -56,17 +66,10 @@ def recognize(image):
                 continue
             if not text or confidence < 0:
                 continue
-            key = (row.get('page_num'), row.get('block_num'), row.get('par_num'), row.get('line_num'))
             x, y = int(row['left']), int(row['top'])
             width, height = int(row['width']), int(row['height'])
-            entry = lines.setdefault(key, {'words': [], 'scores': [], 'x1': x, 'y1': y, 'x2': x + width, 'y2': y + height})
-            entry['words'].append(text); entry['scores'].append(confidence / 100)
-            entry['x1'] = min(entry['x1'], x); entry['y1'] = min(entry['y1'], y)
-            entry['x2'] = max(entry['x2'], x + width); entry['y2'] = max(entry['y2'], y + height)
-        blocks = []
-        for entry in lines.values():
-            x, y = entry['x1'], entry['y1']; width = max(1, entry['x2'] - x); height = max(1, entry['y2'] - y)
-            text = ' '.join(entry['words']); score = round(sum(entry['scores']) / len(entry['scores']), 4)
+            width=max(1,width); height=max(1,height)
+            score = round(confidence / 100, 4)
             points = [[x, y], [x + width, y], [x + width, y + height], [x, y + height]]
             blocks.append({'id':len(blocks),'text':text,'confidence':score,'polygon':points,'source':'Tesseract',
                            'textType':'printed','candidates':[{'text':text,'confidence':score,'source':'Tesseract'}],

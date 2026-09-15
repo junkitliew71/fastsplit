@@ -1,12 +1,13 @@
 import os
 import asyncio
 import logging
+import subprocess
 import cv2
 import numpy as np
 from fastapi import FastAPI,File,UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from ocr.paddle_ocr import engine,recognize
+from ocr.paddle_ocr import engine,recognize,OCR_ENGINE
 from ocr.preprocessing import prepare
 from ocr.quality import analyse
 from parser.layout import reconstruct_layout
@@ -20,11 +21,22 @@ scan_lock=asyncio.Lock();logger=logging.getLogger('fastsplit.ocr')
 def failure(code,message,status=400):return JSONResponse(status_code=status,content={'success':False,'error':{'code':code,'message':message}})
 
 @app.on_event('startup')
-def load_model():engine()
+def load_model():
+    engine()
+    logger.warning('FastSplit OCR ready: engine=%s',OCR_ENGINE)
 @app.get('/health')
-def health():return {'status':'ok','ocr':'ready'}
+def health():return {'status':'ok','ocr':'ready','engine':OCR_ENGINE}
 
 def _score(blocks):return (sum(b['confidence'] for b in blocks)/len(blocks) if blocks else 0)+min(len(blocks),40)/200
+
+def diagnostic(stage,**details):
+    if os.getenv('FASTSPLIT_DIAGNOSTICS')=='1':logger.warning('[FastSplit OCR] %s %s',stage,details)
+
+class ParserFailure(RuntimeError):pass
+
+def understand(image,blocks,quality):
+    try:return _understand(image,blocks,quality)
+    except Exception as error:raise ParserFailure('Layout or receipt parsing failed') from error
 
 def _understand(image,blocks,quality):
     height,width=image.shape[:2];layout=reconstruct_layout(blocks,int(width),int(height));parsed=parse(layout)
@@ -45,37 +57,44 @@ def _needs_enhanced(candidate):
 
 @app.post('/api/receipt/scan')
 async def scan(image:UploadFile=File(...)):
+    diagnostic('request received',engine=OCR_ENGINE)
     if image.content_type not in ALLOWED:return failure('INVALID_IMAGE','Upload a JPG, PNG, or WebP receipt.')
     raw=await image.read()
+    diagnostic('image bytes',count=len(raw))
     if not raw:return failure('INVALID_IMAGE','The image is empty.')
     if len(raw)>MAX_BYTES:return failure('IMAGE_TOO_LARGE','The image must be smaller than 25 MB.',413)
-    decoded=cv2.imdecode(np.frombuffer(raw,np.uint8),cv2.IMREAD_COLOR)
-    if decoded is None:return failure('INVALID_IMAGE','The image could not be decoded.')
-    quality=analyse(decoded)
+    decoded=await asyncio.to_thread(cv2.imdecode,np.frombuffer(raw,np.uint8),cv2.IMREAD_COLOR)
+    if decoded is None:return failure('IMAGE_DECODE_FAILED','The image could not be decoded.')
+    diagnostic('image dimensions',width=int(decoded.shape[1]),height=int(decoded.shape[0]))
+    quality=await asyncio.to_thread(analyse,decoded)
     if quality['fatal']:
         code,message=quality['fatal'];return failure(code,message,422)
     try:
-        prepared,operations=prepare(decoded,quality)
+        prepared,operations=await asyncio.to_thread(prepare,decoded,quality)
+        diagnostic('preprocessing complete',operations=operations)
         async with scan_lock:blocks=await asyncio.to_thread(recognize,prepared)
-        primary=_understand(prepared,blocks,quality)
+        diagnostic('OCR complete',tokens=len(blocks))
+        primary=await asyncio.to_thread(understand,prepared,blocks,quality)
         candidates=[primary];passes=[{'name':'NORMAL','operations':operations,'blockCount':len(blocks),'averageConfidence':round(_score(blocks),4),
           'overallConfidence':primary['confidence']['overallConfidence'],'mathValid':primary['validation']['valid'],'selected':True}]
         # Escalate once only when OCR is weak or the result is structurally incomplete.
         if _needs_enhanced(primary):
-            enhanced,enhanced_operations=prepare(decoded,quality,True)
+            enhanced,enhanced_operations=await asyncio.to_thread(prepare,decoded,quality,True)
             async with scan_lock:enhanced_blocks=await asyncio.to_thread(recognize,enhanced)
-            enhanced_result=_understand(enhanced,enhanced_blocks,quality);candidates.append(enhanced_result)
+            enhanced_result=await asyncio.to_thread(understand,enhanced,enhanced_blocks,quality);candidates.append(enhanced_result)
             passes.append({'name':'ENHANCED','operations':enhanced_operations,'blockCount':len(enhanced_blocks),'averageConfidence':round(_score(enhanced_blocks),4),
               'overallConfidence':enhanced_result['confidence']['overallConfidence'],'mathValid':enhanced_result['validation']['valid'],'selected':False})
         selected=max(candidates,key=_candidate_rank);selected_index=candidates.index(selected)
         for index,ocr_pass in enumerate(passes):ocr_pass['selected']=index==selected_index
         prepared=selected['image'];blocks=selected['blocks'];layout=selected['layout'];parsed=selected['parsed'];validation=selected['validation'];confidence=selected['confidence']
-        if not blocks:return failure('NO_TEXT_FOUND','Unable to read receipt text.',422)
+        if not blocks:return failure('NO_TEXT_DETECTED','Unable to read receipt text.',422)
         warnings=list(validation['warnings'])
+        if not parsed['items']:warnings.append({'type':'ITEM_WITHOUT_PRICE','message':'Text was detected, but items could not be extracted reliably. Please map the text manually.'})
         if quality['issues']:warnings.insert(0,{'type':'LOW_IMAGE_QUALITY','message':'Image quality issues detected: '+', '.join(quality['issues']).lower().replace('_',' ')+'.'})
         if confidence['ocrConfidence']<.72:warnings.append({'type':'LOW_OCR_CONFIDENCE','message':'Some receipt text may have been read incorrectly.'})
         warning=' '.join(w['message'] for w in warnings) or 'OCR complete. Review and map the receipt text.'
         public_items=[{k:v for k,v in item.items() if k!='sourceBlockIds'} for item in parsed['items']]
+        diagnostic('response success',tokens=len(blocks),lines=len(layout['rows']),items=len(public_items),grandTotal=parsed['grandTotal'])
         pipeline_stages={
           '1_IMAGE_QUALITY':quality,
           '2_RAW_OCR':'\n'.join(b['text'] for b in blocks),
@@ -88,13 +107,21 @@ async def scan(image:UploadFile=File(...)):
           '9_MATHEMATICAL_VALIDATION':validation,
           '10_FINAL_RESULT':{'confidence':confidence,'warnings':warnings,'selectedPass':passes[selected_index]['name']},
         }
-        return {'success':True,'imageWidth':int(prepared.shape[1]),'imageHeight':int(prepared.shape[0]),'ocrBlocks':blocks,
+        if os.getenv('FASTSPLIT_DIAGNOSTICS')=='1':
+            logger.warning('FastSplit scan engine=%s blocks=%s items=%s grandTotal=%s selectedPass=%s',OCR_ENGINE,len(blocks),len(public_items),parsed['grandTotal'],passes[selected_index]['name'])
+        return {'success':True,'schemaVersion':1,'extractionStatus':'complete' if public_items else 'needs_manual_mapping','imageWidth':int(prepared.shape[1]),'imageHeight':int(prepared.shape[0]),'ocrBlocks':blocks,
           'restaurant':parsed['restaurant'],'items':public_items,'subtotal':parsed['subtotal'],'serviceCharge':parsed['serviceCharge'],
           'tax':parsed['tax'],'discount':parsed['discount'],'rounding':parsed['rounding'],'grandTotal':parsed['grandTotal'],
           'confidence':confidence,'warnings':warnings,'warning':warning,
           'debug':{'stage1RawOcr':'\n'.join(b['text'] for b in blocks),'stage2Blocks':blocks,'stage3Rows':layout['rows'],
                    'stage4Columns':layout['columns'],'stage5Parser':{**parsed,'items':public_items},'stage6Validation':validation,
                    'imageQuality':quality,'ocrPasses':passes,'pipelineStages':pipeline_stages}}
+    except ParserFailure:
+        logger.exception('Receipt parsing failed')
+        return failure('PARSER_FAILED','Text recognition completed, but receipt parsing failed. Please try again or enter manually.',500)
+    except subprocess.TimeoutExpired:
+        logger.exception('Receipt OCR timed out')
+        return failure('OCR_TIMEOUT','Receipt recognition timed out. Please try a smaller, clearer photo.',504)
     except Exception:
         logger.exception('Receipt scan failed')
-        return failure('OCR_FAILED','Unable to scan this receipt. Please try another photo.',500)
+        return failure('OCR_ENGINE_FAILED','Unable to scan this receipt. Please try another photo.',500)
